@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
-gem 'pry'
-gem 'sinatra'
-gem 'thin'
-gem 'httparty'
+gem 'sinatra', '>= 1.4', require: 'sinatra/base'
 gem 'instagram'
-gem 'json'
 gem 'slim'
+gem 'thin'
+gem 'rake'
+
+
+gem 'pry'
+

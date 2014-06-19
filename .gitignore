@@ -3,3 +3,4 @@ Capfile
 config/deploy.rb
 log
 tmp
+config/secrets/*.yml

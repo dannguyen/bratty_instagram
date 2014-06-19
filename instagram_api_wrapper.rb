@@ -1,7 +1,9 @@
 require 'instagram'
-
+require 'pry'
 
 module InstagramAPIWrapper
+
+  INSTAGRAM_ID_PATTERN = /^\d{3,}$/
   class << self
     attr_reader :client_id, :client_secret, :redirect_uri, :access_token
   end
@@ -44,7 +46,7 @@ module InstagramAPIWrapper
     def self.users(client, arr)
       arr.each do |some_key|
         uid = translate_to_user_id(client, some_key)
-        val = client.user(uid)
+        val = uid.nil? ? {} : client.user(uid)
 
         yield(some_key, val) if block_given?
 
@@ -53,7 +55,12 @@ module InstagramAPIWrapper
     end
 
 
-    def self.search_for_user_id_from_username(uname)
+    # Return a Instagram::User ID from a uname like 'snoopdogg'
+    def self.search_for_user_id_from_username(client, uname)
+      arr = client.user_search(uname)
+      u = arr.find{|h| h['username'].downcase == uname}
+
+      u.nil? ? nil : u['id']
     end
 
     # val is a String
@@ -62,11 +69,16 @@ module InstagramAPIWrapper
     # {'snoopdogg' => 8273372, '9349438' => 9349438, 'https://instagram.com/danwinny' => 7123452 }
     def self.translate_to_user_id(client, val)
       u = val.strip
-      uid = u[/insatgram.com\/\w+/] || u
 
-      # note, this should delegate to the search method
-#      xid = search_for_user_id_from_username(uid)
-      return (uid =~ /^\d{3,}$/) ? uid : uid
+      if u =~ INSTAGRAM_ID_PATTERN
+        return u
+      else
+        # extract user name as part of a hash
+        uname = u[/(?<=instagram\.com\/)\w+/] || u
+        uid = search_for_user_id_from_username(client, uname)
+
+        return uid
+      end
     end
   end
 

@@ -24,9 +24,9 @@ div.container
             div
               a href="u['website']" => u['website']
             div => u['bio']
-
-          td = u['counts']['media']
-          td = u['counts']['follows']
-          td = u['counts']['followed_by']
+          - unless u['id'].nil?
+            td = u['counts']['media']
+            td = u['counts']['follows']
+            td = u['counts']['followed_by']
 
 

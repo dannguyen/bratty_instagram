@@ -19,6 +19,7 @@ module BrattyPack
     use Rack::Deflater
     use BrattyPack::Routes::Instagram
 
+
   end
 end
 

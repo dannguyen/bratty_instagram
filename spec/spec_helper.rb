@@ -1,6 +1,7 @@
 # spec/spec_helper.rb
 require 'rack/test'
 require 'rspec'
+require 'pry'
 
 require File.expand_path '../../app.rb', __FILE__
 
@@ -8,7 +9,9 @@ ENV['RACK_ENV'] = 'test'
 
 module RSpecMixin
   include Rack::Test::Methods
-  def app() Sinatra::Application end
+  def app
+    BrattyPack::App
+  end
 end
 
 # For RSpec 2.x

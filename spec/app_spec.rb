@@ -2,10 +2,36 @@ require 'spec_helper'
 
 
 describe 'my first test' do
-
   it 'should say hello world' do
     expect('hello' + ' world').to eq 'hello world'
   end
 
+  describe 'helpers' do
+    subject{
+      (Class.new { include BrattyPack::Helpers::ApplicationHelper }).new
+    }
 
+
+
+    describe 'clean_text_field' do
+      it 'should split commas and strip whitespace' do
+        str = 'hey, you,guys  '
+        expect(subject.clean_textfield(str)).to eq %w(hey you guys)
+      end
+
+      it 'should split newlines and strip whitespace' do
+        str = "hey there
+        you
+        guys"
+        expect(subject.clean_textfield(str)).to eq ['hey there', 'you', 'guys']
+      end
+
+      it 'should not split by commas if newlines are in place' do
+        str = "hey,there
+           you,guys    "
+
+        expect(subject.clean_textfield(str)).to eq ['hey,there', 'you,guys']
+      end
+    end
+  end
 end

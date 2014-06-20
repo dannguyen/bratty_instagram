@@ -16,10 +16,6 @@ class BrattyResponse
     @status == :error
   end
 
-  def incomplete?
-    @status == :incomplete
-  end
-
   def success?
     @status == :success
   end
@@ -35,14 +31,10 @@ class BrattyResponse
   end
 
   def self.error(params, err, msg=nil)
-    message = msg || "Error: #{err}"
+    message = msg || "#{err.inspect}"
     new(:error, params, {message: message, error: err})
   end
 
-  def self.incomplete(params, msg=nil)
-    message = msg || "Incomplete"
-    new(:incomplete, params, {message: message})
-  end
 
   def self.success(params, resp, msg=nil)
     message = msg || 'Success'

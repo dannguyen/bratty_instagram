@@ -1,8 +1,7 @@
 require 'twitter'
-require 'lib/bratty_response'
+require 'apis/api_wrapper'
 
-class TwitterAPIWrapper
-
+class TwitterAPIWrapper < APIWrapper
 
   # auth_keys looks like:
 
@@ -24,9 +23,7 @@ class TwitterAPIWrapper
   end
 
 
-  def fetch(foo, *args)
-    self.class.fetch(@clients, foo, *args)
-  end
+
 
   module Fetchers
     class << self
@@ -47,8 +44,7 @@ class TwitterAPIWrapper
         opts['include_entities'] ||= true
 
         Array(all_uids).each_slice(TWITTER_MAX_BATCH_USER_SIZE) do |uids|
-          foo_proc = Proc.new do |clients|
-            client = clients.first
+          foo_proc = Proc.new do |client|
             clean_uids = uids.map{|x| clean_screen_name(x) }
             users = client.users(clean_uids, opts)
 
@@ -79,36 +75,7 @@ class TwitterAPIWrapper
             h
           end
         end
-
-
     end
   end
-
-
-  def self.fetch(clients, str, *args)
-    results = []
-    Fetchers.send(str, *args) do |job_type, fetch_proc, args_as_key|
-      begin
-        resp = fetch_proc.call(clients)
-      rescue => err
-        if job_type == :batch
-          results += args_as_key.map{|a| BrattyResponse.error(a, err) }
-        else
-          results << BrattyResponse.error(args_as_key, err)
-        end
-      else
-        if job_type == :batch
-          results += resp.map do |ax, aval|
-            BrattyResponse.success_or_error(ax, aval)
-          end
-        else
-          results << BrattyResponse.success_or_error(args_as_key, resp)
-        end
-      end
-    end
-
-    return results
-  end
-
 
 end

@@ -1,7 +1,7 @@
 require 'instagram'
-require 'lib/bratty_response'
+require 'apis/api_wrapper'
 
-class InstagramAPIWrapper
+class InstagramAPIWrapper < APIWrapper
   INSTAGRAM_ID_PATTERN = /^\d{3,}$/
 
   def initialize(auth_opts)
@@ -16,11 +16,6 @@ class InstagramAPIWrapper
   end
 
 
-  def fetch(foo, *args)
-    self.class.fetch(@clients, foo, *args)
-  end
-
-
   module Fetchers
     class << self
       # uids is an array of user_ids or names
@@ -31,7 +26,7 @@ class InstagramAPIWrapper
             val = client.user(uid)
           end
 
-          yield fetch_proc, userid_val
+          yield :single, fetch_proc, userid_val
         end
       end
 
@@ -62,26 +57,11 @@ class InstagramAPIWrapper
             return user['id']
           end
         end
+        ### private
     end
   end
 
 
-  def self.fetch(clients, str, *args)
-    client = clients.first
-    results = []
-
-    Fetchers.send(str, *args) do |fetch_proc, args_as_key|
-      begin
-        resp = fetch_proc.call(client)
-      rescue => err
-        results << BrattyResponse.error(args_as_key, err)
-      else
-        results << BrattyResponse.success(args_as_key, resp)
-      end
-    end
-
-    return results
-  end
 end
 
 

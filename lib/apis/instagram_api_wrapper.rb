@@ -1,56 +1,31 @@
 require 'instagram'
 require 'lib/bratty_response'
 
-module InstagramAPIWrapper
+class InstagramAPIWrapper
   INSTAGRAM_ID_PATTERN = /^\d{3,}$/
-  class << self
-    attr_reader :client_id, :client_secret, :redirect_uri, :access_token
+
+  def initialize(auth_opts)
+    @clients = auth_opts.map do |a|
+      client = Instagram::Client.new
+      client.client_id = a['id']
+      client.access_token = a['access_token']
+
+      client
+    end
+    # new Keys format TK
   end
 
-  module AuthStuff
 
-    def config_auth!(auth_opts={})
-      Instagram.configure do |config|
-        @client_id = config.client_id = auth_opts['client_id']
-        @client_secret = config.client_secret = auth_opts['client_secret']
-      end
-
-      @access_token =  auth_opts['access_token']
-      @redirect_uri = auth_opts['redirect_uri']
-    end
-
-    def init_client!
-      @client = Instagram.client(access_token: @access_token)
-    end
-
-
-    ### Oauth stuff, may not be needed
-    def authorize_url
-      Instagram.authorize_url(:redirect_uri => self.redirect_uri)
-    end
-
-
-    def set_access_token(token)
-      @access_token = token
-    end
-
-    def has_access_token?
-      !@access_token.nil?
-    end
-
-    def get_access_token(code)
-      response = Instagram.get_access_token(code, redirect_uri: self.redirect_uri )
-
-      return response.access_token
-    end
+  def fetch(foo, *args)
+    self.class.fetch(@clients, foo, *args)
   end
-  extend AuthStuff
+
 
   module Fetchers
     class << self
       # uids is an array of user_ids or names
       def users(uids, &blk)
-        uids.each do |userid_val|
+        Array(uids).each do |userid_val|
           fetch_proc = Proc.new do |client|
             uid = translate_to_user_id(client, userid_val)
             val = client.user(uid)
@@ -62,12 +37,12 @@ module InstagramAPIWrapper
 
         private
         # Return a Instagram::User ID from a uname like 'snoopdogg'
-        def search_for_user_id_from_username(client, uname)
+        def search_for_user_from_username(client, uname)
           arr = client.user_search(uname)
-          u = arr.find{|h| h['username'].downcase == uname}
-          raise InstagramUsernameDoesntExist, "Could not find user #{uname}" if u.nil?
+          user = arr.find{|h| h['username'].downcase == uname.downcase}
+          raise InstagramUsernameDoesntExist, "Could not find user #{uname}" if user.nil?
 
-          u
+          return user
         end
 
         # val is a String
@@ -82,17 +57,17 @@ module InstagramAPIWrapper
           else
             # extract user name as part of a hash
             uname = u[/(?<=instagram\.com\/)\w+/] || u
-            uid = search_for_user_id_from_username(client, uname)
+            user = search_for_user_from_username(client, uname)
 
-            return uid
+            return user['id']
           end
         end
     end
   end
 
 
-  def self.fetch(str, *args)
-    client = init_client!
+  def self.fetch(clients, str, *args)
+    client = clients.first
     results = []
 
     Fetchers.send(str, *args) do |fetch_proc, args_as_key|

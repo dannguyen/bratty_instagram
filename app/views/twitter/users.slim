@@ -1,0 +1,33 @@
+div.container
+  table.table
+    thead
+      tr
+        th Key
+        th id
+        th screen_name
+        th name
+        th followers_count
+
+
+    tbody
+      - @results.each do |result|
+        tr
+          td = result.params
+          - if result.success?
+            - u = result.response
+            td => u['id']
+            td
+              a href="//twitter.com/#{{u['screen_name']}}"
+                div => u['screen_name']
+            td
+              div
+                strong => u['name']
+
+            td => u['followers_count']
+
+
+
+          - else
+            td = result.message
+
+

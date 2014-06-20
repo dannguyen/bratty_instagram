@@ -3,7 +3,7 @@ module BrattyPack
     module ApplicationHelper
 
       # splits either by newline OR comma
-      def clean_textfield(tf)
+      def process_text_input_array(tf)
         txt = tf.strip # first, strip out newlines
 
         (txt =~ /\n/ ? txt.split("\n") : txt.split(',')).

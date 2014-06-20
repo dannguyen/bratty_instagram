@@ -6,5 +6,6 @@ gem 'thin'
 gem 'rake'
 
 
+gem 'rspec'
 gem 'pry'
 

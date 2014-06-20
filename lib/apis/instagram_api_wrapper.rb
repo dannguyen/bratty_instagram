@@ -8,9 +8,6 @@ module InstagramAPIWrapper
   end
 
   module AuthStuff
-    def authorize_url
-      Instagram.authorize_url(:redirect_uri => self.redirect_uri)
-    end
 
     def config_auth!(auth_opts={})
       Instagram.configure do |config|
@@ -21,6 +18,17 @@ module InstagramAPIWrapper
       @access_token =  auth_opts['access_token']
       @redirect_uri = auth_opts['redirect_uri']
     end
+
+    def init_client!
+      @client = Instagram.client(access_token: @access_token)
+    end
+
+
+    ### Oauth stuff, may not be needed
+    def authorize_url
+      Instagram.authorize_url(:redirect_uri => self.redirect_uri)
+    end
+
 
     def set_access_token(token)
       @access_token = token
@@ -35,11 +43,6 @@ module InstagramAPIWrapper
 
       return response.access_token
     end
-
-    def init_client!
-      @client = Instagram.client(access_token: @access_token)
-    end
-
   end
   extend AuthStuff
 
@@ -88,9 +91,7 @@ module InstagramAPIWrapper
           return uid
         end
       end
-
     end
-
   end
 
 
@@ -100,9 +101,4 @@ module InstagramAPIWrapper
 
     return results
   end
-
-
-
-
-
 end

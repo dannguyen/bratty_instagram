@@ -41,4 +41,10 @@ class BrattyResponse
     new(:success, params, {response: resp, message: message})
   end
 
+
+  # if resp inherits from Exception, then it is an error
+  def self.success_or_error(params, resp, msg=nil)
+    resp.class < Exception ? error(params, resp, msg) : success(params, resp, msg)
+  end
+
 end

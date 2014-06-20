@@ -12,6 +12,7 @@ class TwitterAPIWrapper
   #   oauth_token_secret: "OAUTHS"}
 
   AUTH_FIELDS = %w(consumer_key consumer_secret oauth_token oauth_token_secret)
+  TWITTER_MAX_BATCH_USER_SIZE = 100
 
   def initialize(auth_keys)
     arr = auth_keys.is_a?(Hash) ? [auth_keys] : Array(auth_keys)
@@ -42,18 +43,42 @@ class TwitterAPIWrapper
       #   end
       # end
 
-      def users(uids, opts={})
+      def users(all_uids, opts={})
         opts['include_entities'] ||= true
 
-        Array(uids).each do |uid|
+        Array(all_uids).each_slice(TWITTER_MAX_BATCH_USER_SIZE) do |uids|
           foo_proc = Proc.new do |clients|
             client = clients.first
-            client.users(uid, opts)[0]
+            clean_uids = uids.map{|x| clean_screen_name(x) }
+            users = client.users(clean_uids, opts)
+
+            glob_users(users, clean_uids)
           end
 
-          yield foo_proc, uid
+          yield :batch, foo_proc, uids
         end
       end
+
+      private
+
+        # basically removes twitter.com/thing
+        def clean_screen_name(val)
+          if val.is_a?(Fixnum)
+            return val
+          else
+            return val[/(?<=twitter\.com\/)\w+/] || val
+          end
+        end
+
+        def glob_users(users, ukeys)
+          users_arr = users.map{|u| HashWithIndifferentAccess.new(u.to_h) }
+          ukeys.inject({}) do |h, key|
+            uhsh = users_arr.find{|u| key.is_a?(Fixnum) ? u[:id].to_i == key : u[:screen_name].downcase == key.downcase }
+            h[key] = uhsh.nil? ? StandardError.new("#{key} not found") : uhsh
+
+            h
+          end
+        end
 
 
     end
@@ -62,13 +87,23 @@ class TwitterAPIWrapper
 
   def self.fetch(clients, str, *args)
     results = []
-    Fetchers.send(str, *args) do |fetch_proc, args_as_key|
+    Fetchers.send(str, *args) do |job_type, fetch_proc, args_as_key|
       begin
         resp = fetch_proc.call(clients)
       rescue => err
-        results << BrattyResponse.error(args_as_key, err)
+        if job_type == :batch
+          results += args_as_key.map{|a| BrattyResponse.error(a, err) }
+        else
+          results << BrattyResponse.error(args_as_key, err)
+        end
       else
-        results << BrattyResponse.success(args_as_key, resp)
+        if job_type == :batch
+          results += resp.map do |ax, aval|
+            BrattyResponse.success_or_error(ax, aval)
+          end
+        else
+          results << BrattyResponse.success_or_error(args_as_key, resp)
+        end
       end
     end
 

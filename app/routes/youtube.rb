@@ -9,12 +9,12 @@ module BrattyPack
         slim :'youtube/index'
       end
 
-      get '/youtube/users' do
-        names = process_text_input_array(params['ids'].to_s)
+      get '/youtube/channel_ids' do
+        names = process_text_input_array(params['names'].to_s)
         @results = []
-        @results += @@youtube_wrapper.fetch(:users, ids)
+        @results += @@youtube_wrapper.fetch(:channel_ids, names)
 
-        slim :'youtube/users'
+        slim :'youtube/channel_ids'
       end
     end
   end

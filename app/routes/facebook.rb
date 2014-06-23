@@ -10,7 +10,7 @@ module BrattyPack
       end
 
       get '/facebook/users' do
-        names = process_text_input_array(params['ids'].to_s)
+        ids = process_text_input_array(params['ids'].to_s)
         @results = []
         @results += @@facebook_wrapper.fetch(:users, ids)
 

@@ -1,0 +1,47 @@
+div.container-fluid
+  h2 Facebook: /users
+
+  table.table.table-striped.table-bordered
+    thead
+      tr
+        th Input
+        th id
+        th username
+        th Likes
+        th Talking About
+        th bio_stuff
+    tbody
+      - @results.each do |result|
+        tr
+          td = result.params
+          - if result.success?
+            - u = result.response
+            td => u['id']
+            td
+              a href="//facebook.com/#{{u['id']}}"
+                div => u['username']
+                div
+                  img src="https://graph.facebook.com/#{{u['id']}}/picture?width=200"
+
+            td => u['likes']
+            td => u['talking_about_count']
+
+            td
+              div
+                strong Full name: &nbsp;
+                span => u['name']
+              div
+                strong URL: &nbsp;
+                a href="u['website']" => u['website']
+
+              div
+                em => u['about']
+              div
+                em => u['company_overview']
+
+
+
+          - else
+            td = result.message
+
+

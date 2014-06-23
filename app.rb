@@ -16,8 +16,11 @@ module BrattyPack
     end
 
     use Rack::Deflater
+    use BrattyPack::Routes::Facebook
     use BrattyPack::Routes::Instagram
     use BrattyPack::Routes::Twitter
+    use BrattyPack::Routes::Youtube
+
   end
 end
 

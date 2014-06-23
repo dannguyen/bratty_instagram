@@ -1,8 +1,10 @@
 module BrattyPack
   module Routes
     autoload :Base, 'app/routes/base'
+    autoload :Facebook, 'app/routes/facebook'
     autoload :Instagram, 'app/routes/instagram'
     autoload :Twitter, 'app/routes/twitter'
+    autoload :Youtube, 'app/routes/youtube'
 
   end
 end

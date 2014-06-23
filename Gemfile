@@ -8,7 +8,8 @@ gem 'activesupport', require: 'active_support/core_ext/hash/indifferent_access'
 ## data stuff
 gem 'instagram'
 gem 'twitter'
-
+gem 'google-api-client'
+gem 'koala'
 
 ## dev stuff
 gem 'thin'

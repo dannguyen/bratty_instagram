@@ -70,7 +70,7 @@ class TwitterAPIWrapper < APIWrapper
           users_arr = users.map{|u| HashWithIndifferentAccess.new(u.to_h) }
           ukeys.inject({}) do |h, key|
             uhsh = users_arr.find{|u| key.is_a?(Fixnum) ? u[:id].to_i == key : u[:screen_name].downcase == key.downcase }
-            h[key] = uhsh.nil? ? StandardError.new("#{key} not found") : uhsh
+            h[key] = uhsh.nil? ? StandardError.new("Username: #{key} not found") : uhsh
 
             h
           end

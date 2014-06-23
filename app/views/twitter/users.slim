@@ -1,14 +1,16 @@
-div.container
-  table.table
+div.container-fluid
+  table.table.table-striped.table-bordered
     thead
       tr
         th Key
-        th id
+        th User ID
         th screen_name
         th name
-        th followers_count
-
-
+        th account created on
+        th location
+        th followers count
+        th tweets count
+        th latest tweet
     tbody
       - @results.each do |result|
         tr
@@ -19,15 +21,36 @@ div.container
             td
               a href="//twitter.com/#{{u['screen_name']}}"
                 div => u['screen_name']
+                div
+                  img src=u['profile_image_url']
             td
               div
-                strong => u['name']
+                strong Full name: &nbsp;
+                | #{{u['name']}}
+              div
+                strong Homepage: &nbsp;
+                a href="#{{u['url']}}" => u['url']
 
+              div
+                em => u['description']
+
+
+            td => u['created_at']
+            td => u['location']
             td => u['followers_count']
+            td => u['statuses_count']
 
-
+            - if (latest_status = u['status'])
+              td
+                div
+                  strong Created at: &nbsp;
+                  span => latest_status['created_at']
+                div
+                  em => latest_status['text']
+                  a href="https://twitter.com/#{{u['screen_name']}}/status/#{{latest_status['id']}}" => '[link]'
 
           - else
-            td = result.message
+            td
+              => result.message
 
 

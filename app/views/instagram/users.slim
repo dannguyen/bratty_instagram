@@ -1,9 +1,9 @@
 
-div.container
-  table.table
+div.container-fluid
+  table.table.table-striped.table-bordered
     thead
       tr
-        th Key
+        th Input
         th id
         th username
         th bio_stuff
@@ -20,15 +20,20 @@ div.container
             td
               a href="//instagram.com/#{{u['username']}}"
                 div => u['username']
+                div
+                  img src="#{{u['profile_picture']}}"
             td
               div
-                strong => u['full_name']
+                strong Full name: &nbsp;
+                span => u['full_name']
               div
+                strong URL: &nbsp;
                 a href="u['website']" => u['website']
+
               div => u['bio']
             td = u['counts']['media']
-            td = u['counts']['follows']
             td = u['counts']['followed_by']
+            td = u['counts']['follows']
 
           - else
             td = result.message

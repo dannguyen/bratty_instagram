@@ -20,13 +20,14 @@ class InstagramAPIWrapper < APIWrapper
     class << self
       # uids is an array of user_ids or names
       def users(uids, &blk)
-        Array(uids).each do |userid_val|
-          fetch_proc = Proc.new do |client|
-            uid = translate_to_user_id(client, userid_val)
-            val = client.user(uid)
+        Array(uids).each do |userval|
+          foop = Proc.new do |client|
+            uid = translate_to_user_id(client, userval)
+
+            client.user(uid)
           end
 
-          yield :single, fetch_proc, userid_val
+          yield :single, foop, userval
         end
       end
 

@@ -4,8 +4,25 @@ require 'rspec'
 require 'pry'
 
 require File.expand_path '../../app.rb', __FILE__
-
 ENV['RACK_ENV'] = 'test'
+
+module SpecFixtures
+  FIXTURE_DIR = File.expand_path '../fixtures', __FILE__
+  def get_fixture(filename)
+    fname = File.join FIXTURE_DIR, filename
+    data = open(fname){ |f| f.read }
+    case fname[/(?<=\.)\w+$/]
+    when 'json'
+      JSON.parse(data)
+    when 'yml', 'yaml'
+      YAML.load(data)
+    else
+      data
+    end
+  end
+
+end
+
 
 module RSpecMixin
   include Rack::Test::Methods
@@ -17,6 +34,7 @@ end
 # For RSpec 2.x
 RSpec.configure do |c|
   c.include RSpecMixin
+  c.include SpecFixtures
   c.order = "random"
   # Use color in STDOUT
   c.color_enabled = true

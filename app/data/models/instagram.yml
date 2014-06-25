@@ -7,11 +7,11 @@ user:
       type: numeric
       path:
         counts: media
-    - name: followed_by
+    - name: followed_by_count
       type: numeric
       path:
         counts: followed_by
-    - name: follows
+    - name: follows_count
       type: numeric
       path:
         counts: follows

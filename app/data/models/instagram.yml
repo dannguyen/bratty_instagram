@@ -1,0 +1,31 @@
+user:
+  fields:
+    - name: id
+    - name: username
+    - name: bio
+    - name: media_count
+      type: numeric
+      path:
+        counts: media
+    - name: followed_by
+      type: numeric
+      path:
+        counts: followed_by
+    - name: follows
+      type: numeric
+      path:
+        counts: follows
+  format:
+    html:
+      fields:
+        - id
+        - username
+        - bio
+        - media_count
+        - followed_by
+        - follows
+
+
+
+
+

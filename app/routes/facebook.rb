@@ -14,7 +14,9 @@ module BrattyPack
         @results = []
         @results += @@facebook_wrapper.fetch(:users, ids)
 
-        slim :'facebook/users'
+        slim :results_layout, :layout => :layout do
+          slim :'facebook/users'
+        end
       end
     end
   end

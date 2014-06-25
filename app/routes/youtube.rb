@@ -21,7 +21,9 @@ module BrattyPack
         ids = process_text_input_array(params['ids'].to_s)
         @results = @@youtube_wrapper.fetch(:users, ids)
 
-        slim :'youtube/users'
+        slim :results_layout, :layout => :layout do
+          slim :'youtube/users'
+        end
       end
 
     end

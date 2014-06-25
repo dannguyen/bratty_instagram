@@ -20,7 +20,9 @@ module BrattyPack
         @results += @@twitter_wrapper.fetch(:users, ids)
         @results += @@twitter_wrapper.fetch(:users, names)
 
-        slim :'twitter/users'
+        slim :results_layout, :layout => :layout do
+          slim :'twitter/users'
+        end
       end
     end
   end

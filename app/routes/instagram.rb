@@ -14,8 +14,19 @@ module BrattyPack
         user_ids = process_text_input_array(params['users_ids'] || params['ids'])
         @results = @@instagram_wrapper.fetch(:users, user_ids)
 
-        slim :'instagram/users'
+        slim :results_layout, :layout => :layout do
+          slim :'instagram/users'
+        end
       end
+
+
+      module ResultDataObjects
+        class << self
+          def user(obj)
+          end
+        end
+      end
+
     end
   end
 end

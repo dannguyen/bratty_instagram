@@ -8,7 +8,7 @@ div.container-fluid
     table.table.table-striped.table-bordered
       thead
         th Input key
-        - @headers.each do |tn|
+        - @presenter.readable_column_names.each do |tn|
           th = tn
 
       tbody
@@ -17,8 +17,10 @@ div.container-fluid
             td = result.params
             - if result.success?
               - obj = @presenter.parse_into_object( result.response )
-              - @headers.each do |h|
-                td => obj[h]
+              - @presenter.columns.each do |col|
+                td => obj[col]
+            - else
+              td.error = result.message
 
 
   / == yield

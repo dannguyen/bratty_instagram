@@ -8,22 +8,20 @@ module BrattyPack
         slim :'youtube/index'
       end
 
-      # get '/youtube/channel_ids' do
-      #   names = process_text_input_array(params['names'].to_s)
-      #   @results = []
-      #   @results += @@youtube_wrapper.fetch(:channel_ids, names)
 
-      #   slim :'youtube/channel_ids'
+      # /api/youtube/users
+      simple_api_endpoint 'users',
+          service: 'youtube',
+          param_name: :ids,
+          presenter_model: 'user'
+
+      # get '/youtube/users' do
+      #   ids = process_text_input_array(params['ids'].to_s)
+      #   @results = init_api_wrapper.fetch(:users, ids)
+
+      #   @presenter = DataPresenter.new('youtube', 'user')
+      #   slim :results_layout, :layout => :layout
       # end
-
-      get '/youtube/users' do
-        ids = process_text_input_array(params['ids'].to_s)
-        @results = init_api_wrapper.fetch(:users, ids)
-
-        @presenter = DataPresenter.new('youtube', 'user')
-        @headers = @presenter.column_names
-        slim :results_layout, :layout => :layout
-      end
 
     end
   end

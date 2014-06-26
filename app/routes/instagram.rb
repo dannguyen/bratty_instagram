@@ -9,21 +9,11 @@ module BrattyPack
         slim :'instagram/index'
       end
 
-      get '/instagram/users' do
-        user_ids = process_text_input_array(params['users_ids'] || params['ids'])
-        @results = init_api_wrapper.fetch(:users, user_ids)
-        @presenter = DataPresenter.new('instagram', 'user')
-        @headers = @presenter.column_names
-        slim :results_layout, :layout => :layout
-      end
+      simple_api_endpoint 'users',
+          service: 'instagram',
+          param_name: :ids,
+          presenter_model: 'user'
 
-
-      module ResultDataObjects
-        class << self
-          def user(obj)
-          end
-        end
-      end
 
     end
   end

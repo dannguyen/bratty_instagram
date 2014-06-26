@@ -31,6 +31,40 @@ module BrattyPack
           # init with secrets
           wrapper_klass.new(Secrets.keys(service_name.downcase))
         end
+
+        # Repeated from the Helper, for accessibility in simple_api_endpoint
+        def process_text_input_array(tf)
+          txt = tf.strip # first, strip out newlines
+
+          (txt =~ /\n/ ? txt.split("\n") : txt.split(',')).
+            map{|s| s.strip }.reject{|s| s.empty? }
+        end
+
+      # for some conventions
+      # e.g. simple_api_endpoint 'users',
+      #     service: 'youtube',
+      #     param_name: :ids,
+      #     presenter_model: 'user'
+        def simple_api_endpoint(endpoint_name, options={})
+          opts = HashWithIndifferentAccess.new(options)
+
+          http_method = opts[:http_method] || :get
+          service_name = opts[:service]
+          param_name = opts[:param_name]
+          presenter_model_name = opts[:presenter_model]
+
+          self.send(http_method, "/api/#{service_name}/#{endpoint_name}") do
+            if block_given?
+              @results = yield params
+            else
+              input_vals = process_text_input_array(params[param_name.to_sym])
+              @results = init_api_wrapper.fetch(endpoint_name, input_vals)
+            end
+
+            @presenter = DataPresenter.new(service_name, presenter_model_name)
+            slim :results_layout, :layout => :layout
+          end
+        end
       end
 
       private

@@ -2,8 +2,6 @@ module BrattyPack
   class DataPresenter
     CONFIGS_DIR = File.expand_path("../models", __FILE__)
     class << self
-
-
       def load_config(s, m_name)
         h = YAML.load_file(File.join(CONFIGS_DIR, "#{s}.yml"))[m_name]
 
@@ -18,7 +16,11 @@ module BrattyPack
       @config = self.class.load_config(@service_name, @model_name)
     end
 
-    def column_names
+    def readable_column_names
+      @config[:fields].map{ |f| f[:name].gsub('_', ' ') }
+    end
+
+    def columns
       @config[:fields].map{|f| f[:name]}
     end
 

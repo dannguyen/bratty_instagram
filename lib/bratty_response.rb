@@ -1,4 +1,5 @@
 # todo: move to Bratty module
+require 'json'
 class BrattyResponse
 
   attr_reader :params, :response, :error, :message, :status
@@ -32,6 +33,10 @@ class BrattyResponse
       'response' => @response,
       'status' => @status
     }
+  end
+
+  def to_json(*args)
+    to_h.to_json(*args)
   end
 
   def self.error(params, err, msg=nil)

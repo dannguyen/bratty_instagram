@@ -1,6 +1,7 @@
 require 'slim'
 require 'yaml'
-
+require 'sinatra/json'
+require 'csv'
 
 
 Slim::Engine.set_default_options :disable_escape => false, :disable_capture => true
@@ -13,6 +14,7 @@ module BrattyPack
       set :root, File.expand_path('../../../', __FILE__)
 
       helpers BrattyPack::Helpers::ApplicationHelper
+      helpers Sinatra::JSON
 
       module Secrets
         SECRETS_PATH = File.join( Base.root, 'config', 'secrets')
@@ -34,7 +36,7 @@ module BrattyPack
 
         # Repeated from the Helper, for accessibility in simple_api_endpoint
         def process_text_input_array(tf)
-          txt = tf.strip # first, strip out newlines
+          txt = tf.to_s.strip # first, strip out newlines
 
           (txt =~ /\n/ ? txt.split("\n") : txt.split(',')).
             map{|s| s.strip }.reject{|s| s.empty? }
@@ -64,6 +66,49 @@ module BrattyPack
             @presenter = DataPresenter.new(service_name, presenter_model_name)
             slim :results_layout, :layout => :layout
           end
+
+          ### to CSV, TK: DRY it up
+          self.send(http_method, "/api/#{service_name}/#{endpoint_name}.csv") do
+            if block_given?
+              @results = yield params
+            else
+              input_vals = process_text_input_array(params[param_name.to_sym])
+              @results = init_api_wrapper.fetch(endpoint_name, input_vals)
+            end
+
+            @presenter = DataPresenter.new(service_name, presenter_model_name)
+
+            headers( {'Content-Type' => 'text/plain'} )
+            CSV.generate(headers: true) do |csv|
+              headers = @presenter.columns
+              csv << headers
+              @results.each do |r|
+                if r.success?
+                  obj = @presenter.parse_into_object(r.body)
+                  csv << headers.map{|h| obj[h] }
+                else
+                  csv << [r.params.to_s, r.message ]
+                end
+              end
+            end
+          end
+
+
+          ### to JSON, TK: DRY it up
+          # Json doesn't require a presenter
+          self.send(http_method, "/api/#{service_name}/#{endpoint_name}.json") do
+            if block_given?
+              @results = yield params
+            else
+              input_vals = process_text_input_array(params[param_name.to_sym])
+              @results = init_api_wrapper.fetch(endpoint_name, input_vals)
+            end
+
+            json(@results)
+          end
+
+
+
         end
       end
 

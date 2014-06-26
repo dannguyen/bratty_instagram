@@ -5,9 +5,22 @@ div.container-fluid
   h2 Results
 
   div.results
-
     table.table.table-striped.table-bordered
       thead
+        th Input key
+        - @headers.each do |tn|
+          th = tn
+
+      tbody
+        - @results.each do |result|
+          tr
+            td = result.params
+            - if result.success?
+              - obj = @presenter.parse_into_object( result.response )
+              - @headers.each do |h|
+                td => obj[h]
+
+
 
 
 

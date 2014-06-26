@@ -13,10 +13,10 @@ module BrattyPack
       get '/instagram/users' do
         user_ids = process_text_input_array(params['users_ids'] || params['ids'])
         @results = @@instagram_wrapper.fetch(:users, user_ids)
+        @presenter = DataPresenter.new('instagram', 'user')
 
         # note that the :body of each
-        @results = @results.map{|o| DataWrapper.new('instagram', 'user', o.body)}
-        @headers = @results.first.column_names
+        @headers = @presenter.column_names
 
         slim :results_layout, :layout => :layout do
           slim :'instagram/users'

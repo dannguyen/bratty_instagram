@@ -42,4 +42,7 @@ RSpec.configure do |c|
   c.tty = true
   # Use the specified formatter
   c.formatter = :documentation # :progress, :html, :textmate
+  c.filter_run_excluding skip: true
+  c.run_all_when_everything_filtered = true
+  c.filter_run :focus => true
 end

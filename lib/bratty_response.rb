@@ -12,6 +12,10 @@ class BrattyResponse
     @response = opts[:response]
   end
 
+  def body
+    @response
+  end
+
   def error?
     @status == :error
   end

@@ -21,7 +21,9 @@ module BrattyPack
       @data = parse_data_obj
     end
 
-
+    def column_names
+      @data.keys
+    end
 
     private
 
@@ -43,12 +45,6 @@ module BrattyPack
               kval = field_path.keys[0]
               fpath = field_path[kval]
               obj = obj[kval]
-
-              # fpath = fpath[kval]
-              #
-              # kval = fpath.keys[0]
-              # obj = obj[kval]
-              # binding.pry
             end
 
             h[field_name] = obj[fpath]

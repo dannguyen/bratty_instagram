@@ -1,19 +1,27 @@
 user:
   fields:
     - name: id
+      uuid: true
+
     - name: username
+      unique: true
+
     - name: bio
+      type: text
+
     - name: media_count
       type: numeric
-      path:
+      nested:
         counts: media
+
     - name: followed_by_count
       type: numeric
-      path:
+      nested:
         counts: followed_by
+
     - name: follows_count
       type: numeric
-      path:
+      nested:
         counts: follows
   format:
     html:

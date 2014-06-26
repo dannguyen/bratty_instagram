@@ -30,8 +30,8 @@ describe 'DataPresenter' do
     end
   end
 
-  context 'parsing', skip: true do
-    let(:data){ presenter.data }
+  context 'parsing' do
+    let(:data){ presenter.parse_into_object(data_obj) }
     describe '#data' do
       it 'is a hash' do
         expect(data).to be_a Hash

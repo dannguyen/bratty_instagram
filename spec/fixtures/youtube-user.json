@@ -1,0 +1,38 @@
+{
+  "kind": "youtube#channel",
+  "etag": "\"QVyS2yjpsZ-tKkk4JvgYeO_YkzY/DQCn8FIRzrOhjuY6H5LjJUyk-nk\"",
+  "id": "UCjSrVD08nsyPDCNRjqSV7yA",
+  "snippet": {
+    "title": "Delta",
+    "description": "",
+    "publishedAt": "2006-05-11T13:38:17.000Z",
+    "thumbnails": {
+      "default": {
+        "url": "https://yt3.ggpht.com/-JNn9iCjt2so/AAAAAAAAAAI/AAAAAAAAAAA/cWxxRPd15A0/s88-c-k-no/photo.jpg"
+      },
+      "medium": {
+        "url": "https://yt3.ggpht.com/-JNn9iCjt2so/AAAAAAAAAAI/AAAAAAAAAAA/cWxxRPd15A0/s240-c-k-no/photo.jpg"
+      },
+      "high": {
+        "url": "https://yt3.ggpht.com/-JNn9iCjt2so/AAAAAAAAAAI/AAAAAAAAAAA/cWxxRPd15A0/s240-c-k-no/photo.jpg"
+      }
+    }
+  },
+  "contentDetails": {
+    "relatedPlaylists": {
+      "uploads": "UUjSrVD08nsyPDCNRjqSV7yA"
+    },
+    "googlePlusUserId": "105262277181558986338"
+  },
+  "statistics": {
+    "viewCount": "13226128",
+    "commentCount": "644",
+    "subscriberCount": "25623",
+    "hiddenSubscriberCount": false,
+    "videoCount": "220"
+  },
+  "status": {
+    "privacyStatus": "public",
+    "isLinked": true
+  }
+}

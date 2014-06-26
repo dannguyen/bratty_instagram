@@ -21,6 +21,23 @@ module BrattyPack
         end
       end
 
+      class << self
+        # (should this be in the controller?)
+        def init_api_wrapper(service_name=nil)
+          if service_name.nil?
+            service_name = self.name.split('::')[-1]
+          end
+          wrapper_klass = Kernel.const_get(:"#{service_name.capitalize}APIWrapper")
+          # init with secrets
+          wrapper_klass.new(Secrets.keys(service_name.downcase))
+        end
+      end
+
+      private
+        def init_api_wrapper
+          self.class.init_api_wrapper
+        end
+
       error do
         err = request.env['sinatra.error']
         # if err.class == RestClient::BadRequest

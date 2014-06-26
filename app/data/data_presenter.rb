@@ -27,21 +27,24 @@ module BrattyPack
 
       @config['fields'].each do |field|
         field_name = field['name']
-        field_path = field['path']
-        if field_path.nil?
+        f_nested = field['nested']
+
+        if f_nested.nil?
           h[field_name] = data_obj[field_name]
         else
-          kval = field_path.keys[0]    # :counts
-          fpath = field_path[kval]     # { :counts => :media }[:counts]
-          obj = data_obj[kval]  # {counts: {media: 100 }}
+          obj = data_obj
+          kval = f_nested.keys[0]    # :counts
+          fn = f_nested[kval]     # { :counts => :media }[:counts]
 
-          while fpath.is_a?(Hash)
-            kval = field_path.keys[0]
-            fpath = field_path[kval]
+          while obj.is_a?(Hash)
             obj = obj[kval]
+            break unless fn.is_a?(Hash)
+
+            kval = fn.keys[0]
+            fn = fn[kval]
           end
 
-          h[field_name] = obj[fpath]
+          h[field_name] = obj.nil? ? nil : obj[fn]
         end
       end
 

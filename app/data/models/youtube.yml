@@ -1,0 +1,57 @@
+user:
+  fields:
+    - name: id
+      uuid: true
+
+    - name: kind
+
+    - name: title
+      nested:
+        snippet: title
+
+    - name: description
+      type: text
+      nested:
+        snippet: description
+
+    - name: published_at
+      type: datetime
+      nested:
+        snippet: publishedAt
+
+    - name: default_thumbnail
+      nested:
+        snippet:
+          thumbnails:
+            default: url
+
+    - name: uploads_playlist_url
+      unique: true
+      nested:
+        contentDetails:
+          relatedPlaylists: uploads
+
+    - name: google_plus_user_id
+      unique: true
+      nested:
+        contentDetails: googlePlusUserId
+
+    - name: view_count
+      type: numeric
+      nested:
+        statistics: viewCount
+
+    - name: comment_count
+      type: numeric
+      nested:
+        statistics: commentCount
+
+    - name: subscriber_count
+      type: numeric
+      nested:
+        statistics: subscriberCount
+
+    - name: video_count
+      type: numeric
+      nested:
+        statistics: videoCount

@@ -1,0 +1,35 @@
+user:
+  fields:
+    - name: id
+      uuid: true
+
+    - name: username
+      unique: true
+
+    - name: name
+
+    - name: likes
+      type: numeric
+
+    - name: talking_about_count
+      type: numeric
+
+    - name: link
+      type: uuid_url
+
+    - name: is_published
+      type: boolean
+
+    - name: can_post
+      type: boolean
+
+    - name: about
+      type: text
+
+    - name: description
+      type: text
+
+    - name: category
+
+
+

@@ -3,7 +3,6 @@ require 'apis/youtube_api_wrapper'
 module BrattyPack
   module Routes
     class Youtube < Base
-      @@youtube_wrapper = YoutubeAPIWrapper.new(Secrets.keys('youtube'))
 
       get "/youtube" do
         slim :'youtube/index'
@@ -19,11 +18,11 @@ module BrattyPack
 
       get '/youtube/users' do
         ids = process_text_input_array(params['ids'].to_s)
-        @results = @@youtube_wrapper.fetch(:users, ids)
+        @results = init_api_wrapper.fetch(:users, ids)
 
-        slim :results_layout, :layout => :layout do
-          slim :'youtube/users'
-        end
+        @presenter = DataPresenter.new('youtube', 'user')
+        @headers = @presenter.column_names
+        slim :results_layout, :layout => :layout
       end
 
     end

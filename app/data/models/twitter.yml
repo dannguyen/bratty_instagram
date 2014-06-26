@@ -1,0 +1,50 @@
+user:
+  fields:
+    - name: id
+      uuid: true
+
+    - name: screen_name
+      unique: true
+
+    - name: name
+
+    - name: created_at
+      type: datetime
+
+    - name: listed_count
+      type: numeric
+
+    - name: followers_count
+      type: numeric
+
+    - name: statuses_count
+      type: numeric
+
+    - name: friends_count
+      type: numeric
+
+    - name: verified
+      type: boolean
+
+    - name: location
+
+    - name: url
+
+    - name: lang
+
+    - name: utc_offset
+      type: numeric
+
+    - name: latest_status_text
+      nested:
+        status: text
+
+    - name: latest_status_id
+      unique: true
+      nested:
+        status: id
+
+    - name: latest_status_created_at
+      type: datetime
+      nested:
+        status: created_at

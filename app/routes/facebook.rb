@@ -3,7 +3,6 @@ require 'apis/facebook_api_wrapper'
 module BrattyPack
   module Routes
     class Facebook < Base
-      @@facebook_wrapper = FacebookAPIWrapper.new(Secrets.keys('facebook'))
 
       get "/facebook" do
         slim :'facebook/index'
@@ -12,11 +11,11 @@ module BrattyPack
       get '/facebook/users' do
         ids = process_text_input_array(params['ids'].to_s)
         @results = []
-        @results += @@facebook_wrapper.fetch(:users, ids)
+        @results += init_api_wrapper.fetch(:users, ids)
 
-        slim :results_layout, :layout => :layout do
-          slim :'facebook/users'
-        end
+        @presenter = DataPresenter.new('facebook', 'user')
+        @headers = @presenter.column_names
+        slim :results_layout, :layout => :layout
       end
     end
   end

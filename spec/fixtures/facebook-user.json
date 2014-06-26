@@ -1,0 +1,30 @@
+{
+  "about": "Global travel industry intelligence: News, info, data & analysis on airlines, hotels, tourism, cruises, startups, tech and more.",
+  "can_post": true,
+  "category": "Travel/leisure",
+  "description": "Skift is a travel intelligence company that offers news, information, data and services to professionals in the travel industry and professional travelers to help them make smart decisions about travel.\n\nTravel news & data offers a tremendous opportunity: With a $6.5 trillion contribution to GDP and 260 million jobs, travel — made up of tourism, hospitality, transport & leisure — is the world’s largest industry. Skift is the information and intelligence brand that matches the industry’s size and potential.\n\nSkift is the business of travel.",
+  "founded": "2012",
+  "is_published": true,
+  "location": {
+    "street": "",
+    "city": "New York",
+    "state": "NY",
+    "country": "United States",
+    "zip": "10001"
+  },
+  "products": "Skift Global Trends Report",
+  "talking_about_count": 617,
+  "username": "Skiftnews",
+  "website": "http://skift.com/",
+  "were_here_count": 0,
+  "id": "155942621181219",
+  "name": "Skift",
+  "link": "https://www.facebook.com/Skiftnews",
+  "likes": 4265,
+  "cover": {
+    "cover_id": 395532583888887,
+    "source": "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash4/s720x720/1001142_395532583888887_1998787787_n.jpg",
+    "offset_y": 49,
+    "offset_x": 0
+  }
+}

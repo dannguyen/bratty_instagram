@@ -9,14 +9,13 @@ $(document).ready(function(){
 
     var $txtarea = $(this).children('textarea');
     var param_name = $txtarea.attr('name');
-    var txt = $txtarea.text().replace(/\n+/g, ",");
 
 
 
     $(this).find('button').click(function(ev){
       var btnfmt = $(this).attr('data-format');
+      var txt = $txtarea.val().replace(/\n+/g, ",");
       var a_url = (action + btnfmt + '?&' + param_name + '=' + txt);
-
       ev.stopPropagation();
 
       window.location.href = a_url;

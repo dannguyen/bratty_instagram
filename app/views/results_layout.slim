@@ -1,8 +1,15 @@
 div.container-fluid
   div.endpoint_name
-    h3 => request.fullpath
+    / h3 => request.fullpath
+
+  ul.list-inline.list
+    li
+      a href="#{{request.fullpath.sub('?', '.csv?')}}" CSV
+    li
+      a href="#{{request.fullpath.sub('?', '.json?')}}" JSON
 
   h2 Results
+
 
   div.results
     table.table.table-striped.table-bordered

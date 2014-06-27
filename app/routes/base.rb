@@ -8,7 +8,6 @@ Slim::Engine.set_default_options :disable_escape => false, :disable_capture => t
 
 module BrattyPack
   module Routes
-
     class Base < Sinatra::Application
       set :views, 'app/views'
       set :root, File.expand_path('../../../', __FILE__)

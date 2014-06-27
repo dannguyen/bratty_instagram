@@ -15,11 +15,19 @@ module BrattyPack
       enable :sessions, :method_override
     end
 
+
     use Rack::Deflater
     use BrattyPack::Routes::Facebook
     use BrattyPack::Routes::Instagram
     use BrattyPack::Routes::Twitter
     use BrattyPack::Routes::Youtube
+
+
+    set :views, 'app/views'
+    get '/' do
+      slim :index
+    end
+
 
   end
 end

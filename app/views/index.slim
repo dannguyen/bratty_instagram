@@ -1,4 +1,68 @@
 div.container
   h1 Hello
+  div.row
+    div.col-sm-6
+      h3 Facebook
+      p Paste in users, one username, URL, or ID per line
+      form.form-section.api action="/api/facebook/users" method="get"
+        textarea rows="10" cols="80" name="ids"
+          |
+            Skiftnews
+            https://www.facebook.com/zuck
+            125472670805257
+        div.buttons
+          button.btn.btn-default type="button" data-format="" HTML
+          button.btn.btn-default type="button" data-format=".json" JSON
+          button.btn.btn-default type="button" data-format= ".csv" CSV
 
+    div.col-sm-6
+      h3 Twitter
+      p Paste in users, one username, URL, or ID per line
+      form.form-section.api action="/api/twitter/users" method="get"
+        textarea rows="10" cols="80" name="screen_names"
+          |
+            ev
+            https://twitter.com/skift
+        div.buttons
+          button.btn.btn-default type="button" data-format="" HTML
+          button.btn.btn-default type="button" data-format=".json" JSON
+          button.btn.btn-default type="button" data-format= ".csv" CSV
+
+
+
+  div.row
+    div.col-sm-6
+      h3 YouTube
+      p Paste in users, one username, URL, or ID per line
+      form.form-section.api action="/api/youtube/users" method="get"
+        textarea rows="10" cols="80" name="ids"
+          |
+            Delta
+            DeltaAirLines
+            UC0KHhAOmmHCBGea_V5GsEDg
+            UCjSrVD08nsyPDCNRjqSV7yA
+            notarealusername12947
+            UC_not_a_real_user_idSyA
+
+        div.buttons
+          button.btn.btn-default type="button" data-format="" HTML
+          button.btn.btn-default type="button" data-format=".json" JSON
+          button.btn.btn-default type="button" data-format= ".csv" CSV
+
+
+
+    div.col-sm-6
+      h3 Instagram
+      p Paste in users, one username, URL, or ID per line
+      form.form-section.api action="/api/instagram/users" method="get"
+        textarea rows="10" cols="80" name="ids"
+          |
+            1574083
+            danwinny
+            https://instagram.com/Delta
+
+        div.buttons
+          button.btn.btn-default type="button" data-format="" HTML
+          button.btn.btn-default type="button" data-format=".json" JSON
+          button.btn.btn-default type="button" data-format= ".csv" CSV
 

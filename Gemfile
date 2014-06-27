@@ -5,7 +5,10 @@ gem 'sinatra', '>= 1.4', require: 'sinatra/base'
 gem 'sinatra-contrib'
 gem 'slim'
 gem 'activesupport', require: 'active_support/core_ext/hash/indifferent_access'
+gem 'actionview'
+gem 'chronic'
 gem 'andand'
+
 ## data stuff
 gem 'instagram'
 gem 'twitter'

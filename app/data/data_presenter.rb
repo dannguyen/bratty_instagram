@@ -1,3 +1,6 @@
+require 'active_support/all'
+require_relative './data_thing'
+
 module BrattyPack
   class DataPresenter
     CONFIGS_DIR = File.expand_path("../models", __FILE__)
@@ -21,18 +24,27 @@ module BrattyPack
     end
 
     def columns
-      @config[:fields].map{|f| f[:name]}
+      @config[:fields].map{|f| f[:name] }
     end
 
+    # returns DataThing
     def parse_into_object(data_obj)
-      h = HashWithIndifferentAccess.new
 
-      @config['fields'].each do |field|
+      arr = @config['fields'].inject([]) do |a, field|
+        a << [field, parse_value(field, data_obj)]
+      end
+
+      return DataThing.new(arr)
+    end
+
+
+    private
+      def parse_value(field, data_obj)
         field_name = field['name']
         f_nested = field['nested']
 
         if f_nested.nil?
-          h[field_name] = data_obj[field_name]
+          val = data_obj[field_name]
         else
           obj = data_obj
           kval = f_nested.keys[0]    # :counts
@@ -46,16 +58,11 @@ module BrattyPack
             fn = fn[kval]
           end
 
-          h[field_name] = obj.nil? ? nil : obj[fn]
+          val = obj.nil? ? nil : obj[fn]
         end
+
+        return val
       end
-
-      return h
-    end
-
-
-    private
-
 
 
   end

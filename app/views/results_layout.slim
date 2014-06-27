@@ -24,8 +24,19 @@ div.container-fluid
             td = result.params
             - if result.success?
               - obj = @presenter.parse_into_object( result.response )
-              - @presenter.columns.each do |col|
-                td => obj[col]
+              - @presenter.columns.each do |col_name|
+                - col = obj[col_name]
+                td class="#{{col[:type]}}"
+                  - if col[:type].to_s.index('url')
+                    - case col[:type]
+                    - when :image_url
+                      img src="#{{col[:value]}}" alt="image url"
+                    - else
+                      a href="#{{col[:value]}}" => col[:formatted_value]
+
+                  - else
+                    => col[:formatted_value]
+
             - else
               td.error = result.message
 

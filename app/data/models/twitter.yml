@@ -8,6 +8,9 @@ user:
 
     - name: name
 
+    - name: profile_image_url
+      type: image_url
+
     - name: created_at
       type: datetime
 
@@ -29,6 +32,8 @@ user:
     - name: location
 
     - name: url
+      human_name: homepage
+      type: url
 
     - name: lang
 
@@ -48,3 +53,6 @@ user:
       type: datetime
       nested:
         status: created_at
+
+    # - name: profile_url
+    #   interploate: https://twitter.com/&:screen_name

@@ -1,3 +1,17 @@
 body{
   font-size: 13px;
 }
+
+td.boolean{
+  font-weight: bold;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+td.numeric{
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: right;
+}
+
+td.text{
+  font-size: 0.9em;
+}

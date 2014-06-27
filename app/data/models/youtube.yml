@@ -20,6 +20,7 @@ user:
         snippet: publishedAt
 
     - name: default_thumbnail
+      type: image_url
       nested:
         snippet:
           thumbnails:

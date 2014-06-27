@@ -6,8 +6,9 @@ user:
     - name: username
       unique: true
 
-    - name: bio
-      type: text
+    - name: profile_picture
+      type: image_url
+
 
     - name: media_count
       type: numeric
@@ -23,15 +24,9 @@ user:
       type: numeric
       nested:
         counts: follows
-  format:
-    html:
-      fields:
-        - id
-        - username
-        - bio
-        - media_count
-        - followed_by
-        - follows
+
+    - name: bio
+      type: text
 
 
 

@@ -1,9 +1,8 @@
-content_item:
-  description: A status update, e.g. a tweet
-  service_specific_name: status
+tweet:
   fields:
-    - name: id
-      uuid: true
+    - name: text
+      type: text
+    - name: lang
 
 user:
   fields:

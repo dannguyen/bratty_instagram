@@ -11,7 +11,7 @@ gem 'andand'
 
 ## data stuff
 gem 'instagram'
-gem 'twitter'
+gem 'twitter', '>= 5.11'
 gem 'google-api-client'
 gem 'koala'
 

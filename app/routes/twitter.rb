@@ -21,6 +21,26 @@ module BrattyPack
       end
 
 
+      simple_api_endpoint 'content_items',
+                    service: 'twitter',
+                    param_name: :ids,
+                    presenter_model: 'tweet'
+
+
+      simple_api_endpoint 'content_items_for_user',
+                    service: 'twitter' do |_params|
+                    # param_name: [:id],
+                    # presenter_model: 'tweet'
+
+        wrapper = init_api_wrapper
+        uid = _params[:id]
+
+        results = wrapper.fetch(:content_items_for_user, uid)
+      end
+
+
+
+
     end
   end
 end

@@ -13,14 +13,18 @@ class FacebookAPIWrapper < APIWrapper
   module Fetchers
     class << self
       # uids is an array of user_ids or names
-      def users(uids, &blk)
-        Array(uids).each do |userid_val|
+      def users(user_ids, &blk)
+        Array(user_ids).each do |uid|
           fetch_proc = Proc.new do |client|
-            client.get_object(userid_val)
+            client.get_object(uid)
           end
 
-          yield :single, fetch_proc, userid_val
+          yield :single, fetch_proc, uid
         end
+      end
+
+      def content_items_for_user(uid, opts)
+        # use get_connections(uid, :feed)
       end
     end
   end

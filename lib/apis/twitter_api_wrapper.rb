@@ -40,7 +40,8 @@ class TwitterAPIWrapper < APIWrapper
       #   end
       # end
 
-      def users(all_uids, opts={})
+      def users(all_uids, options={})
+        opts = HashWithIndifferentAccess.new(options)
         opts['include_entities'] ||= true
 
         Array(all_uids).each_slice(TWITTER_MAX_BATCH_USER_SIZE) do |uids|
@@ -53,6 +54,30 @@ class TwitterAPIWrapper < APIWrapper
 
           yield :batch, foo_proc, uids
         end
+      end
+
+      # sample return value:
+      # [#<BrattyResponse:0x007fe1a2969ca0
+      #   @error=nil,
+      #   @message="Success",
+      #   @params="JohnDoe",
+      #   @response=
+      #    [#<Twitter::Tweet id=484784608823623680>,
+      #     #<Twitter::Tweet id=484440173195706368>,
+      #     #<Twitter::Tweet id=484119493728149504>,
+      #     ...
+      #  ]
+
+      def content_items_for_user(uid, options = {})
+        opts = HashWithIndifferentAccess.new(options)
+        opts['include_entities'] ||= true
+        opts['count'] ||= 200
+
+        fetch_proc = Proc.new do |client|
+          client.user_timeline(uid, opts)
+        end
+
+        yield :single, fetch_proc, uid
       end
 
       private

@@ -1,3 +1,10 @@
+content_item:
+  description: Any kind of status update or wall post
+  service_specific_name: feed
+  fields:
+    - name: id
+      uuid: true
+
 user:
   fields:
     - name: id

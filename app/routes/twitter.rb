@@ -4,10 +4,6 @@ module BrattyPack
   module Routes
     class Twitter < Base
 
-      get "/twitter" do
-        slim :'twitter/index'
-      end
-
       simple_api_endpoint 'users',
                     service: 'twitter',
                     param_name: [:ids, :screen_names],
@@ -23,6 +19,8 @@ module BrattyPack
 
         results
       end
+
+
     end
   end
 end

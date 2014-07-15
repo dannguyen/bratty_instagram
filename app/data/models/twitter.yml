@@ -1,3 +1,10 @@
+content_item:
+  description: A status update, e.g. a tweet
+  service_specific_name: status
+  fields:
+    - name: id
+      uuid: true
+
 user:
   fields:
     - name: id

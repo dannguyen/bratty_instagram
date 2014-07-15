@@ -1,3 +1,9 @@
+content_item:
+  description: A photo or a video
+  service_specific_name: media
+  fields:
+    - name: id
+      uuid: true
 user:
   fields:
     - name: id

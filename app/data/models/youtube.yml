@@ -1,3 +1,10 @@
+content_item:
+  description: A video
+  service_specific_name: video
+  fields:
+    - name: id
+      uuid: true
+
 user:
   fields:
     - name: id

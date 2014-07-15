@@ -1,6 +1,6 @@
 Batch search Instagram for users. Based off of [propublica/qis](//github.com/propublica/qis)
 
-## Dev instalation
+## Dev installation
 
 0. `bundle install`
 
@@ -14,27 +14,41 @@ client_secret: clientSECRET908324
 redirect_uri: http://localhost:4567/
 ```
 
-2. Run using `ruby app.rb` or however you like running Sinatra apps.
+2. To start up a server:         
+   ```
+   $  thin start
+   ```
 
-## License (MIT)
+3. To play with in `pry`:
+   ```
+   $   pry
+   > require './app'   
+   ```
 
-Copyright (c) 2013 ProPublica
+## Quick Dev stuff
 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
+Once in `pry`, you can use this shortcut to quickly instantiate one of the online service API clients to test things out:
 
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
+```ruby
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  # load up the entire Sinatra app, including the routes to the
+  # auth key files
+  require './app' 
+  # instantiate an instance of the Twitter::Client
+  tclient = BrattyDev.init_client('twitter')
+  # get Skift user profile from Twitter API
+  raw_user_object = tclient.user('skift')  
+  
+  puts raw_user_object.to_h
+  # {:id=>374822255,
+  #  :id_str=>"374822255",
+  # :name=>"Skift",
+  # :screen_name=>"skift",
+  # :location=>"New York City, NY",
+  # :description=>
+  #  "Global travel industry intelligence: News, info, data and analysis on airlines, hotels, tourism, cruises, startups, tech and more. Follow @SkiftStats for stats.",
+  # :url=>"http://t.co/nLTVfbYR5u",
+  # ...
+
+```
+

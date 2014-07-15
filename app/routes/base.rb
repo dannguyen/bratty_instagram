@@ -134,3 +134,17 @@ module BrattyPack
     end
   end
 end
+
+
+# convenience method to get access to an API...for dev uses only
+# if the keyfiles exist on the server, this saves you the trouble of
+# manually authorizing a client
+module BrattyDev
+  def self.init_api_wrapper(service_name)
+    BrattyPack::Routes::Base.init_api_wrapper(service_name)
+  end
+
+  def self.init_client(service_name)
+    init_api_wrapper(service_name).raw_client
+  end
+end

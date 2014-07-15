@@ -2,10 +2,27 @@ require 'lib/bratty_response'
 require 'andand'
 
 class APIWrapper
+  attr_reader :clients
+
+  # pass something directly to the client
+  # e.g. twitter_wrapper.raw('user', 'skift')
+  def raw(*args)
+    raw_client.send(*args)
+  end
+
+  # get access to a client
+  # e.g.
+  # t = twitter_wrapper.raw_client
+  # t.user('skift')
+  def raw_client
+    clients.shuffle.first
+  end
+
+  # this is the predefined-wrapped up way to do API calls
+  # as it will wrap things up in a BrattyResponse
   def fetch(foo, *args)
     self.class.fetch(@clients, foo, *args)
   end
-
 
   def self.fetch(clients, str, *args)
     results = []

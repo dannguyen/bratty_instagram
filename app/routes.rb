@@ -7,6 +7,6 @@ module BrattyPack
     autoload :Youtube, 'app/routes/youtube'
   end
 
-  autoload :DataThing, 'app/data/data_thing'
+  autoload :PresentableDataThing, 'app/data/data_thing'
   autoload :DataPresenter, 'app/data/data_presenter'
 end

@@ -66,7 +66,12 @@ module BrattyPack
             slim :results_layout, :layout => :layout
           end
 
-          ### to CSV, TK: DRY it up
+          # TK: dry this up
+          #### To CSV
+          # each field will be a :formatted_value
+          #  just as if it were a HTML response. Both CSV and HTML provide simplified
+          #  abstractions of the data object
+
           self.send(http_method, "/api/#{service_name}/#{endpoint_name}.csv") do
             if block_given?
               @results = yield params
@@ -77,24 +82,26 @@ module BrattyPack
 
             @presenter = DataPresenter.new(service_name, presenter_model_name)
 
-            headers( {'Content-Type' => 'text/plain'} )
+            content_type 'application/csv'
             CSV.generate(headers: true) do |csv|
               headers = @presenter.columns
               csv << headers
-              @results.each do |r|
-                if r.success?
-                  obj = @presenter.parse_into_object(r.body)
-                  csv << headers.map{|h| obj[h] }
+              @results.each do |result|
+                if result.success?
+                  p_obj = @presenter.create_presentable_object(result.body)
+
+                  csv << headers.map{ |col_name| p_obj[col_name][:value] }
                 else
-                  csv << [r.params.to_s, r.message ]
+                  csv << [result.params.to_s, result.message ]
                 end
               end
             end
+
           end
 
 
           ### to JSON, TK: DRY it up
-          # Json doesn't require a presenter
+          # Json doesn't require a presenter, it just sends the straight results
           self.send(http_method, "/api/#{service_name}/#{endpoint_name}.json") do
             if block_given?
               @results = yield params

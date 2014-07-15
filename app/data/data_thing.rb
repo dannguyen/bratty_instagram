@@ -1,8 +1,21 @@
 require 'action_view/helpers/number_helper'
 require 'chronic'
 
+# The purpose of PresentableDataThing is to wrap the received data and
+# make it presentable for HTML
+#
+# TK: need to give PresentableDataThing a better name,
+# but it essentially acts as an object that contains some metadata
+# for each attribute
+#
+#
+# e.g. for a Twitter user's :followers_count
+#  it has :type => :numeric
+#         :value => (the value as an Integer)
+#         :formatted_value => (the value as a comma delimited string)
+
 module BrattyPack
-  class DataThing < SimpleDelegator
+  class PresentableDataThing < SimpleDelegator
     include ActionView::Helpers::NumberHelper
 
     # array is an Array of pair-arrays:
@@ -38,17 +51,17 @@ module BrattyPack
         att[:type] = (opts[:type] || 'string').to_sym
 
         att[:formatted_value] = case att[:type]
-        when :numeric
-          number_with_delimiter val
-        when :text
-          txt = val.to_s
-          txt.length > 255 ? txt[0..255] + '...' : txt
-        when :datetime
-          Chronic.parse(val).strftime("%Y-%m-%d %H:%M:%S")
-        when :uuid_url, :url
-          val.to_s.gsub(/\/(?!=\/)/, "/\n")
-        else
-          val
+          when :numeric
+            number_with_delimiter val
+          when :text
+            txt = val.to_s
+            txt.length > 255 ? txt[0..255] + '...' : txt
+          when :datetime
+            Chronic.parse(val).strftime("%Y-%m-%d %H:%M:%S")
+          when :uuid_url, :url
+            val.to_s.gsub(/\/(?!=\/)/, "/\n")
+          else
+            val
         end
 
 

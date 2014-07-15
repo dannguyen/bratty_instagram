@@ -8,6 +8,9 @@ require 'sinatra/base'
 require 'app/helpers'
 require 'app/routes'
 
+require 'i18n'
+I18n.config.enforce_available_locales = false
+
 module BrattyPack
   class App < Sinatra::Application
     configure do

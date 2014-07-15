@@ -23,7 +23,7 @@ div.container-fluid
           tr
             td = result.params
             - if result.success?
-              - obj = @presenter.parse_into_object( result.response )
+              - obj = @presenter.create_presentable_object( result.response )
               - @presenter.columns.each do |col_name|
                 - col = obj[col_name]
                 td class="#{{col[:type]}}"

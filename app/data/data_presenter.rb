@@ -27,14 +27,14 @@ module BrattyPack
       @config[:fields].map{|f| f[:name] }
     end
 
-    # returns DataThing
-    def parse_into_object(data_obj)
+    # returns PresentableDataThing
+    def create_presentable_object(data_obj)
 
       arr = @config['fields'].inject([]) do |a, field|
         a << [field, parse_value(field, data_obj)]
       end
 
-      return DataThing.new(arr)
+      return PresentableDataThing.new(arr)
     end
 
 

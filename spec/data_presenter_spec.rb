@@ -31,7 +31,7 @@ describe 'DataPresenter' do
   end
 
   context 'parsing' do
-    let(:data){ presenter.parse_into_object(data_obj) }
+    let(:data){ presenter.create_presentable_object(data_obj) }
     describe '#data' do
       it 'is a hash' do
         expect(data).to be_a Hash

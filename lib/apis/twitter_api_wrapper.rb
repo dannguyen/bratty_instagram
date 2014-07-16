@@ -88,7 +88,7 @@ class TwitterAPIWrapper < APIWrapper
       #     ...
       #  ]
       def content_items_for_user(uid, options = {})
-        t_opts = HashWithIndifferentAccess.new(options)
+        t_opts = HashWithIndifferentAccess.new
         t_opts['contributor_details'] ||= true
         t_opts['include_entities'] ||= true
         t_opts['count'] ||= 200
@@ -98,9 +98,10 @@ class TwitterAPIWrapper < APIWrapper
         # :max_id/:before sets the upper_bounds of what tweets to include
         #  if it is not set, then we assume the user wants to fetch from the latest tweet
         #  and move backwards, hence, setting max_id to the largest possible tweet ID
-        t_opts['max_id']   = t_opts['before'].to_i == 0 ? MAX_TWEET_ID : t_opts['before'].to_i
-        t_opts['since_id'] = t_opts['after'].to_i  == 0 ? 1 : t_opts['after'].to_i
-
+        _xbefore = t_opts.delete('before').to_i # don't want these to be sent to the API
+        _xafter = t_opts.delete('after').to_i
+        t_opts['max_id']   = _before == 0 ? MAX_TWEET_ID : _xbefore
+        t_opts['since_id'] = _after  == 0 ? 1 : _xafter
         foop = Proc.new do |client|
           client.user_timeline(uid, t_opts).map{ |t| HashWithIndifferentAccess.new(t.to_h) }
         end

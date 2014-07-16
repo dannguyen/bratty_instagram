@@ -74,8 +74,11 @@ class TwitterAPIWrapper < APIWrapper
 
 
 
+
       ###################
       # TwitterApiWrapper#content_items_for_user
+      #
+      # e.g. user_timeline
       #
       # sample return value:
       # [#<BrattyResponse:0x007fe1a2969ca0
@@ -93,6 +96,7 @@ class TwitterAPIWrapper < APIWrapper
         t_opts['include_entities'] ||= true
         t_opts['count'] ||= 200
         t_opts['trim_user'] = (t_opts['trim_user'] == false) ? false : true
+        itemsLimit = t_opts.delete(:itemsLimit) || 200
 
         ## seting before and after
         # :max_id/:before sets the upper_bounds of what tweets to include
@@ -100,10 +104,26 @@ class TwitterAPIWrapper < APIWrapper
         #  and move backwards, hence, setting max_id to the largest possible tweet ID
         _xbefore = t_opts.delete('before').to_i # don't want these to be sent to the API
         _xafter = t_opts.delete('after').to_i
-        t_opts['max_id']   = _before == 0 ? MAX_TWEET_ID : _xbefore
-        t_opts['since_id'] = _after  == 0 ? 1 : _xafter
+        t_opts['max_id']   = _xbefore == 0 ? MAX_TWEET_ID : _xbefore
+        t_opts['since_id'] = _xafter  == 0 ? 1 : _xafter
+
         foop = Proc.new do |client|
-          client.user_timeline(uid, t_opts).map{ |t| HashWithIndifferentAccess.new(t.to_h) }
+          collected_tweets = []
+          nxt_step = HashWithIndifferentAccess.new
+          while collected_tweets.length <= itemsLimit
+            resp = client.user_timeline(uid, t_opts.merge(nxt_step))
+            tweets = resp.map{ |t| HashWithIndifferentAccess.new(t.to_h) }
+            collected_tweets += tweets
+
+            # assuming that we're going back in time, we want to set
+            # max_id to be the oldest of this current batch, i.e. the last tweet
+            nxt_step['max_id'] = tweets.last['max_id']
+            puts "Next step: #{nxt_step['max_id']}"
+
+            break if ( resp.nil? || resp.empty? ) ||
+                      ## max_id is nil, or less than since_id
+                      ( nxt_step['max_id'].nil? || nxt_step['max_id'].to_i <= t_opts['since_id'].to_i )
+          end
         end
 
         yield :single, foop, uid

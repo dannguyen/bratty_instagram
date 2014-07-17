@@ -67,8 +67,8 @@ class YoutubeAPIWrapper < APIWrapper
       # it should be channel ID
       def content_items_for_user(uid, options = {})
         opts = HashWithIndifferentAccess.new(options)
-        itemsLimit = opts.delete(:itemsLimit) || 10000
-
+        item_limit  = opts.delete(:item_limit) || 10000
+        batch_sleep = opts.delete(:batch_sleep).to_f
         foop = Proc.new do |client|
           if !is_youtube_id?(uid)
             # do an extra get for the channel and its canonical id
@@ -78,21 +78,23 @@ class YoutubeAPIWrapper < APIWrapper
           list_id = derive_playlist_id_from_channel_id(uid)
 
           # now we make multiple iterations to get the entire list
-          video_arr = []
+          collected_videos = []
           token_hsh = {}
 
-          while video_arr.length < itemsLimit
+          while collected_videos.length < item_limit
             resp = get_video_list_from_playlist_id(client, list_id, token_hsh)
             # temp array
             _vids = extract_items_from_response(resp).map{ |v| v['contentDetails']['videoId'] }
             # now run the method to get all the video details
-            video_arr += extract_items_from_response( get_video_details(client, _vids) )
+            collected_videos += extract_items_from_response( get_video_details(client, _vids) )
             # now see if there's a next page token
             token_hsh['pageToken'] = extract_next_page_token(resp)
             break if token_hsh['pageToken'].nil?
+
+            sleep batch_sleep
           end
 
-          video_arr
+          collected_videos
         end
 
         yield :single, foop, uid

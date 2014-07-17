@@ -31,6 +31,25 @@ class InstagramAPIWrapper < APIWrapper
         end
       end
 
+      def content_items_for_user(uid, options={})
+        opts = HashWithIndifferentAccess.new(options)
+        # TK set itemlimit and batch sleep
+
+        # TK set before/after
+        # TK convert to seconds as needed
+
+        collected_media = []
+        foop = Proc.new do |client|
+          # TK call client method
+
+
+          collected_media
+        end
+
+        yield :single, foop, uid
+      end
+
+
         private
         # Return a Instagram::User ID from a uname like 'snoopdogg'
         def search_for_user_from_username(client, uname)

@@ -23,25 +23,14 @@ class YoutubeAPIWrapper < APIWrapper
  module Fetchers
     class << self
 
-      #   # deprecate
-      # def channel_ids(unames)
-      #   Array(unames).each do |uname|
-      #     fetch_proc = Proc.new do |client|
-      #       get_channel_id_from_username(client, uname)
-      #     end
-
-      #     yield :single, fetch_proc, uname
-      #   end
-      # end
-
-
       def users(ux)
         uids = Array(ux)
         # first, collect info for entries that are channel IDs
         all_cids = uids.select{|u| is_youtube_id?(u) }
 
         Array(all_cids).each_slice(YoutubeAPIWrapper::YOUTUBE_MAX_BATCH_IDS_SIZE) do |cids|
-          foop = Proc.new do |client|
+          foop = Proc.new do |clients|
+            client = clients.pop
             resp =  get_channels_from_channel_ids(client, cids)
             channels = extract_items_from_response(resp) # remove Google API metaheaders
             glob_users(channels, cids)
@@ -53,7 +42,8 @@ class YoutubeAPIWrapper < APIWrapper
         # now collect info for entries that are usernames, not channel IDs, and do that fetch
         unames = uids - all_cids
         unames.each do |uname|
-          foop = Proc.new do |client|
+          foop = Proc.new do |clients|
+            client = clients.pop
             # no need to remove metaheaders, as that's done inside the method
             channel = get_channel_from_username(client, uname)
           end
@@ -69,7 +59,8 @@ class YoutubeAPIWrapper < APIWrapper
         opts = HashWithIndifferentAccess.new(options)
         item_limit  = opts.delete(:item_limit) || 10000
         batch_sleep = opts.delete(:batch_sleep).to_f
-        foop = Proc.new do |client|
+        foop = Proc.new do |clients|
+          client = clients.pop
           if !is_youtube_id?(uid)
             # do an extra get for the channel and its canonical id
             channel = get_channel_from_username(client, uid)
@@ -86,7 +77,7 @@ class YoutubeAPIWrapper < APIWrapper
             # temp array
             _vids = extract_items_from_response(resp).map{ |v| v['contentDetails']['videoId'] }
             # now run the method to get all the video details
-            collected_videos += extract_items_from_response( get_video_details(client, _vids) )
+            collected_videos.concat extract_items_from_response( get_video_details(client, _vids) )
             # now see if there's a next page token
             token_hsh['pageToken'] = extract_next_page_token(resp)
             break if token_hsh['pageToken'].nil?

@@ -24,18 +24,16 @@ class APIWrapper
     self.class.fetch(@clients, foo, *args)
   end
 
+  ## class method
   def self.fetch(clients, str, *args)
     results = []
-    self.module_eval('Fetchers').send(str, *args) do |job_type, fetch_proc, args_as_key|
+    self.module_eval('Fetchers').send(str, *args) do |job_type, foop, args_as_key|
+      # we maintain a new array, as the foop operation may
+      # shuffle through clients and alter the array
+      batch_clients = clients.dup
       begin
-        client = clients.first
-        resp = fetch_proc.call(client)
+        resp = foop.call(batch_clients)
       rescue => err
-
-        # if err < Twitter
-        #   retry
-        # end
-
         if job_type == :batch
           results += args_as_key.map{|a| BrattyResponse.error(a, err) }
         else

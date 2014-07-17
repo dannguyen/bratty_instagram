@@ -30,25 +30,13 @@ class TwitterAPIWrapper < APIWrapper
 
   module Fetchers
     class << self
-      # def users(clients, uids, opts={})
-      #   client = clients.first
-      #   userids = Array(uids)
-
-      #   fetch_proc = Proc.new do |c|
-      #     user_arr = client.users(userids)
-      #     # STUCK HERE
-      #     userids.each do |uid|
-
-      #     end
-      #   end
-      # end
-
       def users(all_uids, options={})
         opts = HashWithIndifferentAccess.new(options)
         opts['include_entities'] ||= true
 
         Array(all_uids).each_slice(TWITTER_MAX_BATCH_USER_SIZE) do |uids|
-          foop = Proc.new do |client|
+          foop = Proc.new do |clients|
+            client = clients.pop
             clean_uids = uids.map{|x| clean_screen_name(x) }
             users = client.users(clean_uids, opts)
 
@@ -62,12 +50,13 @@ class TwitterAPIWrapper < APIWrapper
       #############
       # get individual tweets
       def content_items(tweets_ids, options={})
-        t_opts = HashWithIndifferentAccess.new(options)
+        opts = HashWithIndifferentAccess.new(options)
         Array(tweets_ids).each_slice(TWITTER_MAX_BATCH_TWEET_SIZE) do |batch_ids|
-          foop = Proc.new{ |client|
-            batch_of_tweets = client.statuses(batch_ids, t_opts)
+          foop = Proc.new do |clients|
+            client = clients.pop
+            batch_of_tweets = client.statuses(batch_ids, opts)
             glob_tweets(batch_of_tweets, batch_ids)
-          }
+          end
 
           yield :batch, foop, batch_ids
         end
@@ -89,36 +78,49 @@ class TwitterAPIWrapper < APIWrapper
       #     ...
       #  ]
       def content_items_for_user(uid, options = {})
-        t_opts = HashWithIndifferentAccess.new(options)
-        t_opts['contributor_details'] ||= true
-        t_opts['include_entities'] ||= true
-        t_opts['count'] ||= 200
-        t_opts['trim_user'] = (t_opts['trim_user'] == false) ? false : true
-        item_limit  = t_opts.delete(:item_limit) || MAX_NUMBER_OF_TWEETS_RETRIEVABLE
-        batch_sleep = t_opts.delete(:batch_sleep).to_f
+        opts = HashWithIndifferentAccess.new(options)
+        opts['contributor_details'] ||= true
+        opts['include_entities'] ||= true
+        opts['count'] ||= 200
+        opts['trim_user'] = (opts['trim_user'] == false) ? false : true
+        item_limit  = opts.delete(:item_limit) || MAX_NUMBER_OF_TWEETS_RETRIEVABLE
+        batch_sleep = opts.delete(:batch_sleep).to_f
         ## setting before and after
         # :max_id/:before sets the upper_bounds of what tweets to include
         #  if it is not set, then we assume the user wants to fetch from the latest tweet
         #  and move backwards, hence, setting max_id to the largest possible tweet ID
-        _xbefore = t_opts.delete('before').to_i # don't want these to be sent to the API
-        _xafter = t_opts.delete('after').to_i
-        t_opts['max_id']   = _xbefore == 0 ? MAX_TWEET_ID : _xbefore
-        t_opts['since_id'] = _xafter  == 0 ? 1 : _xafter
+        _xbefore = opts.delete('before').to_i # don't want these to be sent to the API
+        _xafter = opts.delete('after').to_i
+        opts['max_id']   = _xbefore == 0 ? MAX_TWEET_ID : _xbefore
+        opts['since_id'] = _xafter  == 0 ? 1 : _xafter
 
-        foop = Proc.new do |client|
+        foop = Proc.new do |clients|
+          client = clients.pop
           collected_tweets = []
           nxt_step = HashWithIndifferentAccess.new
+
           while collected_tweets.length <= item_limit
-            resp = client.user_timeline(uid, t_opts.merge(nxt_step))
+#           begin
+
+            resp = client.user_timeline(uid, opts.merge(nxt_step))
             tweets = resp.map{ |t| HashWithIndifferentAccess.new(t.to_h) }
-            collected_tweets += tweets
+              collected_tweets.concat tweets
+#           rescue => err
+#              if err is a Timeout
+#                raise Timeout and yield a client
+#                then retry
+#              end
+#           else
+#
+#
+#           end
             # assuming that we're going back in time, we want to set
             # max_id to be the oldest of this current batch, i.e. the last tweet
             nxt_step['max_id'] = tweets.last['id']
             puts "Next step: #{nxt_step['max_id']}"
             break if ( resp.nil? || resp.empty? ) ||
                       ## max_id is nil, or less than since_id
-                      ( nxt_step['max_id'].nil? || nxt_step['max_id'].to_i <= t_opts['since_id'].to_i )
+                      ( nxt_step['max_id'].nil? || nxt_step['max_id'].to_i <= opts['since_id'].to_i )
 
             # decrement max_id so that the same tweet isn't collected twice
             nxt_step['max_id'] = nxt_step['max_id'].to_i - 1

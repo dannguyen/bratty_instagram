@@ -40,23 +40,27 @@ class InstagramAPIWrapper < APIWrapper
       def content_items_for_user(user_id, options = {})
         user_id = Array(user_id)[0] # silly hack for web interface for now
         opts = HashWithIndifferentAccess.new(options)
-        item_limit = (opts.delete(:item_limit) || 10000).to_i
+        batch_limit = (opts.delete(:batch_limit) || 1000).to_i
         batch_sleep = opts.delete(:batch_sleep).to_f
+        opts[:count] = (opts.delete(:batch_size) || 25 ).to_i
 
         ## setting before and after
         _xbefore = convert_time_param_to_seconds( opts.delete('before') )
         _xafter = convert_time_param_to_seconds( opts.delete('after') )
         opts[:max_timestamp] = ( _xbefore || Time.now.to_i ) - 1 # i.e. minus one second
         opts[:min_timestamp] = ( _xafter  || Time.parse("2003-01-01") ).to_i # i.e. some arbitrary time before Facebook
-        opts[:count] ||= 25
 
-        collected_media = []
         foop = Proc.new do |clients|
           client = clients.pop
           # first, get the proper user_id
           uid = translate_to_user_id(client, user_id)
           nxt_step = HashWithIndifferentAccess.new
-          while collected_media.length <= item_limit
+          collected_media = []
+
+          b_count = 0
+
+          while b_count <= batch_limit
+            b_count += 1
             # The call to Instagram's API
             resp = client.user_recent_media(uid, opts.merge(nxt_step))
             media_items = resp.to_a

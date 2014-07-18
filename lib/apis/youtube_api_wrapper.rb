@@ -58,8 +58,10 @@ class YoutubeAPIWrapper < APIWrapper
       # it should be channel ID
       def content_items_for_user(user_id, options = {})
         opts = HashWithIndifferentAccess.new(options)
-        item_limit  = (opts.delete(:item_limit) || 10000).to_i
+        batch_limit  = (opts.delete(:batch_limit) || 1000).to_i
         batch_sleep = opts.delete(:batch_sleep).to_f
+        opts[:maxResults] = (opts.delete(:batch_size) || YOUTUBE_MAX_BATCH_IDS_SIZE).to_i
+
         foop = Proc.new do |clients|
           client = clients.pop
           if !is_youtube_id?(user_id)
@@ -72,9 +74,11 @@ class YoutubeAPIWrapper < APIWrapper
           # now we make multiple iterations to get the entire list
           collected_videos = []
           token_hsh = {}
+          b_count = 0
 
-          while collected_videos.length < item_limit
-            resp = get_video_list_from_playlist_id(client, list_id, token_hsh)
+          while b_count <= batch_limit
+            b_count += 1
+            resp = get_video_list_from_playlist_id(client, list_id, opts.merge(token_hsh))
             # temp array
             _vids = extract_items_from_response(resp).map{ |v| v['contentDetails']['videoId'] }
             # now run the method to get all the video details
@@ -129,7 +133,6 @@ class YoutubeAPIWrapper < APIWrapper
           opts = HashWithIndifferentAccess.new(options)
           opts[:playlistId] = list_id
           opts[:part] ||= 'contentDetails'
-          opts[:maxResults] ||= YOUTUBE_MAX_BATCH_IDS_SIZE
           api_obj = init_api_list_call_object(client, 'playlist_items')
 
           resp = client.execute!(api_obj, opts)

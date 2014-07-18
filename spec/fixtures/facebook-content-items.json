@@ -1,0 +1,2747 @@
+[
+  {
+    "id": "20531316728_10152900307086729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"Hi Ylanan. Thanks for the...\" on their own photo.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-18T17:06:22+0000",
+    "updated_time": "2014-07-18T17:06:22+0000"
+  },
+  {
+    "id": "20531316728_10152898140006729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"Hello Abzal! -Sarah\" on their own photo.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-17T16:22:44+0000",
+    "updated_time": "2014-07-17T16:22:44+0000"
+  },
+  {
+    "id": "20531316728_10152897450461729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "message": "Keep what happens between friends, between friends. Learn how to change who can see your posts here: http://on.fb.me/privacysettings",
+    "picture": "https://scontent-b.xx.fbcdn.net/hphotos-xfp1/t1.0-9/s130x130/10552422_10152895795166729_8098927767786922142_n.png",
+    "link": "https://www.facebook.com/facebook/photos/a.376995711728.190761.20531316728/10152895795166729/?type=1&relevant_count=1",
+    "icon": "https://fbstatic-a.akamaihd.net/rsrc.php/v2/yz/r/StEh3RhPvjk.gif",
+    "actions": [
+      {
+        "name": "Comment",
+        "link": "https://www.facebook.com/20531316728/posts/10152897450461729"
+      },
+      {
+        "name": "Like",
+        "link": "https://www.facebook.com/20531316728/posts/10152897450461729"
+      }
+    ],
+    "privacy": {
+      "value": ""
+    },
+    "type": "photo",
+    "status_type": "added_photos",
+    "object_id": "10152895795166729",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-17T07:00:01+0000",
+    "updated_time": "2014-07-18T21:33:46+0000",
+    "shares": {
+      "count": 3289
+    },
+    "likes": {
+      "data": [
+        {
+          "id": "100001943048770",
+          "name": "Skylar Goodall"
+        },
+        {
+          "id": "100007490711672",
+          "name": "DA Real Bopking"
+        },
+        {
+          "id": "100001580253572",
+          "name": "Jeffrey Deaton"
+        },
+        {
+          "id": "100007041394655",
+          "name": "Manuela Santana Feliz"
+        },
+        {
+          "id": "100005761714346",
+          "name": "Savannah Hatheway"
+        },
+        {
+          "id": "100002902029360",
+          "name": "Michael Spica"
+        },
+        {
+          "id": "100000006948781",
+          "name": "Diana Baker"
+        },
+        {
+          "id": "100003190165530",
+          "name": "Darruis Robinson"
+        },
+        {
+          "id": "586868740",
+          "name": "Leonard Green"
+        },
+        {
+          "id": "100006631421095",
+          "name": "Helen Cole"
+        },
+        {
+          "id": "100006073924629",
+          "name": "Armando Carreno"
+        },
+        {
+          "id": "100004736223148",
+          "name": "Tiffany Trantham"
+        },
+        {
+          "id": "100001254758657",
+          "name": "Shamantria Gilmore"
+        },
+        {
+          "id": "100008333178599",
+          "name": "Curt Jivery"
+        },
+        {
+          "id": "100004448977066",
+          "name": "Selena MsScorpio Breland"
+        },
+        {
+          "id": "100000968242811",
+          "name": "Beth Quinones"
+        },
+        {
+          "id": "1182683381",
+          "name": "Anikaah Coaxum"
+        },
+        {
+          "id": "100003876625607",
+          "name": "Gianluca Liturri"
+        },
+        {
+          "id": "100000584468597",
+          "name": "Trenda Yukiko Ringang"
+        },
+        {
+          "id": "712236312",
+          "name": "Janet R Harris"
+        },
+        {
+          "id": "100000487877658",
+          "name": "Nichole Mcarthur"
+        },
+        {
+          "id": "100006006129076",
+          "name": "Maxie Evans"
+        },
+        {
+          "id": "100006470281728",
+          "name": "La Flakita Loka"
+        },
+        {
+          "id": "100000385267927",
+          "name": "Sam Benton"
+        },
+        {
+          "id": "100007339264184",
+          "name": "Veronica Lopez"
+        }
+      ],
+      "paging": {
+        "cursors": {
+          "after": "MTAwMDA3MzM5MjY0MTg0",
+          "before": "MTAwMDAxOTQzMDQ4Nzcw"
+        },
+        "next": "https://graph.facebook.com/v1.0/20531316728_10152897450461729/likes?access_token=CAAEdO7kSxasBALATKdDe6Shia132J1ZAo7sdWwlpKLrq3A7Y8Q3GtNsIsZAV1OgHiZBYYEguuYzDArJPFSbb7zg8YZCESSJ0p3vBzvMemyNh4HSRqBnWqf84JZB41OwcdbEZBYxzaRqoyRKmqT00YJ8ZCI8QgL78dZAfHNEio6iN9NIwmrzaMhIt&limit=25&after=MTAwMDA3MzM5MjY0MTg0"
+      }
+    },
+    "comments": {
+      "data": [
+        {
+          "id": "10152895795166729_10152898066661729",
+          "from": {
+            "id": "6602900",
+            "name": "Michael Woon"
+          },
+          "message": "Dear Facebook, please don't access everything on my personal device with each upgrade. I can't wait for the next Facebook version to have LESS permissions!",
+          "can_remove": false,
+          "created_time": "2014-07-17T15:31:56+0000",
+          "like_count": 14,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152900506001729",
+          "from": {
+            "id": "1288558189",
+            "name": "Andy Stoflet"
+          },
+          "message": "Dear Facebook, I reported a page that is straight up offensive to people with a certain condition and you said that it did not violate any of your standards.  SERIOUSLY?  The page should be taken down and removed right now.  Also, I don't want to provide my cell phone number!",
+          "can_remove": false,
+          "created_time": "2014-07-18T19:07:04+0000",
+          "like_count": 3,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152900496951729",
+          "from": {
+            "category": "Spas/beauty/personal care",
+            "category_list": [
+              {
+                "id": "139225689474222",
+                "name": "Spa, Beauty & Personal Care"
+              }
+            ],
+            "name": "Landshark Fitness",
+            "id": "419118654823915"
+          },
+          "message": "I run several FB business pages. The \"settings\" link doesn't seem to be working today on any of them. Need to update credit card used to boost posts. Not sure how to alert anyone of this, so left this comment.",
+          "can_remove": false,
+          "created_time": "2014-07-18T19:01:51+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152900472301729",
+          "from": {
+            "id": "1314492746",
+            "name": "Tom Kuzupas Jr"
+          },
+          "message": "Facebook, please, for the love of God, make a better security system for Facebook users. I'm always seeing my friends getting hacked and people getting tagged in spam messages with malware, spyware and virus links. And quite frankly, I'm really sick and tired of seeing this and getting spam messages on my wall.",
+          "can_remove": false,
+          "created_time": "2014-07-18T18:46:27+0000",
+          "like_count": 1,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152900393526729",
+          "from": {
+            "id": "1346155794",
+            "name": "Bryan Jesper"
+          },
+          "message": "Why are privacy settings different on mobile devices? For example, you can't share with friends and exclude a certain list. The friends except option makes you select each person which is time consuming.  I'm sure a lot of people would like to put up a post and exclude a list such as Work people.",
+          "can_remove": false,
+          "created_time": "2014-07-18T18:02:43+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152900370516729",
+          "from": {
+            "id": "100001132923661",
+            "name": "Ceni Halimi"
+          },
+          "message": "Hello Facebook, can i verify my fan page is my ecommerce website ?",
+          "can_remove": false,
+          "created_time": "2014-07-18T17:47:14+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152900106736729",
+          "from": {
+            "id": "771570533",
+            "name": "Chuck Kidd"
+          },
+          "message": "Dear Facebook, why does the BLUE HEADER part of the HOME page scroll up when you scroll down. It has just started doing this on my computer, is there a setting to keep the BLUE HEADER to stay or be still while scrolling down? Thanks",
+          "can_remove": false,
+          "created_time": "2014-07-18T15:10:23+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898349941729",
+          "from": {
+            "id": "100008186702132",
+            "name": "Vi As"
+          },
+          "message": "can someone help me?",
+          "can_remove": false,
+          "created_time": "2014-07-17T18:23:34+0000",
+          "like_count": 2,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152897805631729",
+          "from": {
+            "id": "1828956952",
+            "name": "Dorothy Jackson"
+          },
+          "message": "I'm new  to facebook oday from a different setting  I wish fb could help me get to where I'm trying to go   I don't understand this part of my setting",
+          "can_remove": false,
+          "created_time": "2014-07-17T12:26:39+0000",
+          "like_count": 2,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898197956729",
+          "from": {
+            "id": "1138102495",
+            "name": "Kimberly Block"
+          },
+          "message": "I'm sick of seeing what my friends \"like\" in my news feed. Are they seeing the same from me?",
+          "can_remove": false,
+          "created_time": "2014-07-17T16:59:58+0000",
+          "like_count": 12,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898338901729",
+          "from": {
+            "id": "100000078106366",
+            "name": "Andrew Follese"
+          },
+          "message": "Yea, but, why can't I delete somebody's post on my timeline?",
+          "can_remove": false,
+          "created_time": "2014-07-17T18:18:30+0000",
+          "like_count": 9,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898333606729",
+          "from": {
+            "id": "1378420126",
+            "name": "Brandon Thomas Walbridge"
+          },
+          "message": "Where is my dislike butten!?!",
+          "can_remove": false,
+          "created_time": "2014-07-17T18:16:00+0000",
+          "like_count": 9,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152897944751729",
+          "from": {
+            "id": "586236273",
+            "name": "SÃ¸s JÃ¸rgensen"
+          },
+          "message": "Facebook Why cant you make it possibly for us to make our own themes on our facebook accounts... kinda like on MySpace. Its sooo boring just looking at the same old blue/white colors all the time :(",
+          "message_tags": [
+            {
+              "id": "20531316728",
+              "name": "Facebook",
+              "type": "page",
+              "offset": 0,
+              "length": 8
+            }
+          ],
+          "can_remove": false,
+          "created_time": "2014-07-17T14:11:10+0000",
+          "like_count": 11,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898327061729",
+          "from": {
+            "id": "100005148040421",
+            "name": "Maggie Bonife"
+          },
+          "message": "Hi facebook. Why there is no symbol after my name.can you fix it?",
+          "can_remove": false,
+          "created_time": "2014-07-17T18:12:01+0000",
+          "like_count": 6,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898233186729",
+          "from": {
+            "id": "100007458047553",
+            "name": "Shafiqul Mridha"
+          },
+          "message": "Hello Facebook",
+          "message_tags": [
+            {
+              "id": "20531316728",
+              "name": "Facebook",
+              "type": "page",
+              "offset": 6,
+              "length": 8
+            }
+          ],
+          "can_remove": false,
+          "created_time": "2014-07-17T17:19:00+0000",
+          "like_count": 7,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898357006729",
+          "from": {
+            "id": "100006445060993",
+            "name": "Amanda Ha"
+          },
+          "message": "Hello Facebook Admin. I posted my urgent request about an hour ago with no response...I also personally messaged you, yet other posters with less urgent concerns have had their posts answered.",
+          "can_remove": false,
+          "created_time": "2014-07-17T18:26:55+0000",
+          "like_count": 4,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898135891729",
+          "from": {
+            "id": "549122860",
+            "name": "Treva Cassidy"
+          },
+          "message": "How can we change it so I don't see a million different \"so-and-so commented on such-and-such\"",
+          "can_remove": false,
+          "created_time": "2014-07-17T16:19:38+0000",
+          "like_count": 5,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898102016729",
+          "from": {
+            "id": "844522486",
+            "name": "Jim Schultz"
+          },
+          "message": "Hey Facebook, why did you change how we see comments? I want to see the most recent comments like it used to be, all of a sudden today when I click comments it shows the very first comments with a link to View more comments... This is such a hassle!",
+          "can_remove": false,
+          "created_time": "2014-07-17T15:56:17+0000",
+          "like_count": 4,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898096661729",
+          "from": {
+            "id": "1480493249",
+            "name": "Lisa Ann Daly"
+          },
+          "message": "I hate how when you comment on something, it comes up on the news feed. I don't want everyone reading the comments I write on things pages I like post.",
+          "can_remove": false,
+          "created_time": "2014-07-17T15:52:31+0000",
+          "like_count": 4,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898084111729",
+          "from": {
+            "id": "100003357290849",
+            "name": "Donna Stuart"
+          },
+          "message": "Good reminder!  Sometimes we forget we r exposing ourselves to more than friends. Especially newcomers don't realize this.",
+          "can_remove": false,
+          "created_time": "2014-07-17T15:44:03+0000",
+          "like_count": 5,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152900220106729",
+          "from": {
+            "id": "100000726703818",
+            "name": "Ylanan Etulle"
+          },
+          "message": "Dear Facebook, Why is there so many things to do in order to change your name n facebook? I'm getting irritated and annoyed with this steps to do to change the name. I kept on doing it again and again and nothing happens.",
+          "can_remove": false,
+          "created_time": "2014-07-18T16:18:14+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898657581729",
+          "from": {
+            "id": "100005727555954",
+            "name": "Ahmed Ali"
+          },
+          "message": ".\nI CANT SEND MESSAGES ?",
+          "can_remove": false,
+          "created_time": "2014-07-17T20:52:53+0000",
+          "like_count": 1,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898575266729",
+          "from": {
+            "id": "100004856073761",
+            "name": "Tonya Lynn Harper"
+          },
+          "message": "Like Facebook",
+          "can_remove": false,
+          "created_time": "2014-07-17T20:11:39+0000",
+          "like_count": 1,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898550961729",
+          "from": {
+            "id": "564280442",
+            "name": "Paige Gruner"
+          },
+          "message": "I am so frustrated with Facebook right now. How do you not have a billing support line?! My ad set went from having a lifetime budget to a daily budget and maxed out my account. I need someone to contact me ASAP.",
+          "message_tags": [
+            {
+              "id": "20531316728",
+              "name": "Facebook",
+              "type": "page",
+              "offset": 24,
+              "length": 8
+            }
+          ],
+          "can_remove": false,
+          "created_time": "2014-07-17T19:58:46+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152895795166729_10152898220021729",
+          "from": {
+            "id": "100001844333944",
+            "name": "Maria Olivia Garcia Rios"
+          },
+          "message": "????",
+          "can_remove": false,
+          "created_time": "2014-07-17T17:13:01+0000",
+          "like_count": 2,
+          "user_likes": false
+        }
+      ],
+      "paging": {
+        "cursors": {
+          "after": "MTE4Nw==",
+          "before": "MTIxMg=="
+        },
+        "next": "https://graph.facebook.com/v1.0/20531316728_10152897450461729/comments?access_token=CAAEdO7kSxasBALATKdDe6Shia132J1ZAo7sdWwlpKLrq3A7Y8Q3GtNsIsZAV1OgHiZBYYEguuYzDArJPFSbb7zg8YZCESSJ0p3vBzvMemyNh4HSRqBnWqf84JZB41OwcdbEZBYxzaRqoyRKmqT00YJ8ZCI8QgL78dZAfHNEio6iN9NIwmrzaMhIt&limit=25&after=MTE4Nw%3D%3D"
+      }
+    }
+  },
+  {
+    "id": "20531316728_10152895700711729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"We're glad you think so, Sonya....\" on their own video.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-16T15:53:29+0000",
+    "updated_time": "2014-07-16T15:53:29+0000"
+  },
+  {
+    "id": "20531316728_10152894408351729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "message": "Being a fan is better with friends.",
+    "picture": "https://fbcdn-vthumb-a.akamaihd.net/hvthumb-ak-xpf1/t15.0-10/10549503_10152894410531729_10152894408351729_898_330_b.jpg",
+    "link": "https://www.facebook.com/photo.php?v=10152894408351729",
+    "source": "https://fbcdn-video-a.akamaihd.net/hvideo-ak-xfp1/v/t42.1790-2/10525106_10152894410461729_810040625_n.mp4?oh=70f883c597a54364bdda7b67c15df5ab&oe=53CB45AF&__gda__=1405814644_63fde71f46c2894c1ea85860ebb43a33",
+    "name": "After the Game",
+    "properties": [
+      {
+        "name": "Length",
+        "text": "0:58"
+      }
+    ],
+    "icon": "https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/DggDhA4z4tO.gif",
+    "actions": [
+      {
+        "name": "Comment",
+        "link": "https://www.facebook.com/20531316728/posts/10152894408351729"
+      },
+      {
+        "name": "Like",
+        "link": "https://www.facebook.com/20531316728/posts/10152894408351729"
+      }
+    ],
+    "privacy": {
+      "value": ""
+    },
+    "type": "video",
+    "status_type": "added_video",
+    "object_id": "10152894408351729",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-16T01:06:10+0000",
+    "updated_time": "2014-07-18T21:29:47+0000",
+    "shares": {
+      "count": 6713
+    },
+    "likes": {
+      "data": [
+        {
+          "id": "100001776988102",
+          "name": "Emily Willis"
+        },
+        {
+          "id": "100008318132933",
+          "name": "Shakil Ahmed Mintu"
+        },
+        {
+          "id": "100003578350970",
+          "name": "Ø§Ø¨Ùˆ Ù…ØµØ¹Ø¨ Ø·Ø§Ø±Ù‚"
+        },
+        {
+          "id": "100006451466566",
+          "name": "Blanca Lijia Vasquez"
+        },
+        {
+          "id": "644875628941275",
+          "name": "à¸Šà¸¸à¸¡à¸Šà¸™à¹‚à¸­à¹Šà¸°à¹†"
+        },
+        {
+          "id": "100001982716457",
+          "name": "Joey Roberts"
+        },
+        {
+          "id": "100004934016451",
+          "name": "Romli Putra"
+        },
+        {
+          "id": "100003354184574",
+          "name": "Maricris Cassalon"
+        },
+        {
+          "id": "100004338514476",
+          "name": "Johnathan Arco"
+        },
+        {
+          "id": "100008333745385",
+          "name": "à¦…à¦¬à¦¹à§‡à¦²à¦¿à¦¤ à¦†à¦®à¦¿"
+        },
+        {
+          "id": "100006901722856",
+          "name": "Reem Eatoom"
+        },
+        {
+          "id": "100003396277357",
+          "name": "Hero Bhyana"
+        },
+        {
+          "id": "1284156258",
+          "name": "Roger Van Voorhees"
+        },
+        {
+          "id": "100004052978701",
+          "name": "Cabbar Hasanov"
+        },
+        {
+          "id": "100008318743592",
+          "name": "Mohannad Walaa"
+        },
+        {
+          "id": "100001380284037",
+          "name": "Brittany Charlton"
+        },
+        {
+          "id": "100007745561996",
+          "name": "Zahid Khan"
+        },
+        {
+          "id": "100000655002893",
+          "name": "Baba Giyahmiee"
+        },
+        {
+          "id": "100006878413205",
+          "name": "Rock Moutain"
+        },
+        {
+          "id": "100002369466545",
+          "name": "Robert Ruiz"
+        },
+        {
+          "id": "100004047733562",
+          "name": "Riaz Mehmod"
+        },
+        {
+          "id": "1286606405",
+          "name": "Mariana Michelle Alfaro"
+        },
+        {
+          "id": "100006404837261",
+          "name": "Prasath Prasaath"
+        },
+        {
+          "id": "100006800381311",
+          "name": "Larry Vaughn"
+        },
+        {
+          "id": "100008380639071",
+          "name": "Albina Tedua"
+        }
+      ],
+      "paging": {
+        "cursors": {
+          "after": "MTAwMDA4MzgwNjM5MDcx",
+          "before": "MTAwMDAxNzc2OTg4MTAy"
+        },
+        "next": "https://graph.facebook.com/v1.0/20531316728_10152894408351729/likes?access_token=CAAEdO7kSxasBALATKdDe6Shia132J1ZAo7sdWwlpKLrq3A7Y8Q3GtNsIsZAV1OgHiZBYYEguuYzDArJPFSbb7zg8YZCESSJ0p3vBzvMemyNh4HSRqBnWqf84JZB41OwcdbEZBYxzaRqoyRKmqT00YJ8ZCI8QgL78dZAfHNEio6iN9NIwmrzaMhIt&limit=25&after=MTAwMDA4MzgwNjM5MDcx"
+      }
+    },
+    "comments": {
+      "data": [
+        {
+          "id": "10152894408351729_10152895651901729",
+          "from": {
+            "id": "100002504503838",
+            "name": "Abs Shepherd"
+          },
+          "message": "Hey fb why did you guys change my LEGAL name on my Facebook without letting me prove it is my LEGAL name..... It was either change it or no fb respond please I want this corrected",
+          "can_remove": false,
+          "created_time": "2014-07-16T15:27:45+0000",
+          "like_count": 13,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152894999211729",
+          "from": {
+            "id": "573663096",
+            "name": "Neva Renee Ochoa"
+          },
+          "message": "Great video. Win or lose, at least ya got your friends !",
+          "can_remove": false,
+          "created_time": "2014-07-16T07:36:37+0000",
+          "like_count": 9,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895695541729",
+          "from": {
+            "id": "609093169",
+            "name": "Cathy Barbaro"
+          },
+          "message": "So true love this year",
+          "can_remove": false,
+          "created_time": "2014-07-16T15:50:13+0000",
+          "like_count": 4,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895570766729",
+          "from": {
+            "id": "100005206836557",
+            "name": "Rick Hickman"
+          },
+          "message": "That.    Is.      Sweet",
+          "can_remove": false,
+          "created_time": "2014-07-16T14:40:33+0000",
+          "like_count": 5,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895327006729",
+          "from": {
+            "id": "100004928253087",
+            "name": "Pushpam Sharma"
+          },
+          "message": "Kindly Facebook PLease tell me how to verify a page or account ??",
+          "can_remove": false,
+          "created_time": "2014-07-16T12:34:58+0000",
+          "like_count": 5,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895308301729",
+          "from": {
+            "id": "100006440618750",
+            "name": "Mason Wroblewski"
+          },
+          "message": "thank you facebook i love playing games,chating and commets",
+          "can_remove": false,
+          "created_time": "2014-07-16T12:32:53+0000",
+          "like_count": 5,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895292761729",
+          "from": {
+            "id": "100000122253539",
+            "name": "Rita Montminy Dentino"
+          },
+          "message": "Everything is better with friends!!!",
+          "can_remove": false,
+          "created_time": "2014-07-16T12:28:15+0000",
+          "like_count": 5,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152897867796729",
+          "from": {
+            "id": "100003310627866",
+            "name": "Ramona Ramo"
+          },
+          "message": "Facebook I need help ... someone broke into my account and stole all my pages .... I worked to make them larger .... Could you please help me to recover them ,,... pleaseee :'( I want this page back .. Chocolate Â»  .. pleaseee help me :'( :'(",
+          "message_tags": [
+            {
+              "id": "730369010341272",
+              "name": "Chocolate Â»",
+              "type": "page",
+              "offset": 202,
+              "length": 11
+            }
+          ],
+          "can_remove": false,
+          "created_time": "2014-07-17T13:19:12+0000",
+          "like_count": 1,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152896202866729",
+          "from": {
+            "id": "100005821963219",
+            "name": "Sherry Rogers"
+          },
+          "message": "I love Facebook!!!",
+          "can_remove": false,
+          "created_time": "2014-07-16T19:48:25+0000",
+          "like_count": 21,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895643456729",
+          "from": {
+            "id": "100006194734876",
+            "name": "Alvin Stredic"
+          },
+          "message": "Whats up 5'2",
+          "can_remove": false,
+          "created_time": "2014-07-16T15:22:11+0000",
+          "like_count": 2,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152894910296729",
+          "from": {
+            "id": "100000927339942",
+            "name": "Aaron Gardner"
+          },
+          "message": "You don't have to wait every 4 years for this feeling. Support Your Local Club!",
+          "can_remove": false,
+          "created_time": "2014-07-16T06:18:56+0000",
+          "like_count": 95,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152894770841729",
+          "from": {
+            "id": "100005808755766",
+            "name": "Shauna Smith"
+          },
+          "message": "Facebook is my favorite like page!!!",
+          "can_remove": false,
+          "created_time": "2014-07-16T04:25:18+0000",
+          "like_count": 2,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152894718341729",
+          "from": {
+            "id": "100000753743741",
+            "name": "Billie Jo Shull"
+          },
+          "message": "what an amazing and heartfelt video. Very nice and worth watching...again :)",
+          "can_remove": false,
+          "created_time": "2014-07-16T03:57:12+0000",
+          "like_count": 19,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895658291729",
+          "from": {
+            "id": "618388034",
+            "name": "Sonya Blehm DeLange"
+          },
+          "message": "Beautiful!  And so true!",
+          "can_remove": false,
+          "created_time": "2014-07-16T15:28:59+0000",
+          "like_count": 35,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895651726729",
+          "from": {
+            "id": "504248538",
+            "name": "Juan Sanchez"
+          },
+          "message": "C.J. Horvath Nick Potts USA!ðŸ‡ºðŸ‡¸",
+          "message_tags": [
+            {
+              "id": "70903052",
+              "name": "C.J. Horvath",
+              "type": "user",
+              "offset": 0,
+              "length": 12
+            },
+            {
+              "id": "512007665",
+              "name": "Nick Potts",
+              "type": "user",
+              "offset": 13,
+              "length": 10
+            }
+          ],
+          "can_remove": false,
+          "created_time": "2014-07-16T15:27:40+0000",
+          "like_count": 3,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895157901729",
+          "from": {
+            "id": "100000183867397",
+            "name": "Jeton Petlla"
+          },
+          "message": "Can someone from Facebook tell me how can i find my forgotten facebook password",
+          "can_remove": false,
+          "created_time": "2014-07-16T10:26:32+0000",
+          "like_count": 1,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152896323951729",
+          "from": {
+            "id": "100001839300570",
+            "name": "Georgina Maxwell Sehara"
+          },
+          "message": "everything is better with friends!!",
+          "can_remove": false,
+          "created_time": "2014-07-16T20:46:27+0000",
+          "like_count": 60,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152894793791729",
+          "from": {
+            "id": "730470532",
+            "name": "Gene Park"
+          },
+          "message": "Best Facebook ad I've seen so far. Well done.",
+          "can_remove": false,
+          "created_time": "2014-07-16T04:42:22+0000",
+          "like_count": 23,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895808706729",
+          "from": {
+            "id": "542037543",
+            "name": "Beatriz Mogollon"
+          },
+          "message": "So true! Miss the World Cup",
+          "can_remove": false,
+          "created_time": "2014-07-16T16:45:57+0000",
+          "like_count": 18,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895646341729",
+          "from": {
+            "id": "100006326171166",
+            "name": "Ariel Sealy"
+          },
+          "message": "That was amazing",
+          "can_remove": false,
+          "created_time": "2014-07-16T15:24:07+0000",
+          "like_count": 42,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895933326729",
+          "from": {
+            "id": "1628266331",
+            "name": "Suzi Gowrie"
+          },
+          "message": "Thanks for sending that.....it was wonderful and soooo true!!",
+          "can_remove": false,
+          "created_time": "2014-07-16T17:42:37+0000",
+          "like_count": 10,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152895617901729",
+          "from": {
+            "id": "749022570",
+            "name": "Sheila Ruz Hartford"
+          },
+          "message": "Great video and it was way better to share it with my family in Brasil!",
+          "can_remove": false,
+          "created_time": "2014-07-16T15:08:30+0000",
+          "like_count": 10,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152896325861729",
+          "from": {
+            "id": "100000614762249",
+            "name": "Mary Haisch"
+          },
+          "message": "Thank you Facebook for helping me stay in touch with Family that are many miles away!!!  Means the world to me that you are here to Connect us together!! <3  Also playing awesome games, helping me stay in touch with a Lupus Group!!   Helping me be Happy!!!   THANK YOU AGAIN!!!!",
+          "can_remove": false,
+          "created_time": "2014-07-16T20:47:11+0000",
+          "like_count": 3,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152896343476729",
+          "from": {
+            "id": "100002474929581",
+            "name": "Ryan Petersen"
+          },
+          "message": "Hello, great video",
+          "can_remove": false,
+          "created_time": "2014-07-16T20:57:06+0000",
+          "like_count": 2,
+          "user_likes": false
+        },
+        {
+          "id": "10152894408351729_10152896200756729",
+          "from": {
+            "id": "100002373690835",
+            "name": "Jenkins Edward"
+          },
+          "message": "My daily routing is Facebook with coffee and breakfast.  More Facebook later on.",
+          "message_tags": [
+            {
+              "id": "20531316728",
+              "name": "Facebook",
+              "type": "page",
+              "offset": 20,
+              "length": 8
+            }
+          ],
+          "can_remove": false,
+          "created_time": "2014-07-16T19:47:27+0000",
+          "like_count": 1,
+          "user_likes": false
+        }
+      ],
+      "paging": {
+        "cursors": {
+          "after": "NDE1MQ==",
+          "before": "NDE3NQ=="
+        },
+        "next": "https://graph.facebook.com/v1.0/20531316728_10152894408351729/comments?access_token=CAAEdO7kSxasBALATKdDe6Shia132J1ZAo7sdWwlpKLrq3A7Y8Q3GtNsIsZAV1OgHiZBYYEguuYzDArJPFSbb7zg8YZCESSJ0p3vBzvMemyNh4HSRqBnWqf84JZB41OwcdbEZBYxzaRqoyRKmqT00YJ8ZCI8QgL78dZAfHNEio6iN9NIwmrzaMhIt&limit=25&after=NDE1MQ%3D%3D"
+      }
+    }
+  },
+  {
+    "id": "20531316728_10152893147401729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"You're welcome, YaSir. Enjoy!...\" on their own photo.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-15T15:48:06+0000",
+    "updated_time": "2014-07-15T15:48:06+0000"
+  },
+  {
+    "id": "20531316728_10152890944986729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"Agreed, Bob. Friends make a...\" on their own video.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-14T15:37:50+0000",
+    "updated_time": "2014-07-14T15:37:50+0000"
+  },
+  {
+    "id": "20531316728_10152883392131729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"Thanks for your question, Mido....\" on their own video.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-11T20:00:47+0000",
+    "updated_time": "2014-07-11T20:00:47+0000"
+  },
+  {
+    "id": "20531316728_10152880455786729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\":) -Jenny\" on their own video.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-10T18:46:51+0000",
+    "updated_time": "2014-07-10T18:46:51+0000"
+  },
+  {
+    "id": "20531316728_10152878708686729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "message": "Friends make the best teammates.",
+    "picture": "https://fbcdn-vthumb-a.akamaihd.net/hvthumb-ak-xfp1/v/t15.0-10/10549535_10152878712216729_10152878708686729_56354_439_b.jpg?oh=a2302ea1a2e4834dd26e71d6c4577a54&oe=54497D22&__gda__=1414088930_31309263a7e6d61440430da5b3953373",
+    "link": "https://www.facebook.com/photo.php?v=10152878708686729",
+    "source": "https://fbcdn-video-a.akamaihd.net/hvideo-ak-xpf1/v/t42.1790-2/10544435_10152878712161729_1305983605_n.mp4?oh=70d0f630cb7e9deea132089301624905&oe=53CB0738&__gda__=1405854085_ec2d9d29ccff29bc45abe5fa7d39084d",
+    "name": "Summer Friendly",
+    "properties": [
+      {
+        "name": "Length",
+        "text": "1:16"
+      }
+    ],
+    "icon": "https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/DggDhA4z4tO.gif",
+    "actions": [
+      {
+        "name": "Comment",
+        "link": "https://www.facebook.com/20531316728/posts/10152878708686729"
+      },
+      {
+        "name": "Like",
+        "link": "https://www.facebook.com/20531316728/posts/10152878708686729"
+      }
+    ],
+    "privacy": {
+      "value": ""
+    },
+    "type": "video",
+    "status_type": "added_video",
+    "object_id": "10152878708686729",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-10T02:41:00+0000",
+    "updated_time": "2014-07-18T19:43:06+0000",
+    "shares": {
+      "count": 25208
+    },
+    "likes": {
+      "data": [
+        {
+          "id": "100000604564026",
+          "name": "Kathrina McCaleb"
+        },
+        {
+          "id": "100003578350970",
+          "name": "Ø§Ø¨Ùˆ Ù…ØµØ¹Ø¨ Ø·Ø§Ø±Ù‚"
+        },
+        {
+          "id": "1101536049",
+          "name": "Barbara Pride"
+        },
+        {
+          "id": "1483945650",
+          "name": "à¸›à¸²à¸•à¸µà¹‰ à¸¡à¹ˆà¸§à¸™à¸„à¸±à¸"
+        },
+        {
+          "id": "100004934016451",
+          "name": "Romli Putra"
+        },
+        {
+          "id": "100006901722856",
+          "name": "Reem Eatoom"
+        },
+        {
+          "id": "100007252386469",
+          "name": "Ù…Ø§Ù‡Ø± Ø³Ù„Ø§Ù… Ø§Ù„Ø¹Ø§Ù…Ø±ÙŠ"
+        },
+        {
+          "id": "100003396277357",
+          "name": "Hero Bhyana"
+        },
+        {
+          "id": "1284156258",
+          "name": "Roger Van Voorhees"
+        },
+        {
+          "id": "100007986390069",
+          "name": "Ù…Ø­Ù…Ø¯ Ø¹Ø·Ø§ÙˆÙ†Ù‡"
+        },
+        {
+          "id": "100001264712042",
+          "name": "Ylli Kadrijaj"
+        },
+        {
+          "id": "100008090417337",
+          "name": "Larry Montgomery"
+        },
+        {
+          "id": "100007129577235",
+          "name": "Bir Bahadur"
+        },
+        {
+          "id": "100005465777259",
+          "name": "Nawaz Mnawaz"
+        },
+        {
+          "id": "100008245662475",
+          "name": "Mehmet Yasin"
+        },
+        {
+          "id": "100004317994801",
+          "name": "Ana Lilia Santos"
+        },
+        {
+          "id": "100006758313392",
+          "name": "Ana Paula Silva de Andrade"
+        },
+        {
+          "id": "100001288207328",
+          "name": "Chew Christie"
+        },
+        {
+          "id": "100007960688592",
+          "name": "Deema Ahmedan"
+        },
+        {
+          "id": "100005920396246",
+          "name": "Sri Davi"
+        },
+        {
+          "id": "100006778486336",
+          "name": "Uttam Paul"
+        },
+        {
+          "id": "100007522899166",
+          "name": "Betty Stewart"
+        },
+        {
+          "id": "100000719366379",
+          "name": "Omazing Far"
+        },
+        {
+          "id": "100007676254422",
+          "name": "Olga Lopez"
+        },
+        {
+          "id": "100006813885075",
+          "name": "Sahil Dodeja"
+        }
+      ],
+      "paging": {
+        "cursors": {
+          "after": "MTAwMDA2ODEzODg1MDc1",
+          "before": "MTAwMDAwNjA0NTY0MDI2"
+        },
+        "next": "https://graph.facebook.com/v1.0/20531316728_10152878708686729/likes?access_token=CAAEdO7kSxasBALATKdDe6Shia132J1ZAo7sdWwlpKLrq3A7Y8Q3GtNsIsZAV1OgHiZBYYEguuYzDArJPFSbb7zg8YZCESSJ0p3vBzvMemyNh4HSRqBnWqf84JZB41OwcdbEZBYxzaRqoyRKmqT00YJ8ZCI8QgL78dZAfHNEio6iN9NIwmrzaMhIt&limit=25&after=MTAwMDA2ODEzODg1MDc1"
+      }
+    },
+    "comments": {
+      "data": [
+        {
+          "id": "10152878708686729_10152882991686729",
+          "from": {
+            "id": "100003477571596",
+            "name": "Layne Sporleder"
+          },
+          "message": "Nghia Huu Dinh Shane York",
+          "message_tags": [
+            {
+              "id": "100001083661426",
+              "name": "Nghia Huu Dinh",
+              "type": "user",
+              "offset": 0,
+              "length": 14
+            },
+            {
+              "id": "1603856743",
+              "name": "Shane York",
+              "type": "user",
+              "offset": 15,
+              "length": 10
+            }
+          ],
+          "can_remove": false,
+          "created_time": "2014-07-11T16:43:07+0000",
+          "like_count": 12,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152882573576729",
+          "from": {
+            "id": "100000176375673",
+            "name": "Elaine Bjerken Waldrup"
+          },
+          "message": "this is so true.  nice to see people just pick up and play a game together",
+          "can_remove": false,
+          "created_time": "2014-07-11T12:23:51+0000",
+          "like_count": 58,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880140116729",
+          "from": {
+            "id": "1129899838",
+            "name": "Beth Schwartz"
+          },
+          "message": "so you guys have not heard of this. Her name is Mary Morgan and she is on line right now and told me to check this to by emailing \nfacebookonlinecordinator@hotmail.com",
+          "can_remove": false,
+          "created_time": "2014-07-10T16:19:53+0000",
+          "like_count": 12,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152883357461729",
+          "from": {
+            "id": "100007165770098",
+            "name": "Mohamed Mido Chaabnia"
+          },
+          "message": "How can i verifed a page on facebok . Please i need help :)",
+          "can_remove": false,
+          "created_time": "2014-07-11T19:42:25+0000",
+          "like_count": 10,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152882996041729",
+          "from": {
+            "id": "100006033948224",
+            "name": "Dawson Cash"
+          },
+          "message": "Friends are always by you'r side.... :)",
+          "can_remove": false,
+          "created_time": "2014-07-11T16:45:40+0000",
+          "like_count": 11,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880611401729",
+          "from": {
+            "id": "100001178870448",
+            "name": "Nita Brannon Welch"
+          },
+          "message": "LOVE YOU",
+          "can_remove": false,
+          "created_time": "2014-07-10T19:55:23+0000",
+          "like_count": 12,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880429596729",
+          "from": {
+            "id": "868395135",
+            "name": "Abram Villarreal"
+          },
+          "message": "Adam Lozano, Chantel Lozano Alina Mendoza Ramon Mendoza Robert Charles Arredondo Kristen Amelia Arredondo Valerie Santoscoy Kevin Hodgers Matthew Varella.. Footy in the park?",
+          "message_tags": [
+            {
+              "id": "882985430",
+              "name": "Adam Lozano",
+              "type": "user",
+              "offset": 0,
+              "length": 11
+            },
+            {
+              "id": "536713291",
+              "name": "Chantel Lozano",
+              "type": "user",
+              "offset": 13,
+              "length": 14
+            },
+            {
+              "id": "100000993565100",
+              "name": "Alina Mendoza",
+              "type": "user",
+              "offset": 28,
+              "length": 13
+            },
+            {
+              "id": "100001408420800",
+              "name": "Ramon Mendoza",
+              "type": "user",
+              "offset": 42,
+              "length": 13
+            },
+            {
+              "id": "849569191",
+              "name": "Robert Charles Arredondo",
+              "type": "user",
+              "offset": 56,
+              "length": 24
+            },
+            {
+              "id": "1445869943",
+              "name": "Kristen Amelia Arredondo",
+              "type": "user",
+              "offset": 81,
+              "length": 24
+            },
+            {
+              "id": "1548810004",
+              "name": "Valerie Santoscoy",
+              "type": "user",
+              "offset": 106,
+              "length": 17
+            },
+            {
+              "id": "518668178",
+              "name": "Kevin Hodgers",
+              "type": "user",
+              "offset": 124,
+              "length": 13
+            },
+            {
+              "id": "100000014922846",
+              "name": "Matthew Varella",
+              "type": "user",
+              "offset": 138,
+              "length": 15
+            }
+          ],
+          "can_remove": false,
+          "created_time": "2014-07-10T18:31:19+0000",
+          "like_count": 5,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880171526729",
+          "from": {
+            "id": "100000926947816",
+            "name": "Nancy Witt"
+          },
+          "message": "Love this...you've got friends!!!",
+          "can_remove": false,
+          "created_time": "2014-07-10T16:37:54+0000",
+          "like_count": 10,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880141726729",
+          "from": {
+            "id": "100007297204411",
+            "name": "Ismael Calderon"
+          },
+          "message": "Nice games",
+          "can_remove": false,
+          "created_time": "2014-07-10T16:20:32+0000",
+          "like_count": 11,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880138856729",
+          "from": {
+            "id": "100002934584558",
+            "name": "Ruby Johnson Farris"
+          },
+          "message": "How refreshing. ",
+          "can_remove": false,
+          "created_time": "2014-07-10T16:19:05+0000",
+          "like_count": 11,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880135921729",
+          "from": {
+            "id": "100002844586612",
+            "name": "Russ Kohn"
+          },
+          "message": "Love it. Even the dog gets to play!",
+          "can_remove": false,
+          "created_time": "2014-07-10T16:17:56+0000",
+          "like_count": 11,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880133466729",
+          "from": {
+            "id": "100007769466109",
+            "name": "Karen Brock"
+          },
+          "message": "my daughter Della likes soccer",
+          "can_remove": false,
+          "created_time": "2014-07-10T16:16:44+0000",
+          "like_count": 9,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880095261729",
+          "from": {
+            "id": "1347500040",
+            "name": "Robert Thomas"
+          },
+          "message": "FACEBOOK!   Can you tell me just how many times I much change my newsfeed BACK to most recent before you stop screwing around with me and changing it to a setting I never wanted or used???????",
+          "can_remove": false,
+          "created_time": "2014-07-10T15:58:36+0000",
+          "like_count": 10,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880088761729",
+          "from": {
+            "id": "100001363038494",
+            "name": "Carlton C Richardson Sr"
+          },
+          "message": "Strong team players care about their work, the team, and the team's work. They show up every day with this care and commitment  up front. They want to give a good effort, and they want other team members to do the same.",
+          "can_remove": false,
+          "created_time": "2014-07-10T15:54:28+0000",
+          "like_count": 10,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152892262301729",
+          "from": {
+            "id": "100008347188052",
+            "name": "Shirley Talbott"
+          },
+          "message": "That was fun to watch.",
+          "can_remove": false,
+          "created_time": "2014-07-15T03:52:57+0000",
+          "like_count": 7,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152890960161729",
+          "from": {
+            "id": "100007729838336",
+            "name": "à¦¸à§à¦¬à¦ªà§à¦¨à¦¹à§€à¦¨ à¦®à¦¨ à¦†à¦®à¦¾à¦°"
+          },
+          "message": "Hi friend ",
+          "can_remove": false,
+          "created_time": "2014-07-14T15:46:44+0000",
+          "like_count": 8,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152883135451729",
+          "from": {
+            "id": "100005797837342",
+            "name": "Nancy Ferreira"
+          },
+          "message": "Love it!!!",
+          "can_remove": false,
+          "created_time": "2014-07-11T18:04:12+0000",
+          "like_count": 8,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152879798641729",
+          "from": {
+            "id": "100001136684554",
+            "name": "Joanna Louise Golden"
+          },
+          "message": "I like the last two sentences of the video... \"if you've got friends, you've got a team\"",
+          "can_remove": false,
+          "created_time": "2014-07-10T12:52:09+0000",
+          "like_count": 25,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152879757921729",
+          "from": {
+            "id": "100005378343509",
+            "name": "Phong Nguyen"
+          },
+          "message": "I love facebook",
+          "can_remove": false,
+          "created_time": "2014-07-10T12:25:11+0000",
+          "like_count": 4,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152893067236729",
+          "from": {
+            "id": "100000148669376",
+            "name": "Lilly Fields"
+          },
+          "message": "I away's loved that tune.  ðŸŽ¶ðŸ‘",
+          "can_remove": false,
+          "created_time": "2014-07-15T15:06:33+0000",
+          "like_count": 4,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152890506936729",
+          "from": {
+            "id": "1320675448",
+            "name": "Starlene Koch Everson"
+          },
+          "message": "Love the dog on the team!",
+          "can_remove": false,
+          "created_time": "2014-07-14T10:29:00+0000",
+          "like_count": 2,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880514261729",
+          "from": {
+            "id": "100002090743158",
+            "name": "Festus Asare"
+          },
+          "message": "That's true",
+          "can_remove": false,
+          "created_time": "2014-07-10T19:09:31+0000",
+          "like_count": 6,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880149671729",
+          "from": {
+            "id": "1554480887",
+            "name": "Marilynn Norris Hughes"
+          },
+          "message": "someone is using my account and asking for friends I changed my password",
+          "can_remove": false,
+          "created_time": "2014-07-10T16:24:44+0000",
+          "like_count": 5,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152880124476729",
+          "from": {
+            "id": "796402481",
+            "name": "Gabriella Sannino"
+          },
+          "message": "Well done! *bravo @Facebook",
+          "can_remove": false,
+          "created_time": "2014-07-10T16:12:28+0000",
+          "like_count": 5,
+          "user_likes": false
+        },
+        {
+          "id": "10152878708686729_10152879843106729",
+          "from": {
+            "id": "100008395264117",
+            "name": "Yo Yo PawaÃ± Gupta"
+          },
+          "message": "I love",
+          "can_remove": false,
+          "created_time": "2014-07-10T13:25:10+0000",
+          "like_count": 3,
+          "user_likes": false
+        }
+      ],
+      "paging": {
+        "cursors": {
+          "after": "MTAxMjE=",
+          "before": "MTAxNDY="
+        },
+        "next": "https://graph.facebook.com/v1.0/20531316728_10152878708686729/comments?access_token=CAAEdO7kSxasBALATKdDe6Shia132J1ZAo7sdWwlpKLrq3A7Y8Q3GtNsIsZAV1OgHiZBYYEguuYzDArJPFSbb7zg8YZCESSJ0p3vBzvMemyNh4HSRqBnWqf84JZB41OwcdbEZBYxzaRqoyRKmqT00YJ8ZCI8QgL78dZAfHNEio6iN9NIwmrzaMhIt&limit=25&after=MTAxMjE%3D"
+      }
+    }
+  },
+  {
+    "id": "20531316728_10152877495471729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"We love you too, Kaden! -Jenny\" on their own photo.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-09T17:52:13+0000",
+    "updated_time": "2014-07-09T17:52:13+0000"
+  },
+  {
+    "id": "20531316728_10152874752651729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"Great advice, Carol! - Elissa\" on their own photo.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-08T16:18:27+0000",
+    "updated_time": "2014-07-08T16:18:27+0000"
+  },
+  {
+    "id": "20531316728_10152872445081729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"We love you too, Flo! - Elissa\" on their own photo.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-07T15:45:52+0000",
+    "updated_time": "2014-07-07T15:45:52+0000"
+  },
+  {
+    "id": "20531316728_10152871796826729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "message": "A friend's discovery can lead to your next adventure.",
+    "picture": "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xpa1/t1.0-9/s130x130/10492125_10152861983841729_3572096452617269346_n.png",
+    "link": "https://www.facebook.com/facebook/photos/a.376995711728.190761.20531316728/10152861983841729/?type=1&relevant_count=1",
+    "icon": "https://fbstatic-a.akamaihd.net/rsrc.php/v2/yz/r/StEh3RhPvjk.gif",
+    "actions": [
+      {
+        "name": "Comment",
+        "link": "https://www.facebook.com/20531316728/posts/10152871796826729"
+      },
+      {
+        "name": "Like",
+        "link": "https://www.facebook.com/20531316728/posts/10152871796826729"
+      }
+    ],
+    "privacy": {
+      "value": ""
+    },
+    "type": "photo",
+    "status_type": "added_photos",
+    "object_id": "10152861983841729",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-07T06:34:16+0000",
+    "updated_time": "2014-07-07T06:34:16+0000",
+    "shares": {
+      "count": 138883
+    },
+    "likes": {
+      "data": [
+        {
+          "id": "100005519568807",
+          "name": "Emidio Cabrera"
+        },
+        {
+          "id": "100007649070128",
+          "name": "Md Gefor Islam"
+        },
+        {
+          "id": "100005673072311",
+          "name": "Sakarie Sheikh"
+        },
+        {
+          "id": "100007252386469",
+          "name": "Ù…Ø§Ù‡Ø± Ø³Ù„Ø§Ù… Ø§Ù„Ø¹Ø§Ù…Ø±ÙŠ"
+        },
+        {
+          "id": "100004424597115",
+          "name": "Roohullah Roohullah"
+        },
+        {
+          "id": "100007986390069",
+          "name": "Ù…Ø­Ù…Ø¯ Ø¹Ø·Ø§ÙˆÙ†Ù‡"
+        },
+        {
+          "id": "100007937776778",
+          "name": "Sk Sapno Estudan"
+        },
+        {
+          "id": "100006419598447",
+          "name": "Georgie Roho Safi"
+        },
+        {
+          "id": "100005959997193",
+          "name": "Sultan Othman"
+        },
+        {
+          "id": "100000118900958",
+          "name": "Claire Virga"
+        },
+        {
+          "id": "100007750625526",
+          "name": "Tayef Mehzz"
+        },
+        {
+          "id": "100005435567374",
+          "name": "à¸ªà¸¡à¸Šà¸²à¸¢ à¹à¸™à¹à¸Š"
+        },
+        {
+          "id": "100007616081109",
+          "name": "Jerry Lupo"
+        },
+        {
+          "id": "100001288207328",
+          "name": "Chew Christie"
+        },
+        {
+          "id": "100003601862787",
+          "name": "Olaf Bizacki"
+        },
+        {
+          "id": "100004680522248",
+          "name": "Kathy Nance"
+        },
+        {
+          "id": "100004528695314",
+          "name": "Anita Karki"
+        },
+        {
+          "id": "1031663401",
+          "name": "Sarkis Gevorkyan"
+        },
+        {
+          "id": "100006140402041",
+          "name": "Adnan Albeda"
+        },
+        {
+          "id": "1819676552",
+          "name": "Karen Medina"
+        },
+        {
+          "id": "100006597378083",
+          "name": "Zubayer Pabna"
+        },
+        {
+          "id": "100004645873708",
+          "name": "Subodh Basak"
+        },
+        {
+          "id": "100008012912459",
+          "name": "ÙØ§Ø±Ø³ Ø­Ø³Ù†"
+        },
+        {
+          "id": "100006778869388",
+          "name": "Banyu Putih"
+        },
+        {
+          "id": "100005819953661",
+          "name": "Mohd Ajwad"
+        }
+      ],
+      "paging": {
+        "cursors": {
+          "after": "MTAwMDA1ODE5OTUzNjYx",
+          "before": "MTAwMDA1NTE5NTY4ODA3"
+        },
+        "next": "https://graph.facebook.com/v1.0/20531316728_10152871796826729/likes?access_token=CAAEdO7kSxasBALATKdDe6Shia132J1ZAo7sdWwlpKLrq3A7Y8Q3GtNsIsZAV1OgHiZBYYEguuYzDArJPFSbb7zg8YZCESSJ0p3vBzvMemyNh4HSRqBnWqf84JZB41OwcdbEZBYxzaRqoyRKmqT00YJ8ZCI8QgL78dZAfHNEio6iN9NIwmrzaMhIt&limit=25&after=MTAwMDA1ODE5OTUzNjYx"
+      }
+    },
+    "comments": {
+      "data": [
+        {
+          "id": "10152861983841729_10152873005466729",
+          "from": {
+            "id": "1313648418",
+            "name": "Nancy Lizotte"
+          },
+          "message": "Let\"s go",
+          "can_remove": false,
+          "created_time": "2014-07-07T20:24:18+0000",
+          "like_count": 10,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152872798166729",
+          "from": {
+            "id": "100000510384278",
+            "name": "Rosanne Caporuscio-Starr"
+          },
+          "message": "Wish I could be there.",
+          "can_remove": false,
+          "created_time": "2014-07-07T18:47:48+0000",
+          "like_count": 10,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152872778836729",
+          "from": {
+            "id": "100007241713588",
+            "name": "Chuy Martinez"
+          },
+          "message": "Amen that's paradise",
+          "can_remove": false,
+          "created_time": "2014-07-07T18:41:48+0000",
+          "like_count": 10,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152867444646729",
+          "from": {
+            "id": "705949725",
+            "name": "Cindy Dahlke"
+          },
+          "message": "Remember places in your heart is the best place to start",
+          "can_remove": false,
+          "created_time": "2014-07-05T11:59:53+0000",
+          "like_count": 2292,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152872804026729",
+          "from": {
+            "id": "100001632889557",
+            "name": "Brian Williamson"
+          },
+          "message": "scotland",
+          "can_remove": false,
+          "created_time": "2014-07-07T18:52:02+0000",
+          "like_count": 8,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152872800306729",
+          "from": {
+            "id": "1362003442",
+            "name": "Barbara Gallaway"
+          },
+          "message": "How beautiful",
+          "can_remove": false,
+          "created_time": "2014-07-07T18:49:16+0000",
+          "like_count": 8,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152872796131729",
+          "from": {
+            "id": "1676395385",
+            "name": "Jim Hopper"
+          },
+          "message": "the best place you'll ever go is just a little farther down the road...",
+          "can_remove": false,
+          "created_time": "2014-07-07T18:46:35+0000",
+          "like_count": 9,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152872796036729",
+          "from": {
+            "id": "100002090929113",
+            "name": "Sabrinna Cooper"
+          },
+          "message": "Now that's somewhere I'd like to be at!",
+          "can_remove": false,
+          "created_time": "2014-07-07T18:46:30+0000",
+          "like_count": 9,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152872794416729",
+          "from": {
+            "id": "1307154719",
+            "name": "Judy A Davis"
+          },
+          "message": "Wow, I love it but then I love anything to do with the ocean, lakes, whatever.  Makes me homesick",
+          "can_remove": false,
+          "created_time": "2014-07-07T18:45:47+0000",
+          "like_count": 9,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152872780756729",
+          "from": {
+            "id": "564803510",
+            "name": "Nico Arihood"
+          },
+          "message": "this is Little Beach Maui",
+          "can_remove": false,
+          "created_time": "2014-07-07T18:42:26+0000",
+          "like_count": 9,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152872776806729",
+          "from": {
+            "id": "100001745544361",
+            "name": "Jonard Cuadra"
+          },
+          "message": "Ameen...",
+          "can_remove": false,
+          "created_time": "2014-07-07T18:40:34+0000",
+          "like_count": 7,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152872776311729",
+          "from": {
+            "id": "579072733",
+            "name": "Colleen Cox"
+          },
+          "message": "True",
+          "can_remove": false,
+          "created_time": "2014-07-07T18:40:14+0000",
+          "like_count": 8,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152872775921729",
+          "from": {
+            "id": "100003261382567",
+            "name": "Kat Simon"
+          },
+          "message": "Yep,thts true!",
+          "can_remove": false,
+          "created_time": "2014-07-07T18:39:58+0000",
+          "like_count": 9,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152867371316729",
+          "from": {
+            "id": "1658915618",
+            "name": "Jim Strelec"
+          },
+          "message": "So true! We never know where the road goes next. Places and people and things come along each day and it's what we do with them that count!",
+          "can_remove": false,
+          "created_time": "2014-07-05T11:02:54+0000",
+          "like_count": 2942,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152867341981729",
+          "from": {
+            "id": "100005863538186",
+            "name": "Jonathan Ruiz"
+          },
+          "message": "Every one should keep that in mind before they call any place there favorite. Who knows how many more favorite you have and haven't found yet.",
+          "can_remove": false,
+          "created_time": "2014-07-05T10:36:23+0000",
+          "like_count": 405,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152893500221729",
+          "from": {
+            "id": "100008011172528",
+            "name": "Teylor Swift Taylor"
+          },
+          "message": "can any body their to fix my account which was disable or give me a way to fix my account please/please/please",
+          "can_remove": false,
+          "created_time": "2014-07-15T18:57:43+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152893127626729",
+          "from": {
+            "id": "100005227477230",
+            "name": "YaSir SH"
+          },
+          "message": "Yup thtx grat",
+          "can_remove": false,
+          "created_time": "2014-07-15T15:35:38+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152892669341729",
+          "from": {
+            "id": "100003032200324",
+            "name": "Eziekiel Aycardo"
+          },
+          "message": "my favorite is facebook",
+          "can_remove": false,
+          "created_time": "2014-07-15T11:01:11+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152891362571729",
+          "from": {
+            "id": "100000644529717",
+            "name": "Norez Javed"
+          },
+          "message": "Respected Facebook Team\n\nPlease we have a Page of Helping Kids Foundation Please Check it and make it Verified Page it will be a blessing we are Praying for you. God will bless you more and more.\n\nhttps://www.facebook.com/helpingkidsfoundationpakistan\n\nNorez Javed",
+          "can_remove": false,
+          "created_time": "2014-07-14T18:58:35+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152891203431729",
+          "from": {
+            "id": "1084381151",
+            "name": "Sean M. Petell"
+          },
+          "message": "hi Facebook i made a mistake when i put an M. in the middle of my name i'd rather go by Sean Petell today and i don't want to have to wait 60 days please help me",
+          "can_remove": false,
+          "created_time": "2014-07-14T17:56:55+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152891103886729",
+          "from": {
+            "id": "100004605213087",
+            "name": "FatimAh Haroon"
+          },
+          "message": "yeah !! absolutely !! u never know where are u going... until the people u meet  on the way !!",
+          "can_remove": false,
+          "created_time": "2014-07-14T17:00:55+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152890814166729",
+          "from": {
+            "id": "100007519995490",
+            "name": "Kamal Salman"
+          },
+          "message": "be honest in your life its make u a successfull person.",
+          "can_remove": false,
+          "created_time": "2014-07-14T14:21:31+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152877562136729",
+          "from": {
+            "id": "100006008892889",
+            "name": "Masrinaldi Rinaldi"
+          },
+          "message": "Sup??",
+          "can_remove": false,
+          "created_time": "2014-07-09T18:19:03+0000",
+          "like_count": 1,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152877501431729",
+          "from": {
+            "id": "100002827433791",
+            "name": "Cheryl Watts Buchanan"
+          },
+          "message": "I was going to delete my account and I have changed my mind. How can I keep it from being deleted? It is due to be deleted by July 14. Help please.",
+          "can_remove": false,
+          "created_time": "2014-07-09T17:54:36+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152861983841729_10152877451491729",
+          "from": {
+            "id": "100000097254610",
+            "name": "Linda Monroe"
+          },
+          "message": "I'm ready to go...with a good book in hand!",
+          "can_remove": false,
+          "created_time": "2014-07-09T17:34:03+0000",
+          "like_count": 0,
+          "user_likes": false
+        }
+      ],
+      "paging": {
+        "cursors": {
+          "after": "MjE3NzQ=",
+          "before": "MjE3OTk="
+        },
+        "next": "https://graph.facebook.com/v1.0/20531316728_10152871796826729/comments?access_token=CAAEdO7kSxasBALATKdDe6Shia132J1ZAo7sdWwlpKLrq3A7Y8Q3GtNsIsZAV1OgHiZBYYEguuYzDArJPFSbb7zg8YZCESSJ0p3vBzvMemyNh4HSRqBnWqf84JZB41OwcdbEZBYxzaRqoyRKmqT00YJ8ZCI8QgL78dZAfHNEio6iN9NIwmrzaMhIt&limit=25&after=MjE3NzQ%3D"
+      }
+    }
+  },
+  {
+    "id": "20531316728_10152863089846729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"Hi Cory. We're sorry that...\" on their own photo.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-03T15:20:59+0000",
+    "updated_time": "2014-07-03T15:20:59+0000"
+  },
+  {
+    "id": "20531316728_10152860528161729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"We're glad to hear you like the...\" on their own photo.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-02T12:57:45+0000",
+    "updated_time": "2014-07-02T12:57:45+0000"
+  },
+  {
+    "id": "20531316728_10152860117491729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "message": "Nearby Friends helps you discover which friends are nearby or on the go. Opt in and learn more: http://on.fb.me/NearbyFriends",
+    "picture": "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/t1.0-9/p130x130/10441190_10152856808441729_3636622776060007944_n.png",
+    "link": "https://www.facebook.com/facebook/photos/a.376995711728.190761.20531316728/10152856808441729/?type=1&relevant_count=1",
+    "icon": "https://fbstatic-a.akamaihd.net/rsrc.php/v2/yz/r/StEh3RhPvjk.gif",
+    "actions": [
+      {
+        "name": "Comment",
+        "link": "https://www.facebook.com/20531316728/posts/10152860117491729"
+      },
+      {
+        "name": "Like",
+        "link": "https://www.facebook.com/20531316728/posts/10152860117491729"
+      }
+    ],
+    "privacy": {
+      "value": ""
+    },
+    "type": "photo",
+    "status_type": "added_photos",
+    "object_id": "10152856808441729",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-02T07:00:01+0000",
+    "updated_time": "2014-07-18T20:36:27+0000",
+    "shares": {
+      "count": 5861
+    },
+    "likes": {
+      "data": [
+        {
+          "id": "726949095",
+          "name": "Tim Booher"
+        },
+        {
+          "id": "100006295928041",
+          "name": "Cynthia Hampton"
+        },
+        {
+          "id": "1280747989",
+          "name": "Sonia Ruiz"
+        },
+        {
+          "id": "100005915314863",
+          "name": "Mary Mauldin"
+        },
+        {
+          "id": "8503961",
+          "name": "Ashley Baker"
+        },
+        {
+          "id": "100000739939515",
+          "name": "Linda Boynton"
+        },
+        {
+          "id": "100008392002283",
+          "name": "Maria Rodriguez"
+        },
+        {
+          "id": "100005180203245",
+          "name": "Jerry McCaffery"
+        },
+        {
+          "id": "100004326632311",
+          "name": "Lapamela Levells"
+        },
+        {
+          "id": "1370868667",
+          "name": "Elizabeth Cowger"
+        },
+        {
+          "id": "100007728401789",
+          "name": "Cecil Dubb"
+        },
+        {
+          "id": "100008167754133",
+          "name": "Bob Pracht"
+        },
+        {
+          "id": "100008238001094",
+          "name": "Felix Martinez"
+        },
+        {
+          "id": "100005641230541",
+          "name": "Beatriz Claros"
+        },
+        {
+          "id": "100007369753119",
+          "name": "Sandra Chavez Mendez"
+        },
+        {
+          "id": "100007905575121",
+          "name": "Joe Henry"
+        },
+        {
+          "id": "100006912667732",
+          "name": "Moheen Ahmed"
+        },
+        {
+          "id": "100004050882794",
+          "name": "Lucia Ademar"
+        },
+        {
+          "id": "100007040496121",
+          "name": "Eleanor Lee"
+        },
+        {
+          "id": "100007357775799",
+          "name": "Pedro Jose Santos Miranda"
+        },
+        {
+          "id": "100006141946693",
+          "name": "Maria Gregorio"
+        },
+        {
+          "id": "100005525477019",
+          "name": "Rosady Arteaga"
+        },
+        {
+          "id": "100004037756294",
+          "name": "Luis Huezo"
+        },
+        {
+          "id": "1055630047",
+          "name": "John Anthony Zitiello"
+        },
+        {
+          "id": "100001263489519",
+          "name": "Tammy Cooper Robinette"
+        }
+      ],
+      "paging": {
+        "cursors": {
+          "after": "MTAwMDAxMjYzNDg5NTE5",
+          "before": "NzI2OTQ5MDk1"
+        },
+        "next": "https://graph.facebook.com/v1.0/20531316728_10152860117491729/likes?access_token=CAAEdO7kSxasBALATKdDe6Shia132J1ZAo7sdWwlpKLrq3A7Y8Q3GtNsIsZAV1OgHiZBYYEguuYzDArJPFSbb7zg8YZCESSJ0p3vBzvMemyNh4HSRqBnWqf84JZB41OwcdbEZBYxzaRqoyRKmqT00YJ8ZCI8QgL78dZAfHNEio6iN9NIwmrzaMhIt&limit=25&after=MTAwMDAxMjYzNDg5NTE5"
+      }
+    },
+    "comments": {
+      "data": [
+        {
+          "id": "10152856808441729_10152888086956729",
+          "from": {
+            "id": "100007357663404",
+            "name": "Cheryl White"
+          },
+          "message": "I love facebook it helps me see my grandchildren and great grandchild. And just keep in touch with my family daily.. Thank you Facebook.",
+          "can_remove": false,
+          "created_time": "2014-07-13T14:29:55+0000",
+          "like_count": 7,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152868312951729",
+          "from": {
+            "id": "1191821786",
+            "name": "Jeff Sullivan"
+          },
+          "message": "I opted in and tried to use the feature on my iPhone yesterday during the Independence Day festivities in Bridgeport in California's Eastern Sierra, but I couldn't seem to select any of the distance options.  It looks like an interesting feature though, so I'm looking forward to trying it again.  Later that day I did run into one of my Facebook contacts just before the fireworks show (shame I couldn't find her and others through the Nearby Friends feature).",
+          "can_remove": false,
+          "created_time": "2014-07-05T18:20:09+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152864922656729",
+          "from": {
+            "id": "100003477362056",
+            "name": "Kay El"
+          },
+          "message": "So, if this os turned off by default, why is there a 5-step process to opt out?",
+          "can_remove": false,
+          "created_time": "2014-07-04T12:15:56+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860378441729",
+          "from": {
+            "id": "1075245059",
+            "name": "Kathi Clark Russell"
+          },
+          "message": "Creepy. Is there any way to turn this feature off? I don't like the idea if everyone knowing where I am at every moment. That's just creepy.",
+          "can_remove": false,
+          "created_time": "2014-07-02T11:45:21+0000",
+          "like_count": 26,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152880410076729",
+          "from": {
+            "id": "100000000531634",
+            "name": "KenzieMarie N BristolMarie"
+          },
+          "message": "Facebook can someone please message me back. Im having some problems.  Thanks",
+          "can_remove": false,
+          "created_time": "2014-07-10T18:20:50+0000",
+          "like_count": 0,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860903846729",
+          "from": {
+            "id": "1181853169",
+            "name": "Nicki-Ronnie Creel"
+          },
+          "message": "So if I don't want this option or I don't want my \"crowd\" to be able to track me down, creepy, how do I keep that from happening?",
+          "can_remove": false,
+          "created_time": "2014-07-02T16:24:30+0000",
+          "like_count": 22,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860796901729",
+          "from": {
+            "id": "1341735308",
+            "name": "Rhonda Sheets"
+          },
+          "message": "This could be used for good & bad. Would be great to find a friend in a crowd, however, an unknown stalker could try to track you also or a crazy ex. \nIn reality do you really want FB to become the Governments Population & your every movement control? I don't & want a way to opt out",
+          "can_remove": false,
+          "created_time": "2014-07-02T15:24:19+0000",
+          "like_count": 117,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860502096729",
+          "from": {
+            "id": "100000177911653",
+            "name": "Joyce Nelson"
+          },
+          "message": "Got too see many friends and family last week, but had to bury two cousins. Franny is gone way too young, Carolyn Nelson gone, too. Life happens too fast!",
+          "can_remove": false,
+          "created_time": "2014-07-02T12:38:26+0000",
+          "like_count": 21,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152861271816729",
+          "from": {
+            "id": "544889687",
+            "name": "Nelson D. Beverly"
+          },
+          "message": "I need someone from FB to contact me ASAP. My credit card WAS charged for other people's ads that you said I would NOT be charged for. THIS IS UNACCEPTABLE.",
+          "can_remove": false,
+          "created_time": "2014-07-02T19:10:03+0000",
+          "like_count": 17,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860582196729",
+          "from": {
+            "id": "100004299104366",
+            "name": "Destiny Noel Gunsallus"
+          },
+          "message": "Cute",
+          "can_remove": false,
+          "created_time": "2014-07-02T13:30:54+0000",
+          "like_count": 15,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860501896729",
+          "from": {
+            "id": "100006177305678",
+            "name": "Ash Grove Buzz"
+          },
+          "message": "OMG how darling!!! A great summer photo!!!!!!",
+          "can_remove": false,
+          "created_time": "2014-07-02T12:38:16+0000",
+          "like_count": 15,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152861424506729",
+          "from": {
+            "id": "42212745",
+            "name": "Matt Perry"
+          },
+          "message": "Is there a way to turn this feature off?",
+          "can_remove": false,
+          "created_time": "2014-07-02T20:14:02+0000",
+          "like_count": 13,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152861090256729",
+          "from": {
+            "id": "1810462957",
+            "name": "Erin Miller"
+          },
+          "message": "Please take your ads off my wall.. Please send updates in a message if you're trying to get the word out. This is annoying. If not, at least let me hide your updates from my wall.",
+          "can_remove": false,
+          "created_time": "2014-07-02T18:00:37+0000",
+          "like_count": 14,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860561141729",
+          "from": {
+            "id": "100004591064423",
+            "name": "Erika Lutz"
+          },
+          "message": "Great pic",
+          "can_remove": false,
+          "created_time": "2014-07-02T13:19:54+0000",
+          "like_count": 12,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860483286729",
+          "from": {
+            "id": "100007870123777",
+            "name": "Maryjo Raszeja"
+          },
+          "message": "Nice!!!",
+          "can_remove": false,
+          "created_time": "2014-07-02T12:33:51+0000",
+          "like_count": 13,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152863527031729",
+          "from": {
+            "id": "100001219326507",
+            "name": "Amber Mackanick"
+          },
+          "message": "I love Facebook",
+          "can_remove": false,
+          "created_time": "2014-07-03T19:38:55+0000",
+          "like_count": 6,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152862975841729",
+          "from": {
+            "id": "100004776908287",
+            "name": "Lydia Germano"
+          },
+          "message": "If I need privacy FaceBook has that option ...must learn how to utilize it ...in the mean time I m enjoying finding people I haven t seen in yrs.. and more..love it",
+          "can_remove": false,
+          "created_time": "2014-07-03T14:13:05+0000",
+          "like_count": 11,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152862952386729",
+          "from": {
+            "id": "1496363464",
+            "name": "Jeannette Nelson Brokaw"
+          },
+          "message": "Happy birthday Robin!",
+          "can_remove": false,
+          "created_time": "2014-07-03T13:57:57+0000",
+          "like_count": 6,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860909281729",
+          "from": {
+            "id": "100000329851970",
+            "name": "Maryann Marino"
+          },
+          "message": "Thanks to FB I found more family members I never met .great /grand/grand neices/nephews.& they all live all over the U.S.; so my family has grown . I think this wonderful that u can find people on FB. Thanks to my daughter & granddaughter for inyerducing me to FB. THANKS AGAIN FBâ™¥â™¥â™¥â™¥",
+          "can_remove": false,
+          "created_time": "2014-07-02T16:28:02+0000",
+          "like_count": 11,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860898376729",
+          "from": {
+            "id": "100000150047136",
+            "name": "Zachary Lessard"
+          },
+          "message": "I love Facebook it has truly changed my life and it lets people know what you want and what you need it is the greatest thing since the Internet was created it's awesome thank you Mark Zuckerberg",
+          "can_remove": false,
+          "created_time": "2014-07-02T16:20:48+0000",
+          "like_count": 49,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860782216729",
+          "from": {
+            "id": "100005876140699",
+            "name": "Johnna Mae Iopa"
+          },
+          "message": "I find lots of friends here",
+          "can_remove": false,
+          "created_time": "2014-07-02T15:16:48+0000",
+          "like_count": 9,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860534741729",
+          "from": {
+            "id": "1244929492",
+            "name": "Bonnie Sue Small"
+          },
+          "message": "I think it is great",
+          "can_remove": false,
+          "created_time": "2014-07-02T13:03:06+0000",
+          "like_count": 10,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152860491151729",
+          "from": {
+            "id": "100005378343509",
+            "name": "Phong Nguyen"
+          },
+          "message": "I love facebook",
+          "can_remove": false,
+          "created_time": "2014-07-02T12:35:13+0000",
+          "like_count": 9,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152863067491729",
+          "from": {
+            "id": "1337234093",
+            "name": "Betty Uber"
+          },
+          "message": "I'm with Rosa - I'm out.  We already get tracked and don't consent to it. It's B.S.",
+          "can_remove": false,
+          "created_time": "2014-07-03T15:08:21+0000",
+          "like_count": 51,
+          "user_likes": false
+        },
+        {
+          "id": "10152856808441729_10152862987831729",
+          "from": {
+            "id": "100000081420262",
+            "name": "Cory Wortherly"
+          },
+          "message": "I have sent a report that one of my ad was supposed to be a one time ad for $15 but after being charger the first time I noticed it was still running with a $15 limit everyday draining money from my account. I have tried multiple time to stop or delete the ad but i kept getting an error message (The content you requested cannot be displayed right now.It may be temporarily unavailable, the link clicked on may have expired, or you may not have permission to view this page.). I have tried and tried to contact Facebook and still nothing have been done. I would like the ad stopped and anything over the original $15 I planned to use I want it refunded as soon as possible.",
+          "can_remove": false,
+          "created_time": "2014-07-03T14:21:16+0000",
+          "like_count": 6,
+          "user_likes": false
+        }
+      ],
+      "paging": {
+        "cursors": {
+          "after": "NTk1Nw==",
+          "before": "NTk4MQ=="
+        },
+        "next": "https://graph.facebook.com/v1.0/20531316728_10152860117491729/comments?access_token=CAAEdO7kSxasBALATKdDe6Shia132J1ZAo7sdWwlpKLrq3A7Y8Q3GtNsIsZAV1OgHiZBYYEguuYzDArJPFSbb7zg8YZCESSJ0p3vBzvMemyNh4HSRqBnWqf84JZB41OwcdbEZBYxzaRqoyRKmqT00YJ8ZCI8QgL78dZAfHNEio6iN9NIwmrzaMhIt&limit=25&after=NTk1Nw%3D%3D"
+      }
+    }
+  },
+  {
+    "id": "20531316728_10152857331096729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"That sounds like a great idea,...\" on their own video.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-07-01T03:08:42+0000",
+    "updated_time": "2014-07-01T03:08:42+0000"
+  },
+  {
+    "id": "20531316728_10152854714481729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"We're glad you enjoyed it,...\" on their own video.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-06-30T01:17:16+0000",
+    "updated_time": "2014-06-30T01:17:16+0000"
+  },
+  {
+    "id": "20531316728_10152849336996729",
+    "from": {
+      "category": "Product/service",
+      "name": "Facebook",
+      "id": "20531316728"
+    },
+    "story": "\"Thanks Cristian! - Elissa\" on their own video.",
+    "privacy": {
+      "value": ""
+    },
+    "type": "status",
+    "application": {
+      "name": "Power Editor",
+      "id": "119211728144504"
+    },
+    "created_time": "2014-06-27T20:23:31+0000",
+    "updated_time": "2014-06-27T20:23:31+0000"
+  }
+]

@@ -35,9 +35,11 @@ class FacebookAPIWrapper < APIWrapper
       def content_items_for_user(user_id, options = {})
         user_id = Array(user_id)[0] # silly hack for web interface for now
         opts = HashWithIndifferentAccess.new(options)
-        item_limit = (opts.delete(:item_limit) || 99999).to_i
+        batch_limit = (opts.delete(:batch_limit) || 5000).to_i
         batch_sleep = opts.delete(:batch_sleep).to_f
-        opts[:limit] ||= 25 # this is a limit of posts-per batch, 25 is fine
+        # this is a limit of posts-per batch, 25 is fine
+        opts[:limit] = (opts.delete(:batch_size) || 25 ).to_i
+
         # set before/after
         _xbefore = convert_time_param_to_seconds opts.delete('before')
         _xafter = convert_time_param_to_seconds opts.delete('after')
@@ -48,7 +50,10 @@ class FacebookAPIWrapper < APIWrapper
           client = clients.pop
           collected_posts = []
           koala = nil # this will be a Koala::Facebook::API::GraphCollection
-          while collected_posts.length <= item_limit
+          b_count = 0
+
+          while b_count <= batch_limit
+            b_count += 1
             if koala.nil?
               # first iteration
               koala = client.get_connection(user_id, :feed, opts)

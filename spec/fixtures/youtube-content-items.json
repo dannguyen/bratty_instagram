@@ -1,0 +1,1217 @@
+[
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/dUUyADSYX8kJIk7WPZeyAxgfUqk\"",
+    "id": "YwieEMURX6o",
+    "snippet": {
+      "publishedAt": "2014-07-10T12:45:23.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Delta, KaBOOM! partner to build 2nd playground in Seattle",
+      "description": "Volunteers build playground in a single day as Delta contributes surprise $10,000 check to University Heights Center.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/YwieEMURX6o/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/YwieEMURX6o/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/YwieEMURX6o/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/YwieEMURX6o/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/YwieEMURX6o/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT2M48S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "528",
+      "likeCount": "14",
+      "dislikeCount": "1",
+      "favoriteCount": "0",
+      "commentCount": "2"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/zv1RPvETS2PM2IirEzVq-bvD_BY\"",
+    "id": "pOBfZpcG_bY",
+    "snippet": {
+      "publishedAt": "2014-05-30T14:05:49.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "æ­“å£°ã‚ãµã‚Œã‚‹ã‚¹ã‚¿ã‚¸ã‚¢ãƒ ã¸",
+      "description": "æ­ä¹—ã‚²ãƒ¼ãƒˆã‚’é€²ã‚€ã¨ã€ãã“ã¯æ­“å£°ã‚ãµã‚Œã‚‹ã‚¹ã‚¿ã‚¸ã‚¢ãƒ ã€‚æ¯Žæ—¥60ä»¥ä¸Šã®å›½ã®ç©ºã‚’ã¤ãªããƒ‡ãƒ«ã‚¿èˆªç©ºã¯ã€ãƒã‚§ãƒ«ã‚·ãƒ¼FCã®ã‚ªãƒ•ã‚£ã‚·ãƒ£ãƒ«ãƒ»ã‚¨ã‚¢ãƒ©ã‚¤ãƒ³ãƒ»ãƒ‘ãƒ¼ãƒˆãƒŠãƒ¼ã§ã™ã€‚#DeltaCFC #KeepClimbing",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/pOBfZpcG_bY/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/pOBfZpcG_bY/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/pOBfZpcG_bY/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/pOBfZpcG_bY/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/pOBfZpcG_bY/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT41S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "722",
+      "likeCount": "6",
+      "dislikeCount": "0",
+      "favoriteCount": "0",
+      "commentCount": "0"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/lJgAqPRrNMys-fcoyIrUBQ9loMo\"",
+    "id": "YzDZd_ZvJAY",
+    "snippet": {
+      "publishedAt": "2014-05-24T03:34:10.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Take Our Kids To Work Day",
+      "description": "Delta kids go behind the scenes at Take Our Kids to Work Day 2014\nWe followed more than 800 kids as they experienced the behind the scenes operations at Delta and shared their view on the airline from a kid's perspective.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/YzDZd_ZvJAY/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/YzDZd_ZvJAY/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/YzDZd_ZvJAY/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/YzDZd_ZvJAY/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/YzDZd_ZvJAY/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT1M40S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "2133",
+      "likeCount": "48",
+      "dislikeCount": "0",
+      "favoriteCount": "0",
+      "commentCount": "6"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/i46TP-zbUo_hjmH-3rHipeRyKTk\"",
+    "id": "RbLV3gnhj60",
+    "snippet": {
+      "publishedAt": "2014-05-30T15:37:06.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Delta's New In-Flight Safety Video -- Version 6",
+      "description": "Safety information is information that no one should miss, even if they've heard it a dozen times. So to help encourage even the most frequent of frequent fliers to pay attention we're constantly adding fresh scenes and moments of fun. It's part of Delta's commitment to making every part of our passengers' flight a memorable one.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/RbLV3gnhj60/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/RbLV3gnhj60/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/RbLV3gnhj60/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/RbLV3gnhj60/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/RbLV3gnhj60/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT5M5S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "18028",
+      "likeCount": "207",
+      "dislikeCount": "7",
+      "favoriteCount": "0",
+      "commentCount": "74"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/Xdwee5rb1boC-eAy8o5c6coxdbM\"",
+    "id": "Cn2_tEVoYwo",
+    "snippet": {
+      "publishedAt": "2014-05-30T14:06:52.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "PortÃ£o para Futebol",
+      "description": "Do portÃ£o de embarque a porta do estadio, o nosso 'time' conecta mais de 60 naÃ§Ãµes a cada dia. Estamos orgulhosos de ser a empresa aÃ©rea oficial do Chelsea Football Club. #DeltaCFC #DeltaFutebol",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/Cn2_tEVoYwo/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/Cn2_tEVoYwo/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/Cn2_tEVoYwo/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/Cn2_tEVoYwo/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/Cn2_tEVoYwo/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT41S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "986",
+      "likeCount": "8",
+      "dislikeCount": "1",
+      "favoriteCount": "0",
+      "commentCount": "0"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/_jmWw0XcL3XngzY0ydVq9nXybWk\"",
+    "id": "s2aw3H4tbP4",
+    "snippet": {
+      "publishedAt": "2014-05-29T14:43:02.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Gateway to Football",
+      "description": "From the jetway to the gateway of football, our 'team' connects more than 60 nations every day. We're proud to be the official airline partner of Chelsea Football Club. #DeltaCFC #KeepClimbing",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/s2aw3H4tbP4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/s2aw3H4tbP4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/s2aw3H4tbP4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/s2aw3H4tbP4/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/s2aw3H4tbP4/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT41S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "14569",
+      "likeCount": "119",
+      "dislikeCount": "5",
+      "favoriteCount": "0",
+      "commentCount": "16"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/B0smqbYuoZpH1znUg247VL6f4zc\"",
+    "id": "FZm4gqagnVs",
+    "snippet": {
+      "publishedAt": "2014-05-21T19:42:59.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Delta's New In-Flight Safety Video -- Version 5",
+      "description": "Safety information is information that no one should miss, even if they've heard it a dozen times. So to help encourage even the most frequent of frequent fliers to pay attention we're constantly adding fresh scenes and moments of fun. It's part of Delta's commitment to making every part of our passengers' flight a memorable one.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/FZm4gqagnVs/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/FZm4gqagnVs/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/FZm4gqagnVs/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/FZm4gqagnVs/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/FZm4gqagnVs/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT5M17S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "42089",
+      "likeCount": "395",
+      "dislikeCount": "19",
+      "favoriteCount": "0",
+      "commentCount": "112"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/YpKQ0fW0M9pKXz623nwPOsRL1AE\"",
+    "id": "PSDjPfK5HLo",
+    "snippet": {
+      "publishedAt": "2014-05-21T20:31:36.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Delta ShuttleÂ® between LAX and SFO",
+      "description": "Business is booming aboard the Delta Shuttle between Los Angeles (LAX) and San Francisco (SFO). Hop on at your convenienceâ€”flights depart all day long and are available with First Class and Economy Comfortâ„¢ seating options.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/PSDjPfK5HLo/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/PSDjPfK5HLo/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/PSDjPfK5HLo/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/PSDjPfK5HLo/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/PSDjPfK5HLo/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT1M1S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "6670",
+      "likeCount": "67",
+      "dislikeCount": "0",
+      "favoriteCount": "0",
+      "commentCount": "9"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/NkbliCKB9_OiO3MbFNPlMQDUl-s\"",
+    "id": "Qj19TXuVyTw",
+    "snippet": {
+      "publishedAt": "2014-05-23T16:46:47.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Fifth Annual Jet Drag",
+      "description": "The fifth annual Jet Drag to benefit the American Cancer Society saw more than 2,000 participants and 72 teams compete to pull a 757 20 feet in the fastest time.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/Qj19TXuVyTw/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/Qj19TXuVyTw/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/Qj19TXuVyTw/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/Qj19TXuVyTw/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/Qj19TXuVyTw/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT2M7S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "3339",
+      "likeCount": "91",
+      "dislikeCount": "0",
+      "favoriteCount": "0",
+      "commentCount": "11"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/etcQWyAoxWYTQB90JSLCAmx7b6I\"",
+    "id": "iiAwqEuNsEA",
+    "snippet": {
+      "publishedAt": "2014-05-07T18:58:06.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Delta Innovation Class with Sean Brock",
+      "description": "Chef Sean Brock travels to New York and the James Beard Awards in Delta's Innovation Class. \nOnboard he meets with Irina Vishnevskaya, a Minneapolis restaurateur opening her first microbrewery and gastropub in the U.S. See Sean share his thoughts on food, agriculture and entrepreneurship as they travel together to the main culinary event of the year.\n\nSee upcoming Innovation Class flights at DeltaInnovationClass.com",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/iiAwqEuNsEA/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/iiAwqEuNsEA/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/iiAwqEuNsEA/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/iiAwqEuNsEA/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/iiAwqEuNsEA/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT2M56S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "6362",
+      "likeCount": "38",
+      "dislikeCount": "3",
+      "favoriteCount": "0",
+      "commentCount": "8"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/SPd4s8HXae685JdGPidGECstnAg\"",
+    "id": "1MGOy1hfaS4",
+    "snippet": {
+      "publishedAt": "2014-04-02T18:31:41.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Delta Sustainability In-flight Video",
+      "description": "Let your green side fly. We're kicking off Earth Month and highlighting ways we can all use less to achieve more. Fuel-saving winglets are just the beginning!",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/1MGOy1hfaS4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/1MGOy1hfaS4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/1MGOy1hfaS4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/1MGOy1hfaS4/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/1MGOy1hfaS4/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT1M1S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "5689",
+      "likeCount": "81",
+      "dislikeCount": "1",
+      "favoriteCount": "0",
+      "commentCount": "9"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/Cmhw9ZTycCPaKiH8lbHcvJhchAQ\"",
+    "id": "uCj8q0gxmBQ",
+    "snippet": {
+      "publishedAt": "2014-03-20T21:01:28.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Delta Innovation Class to TED",
+      "description": "Eric Migicovsky, founder of Pebble, takes the mentor seat for the inaugural Innovation Class flight going to the TED Conference in Vancouver. Follow him on board as he meets with James Patten, an interaction designer and inventor who works to connect the physical and digital world in new ways. \n\n\nSee upcoming Innovation Class flights at DeltaInnovationClass.com",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/uCj8q0gxmBQ/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/uCj8q0gxmBQ/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/uCj8q0gxmBQ/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/uCj8q0gxmBQ/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/uCj8q0gxmBQ/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT2M47S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "14561",
+      "likeCount": "87",
+      "dislikeCount": "2",
+      "favoriteCount": "0",
+      "commentCount": "19"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/77rRSZZQ-KbzX-Y4ZRW4gD-v8s0\"",
+    "id": "3_-1LPRMD_4",
+    "snippet": {
+      "publishedAt": "2014-03-17T16:34:53.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Introducing Delta Innovation Class",
+      "description": "Delta Innovation Class is a mentoring program that just happens to take place at 35,000 ft. \n\nHand picked leaders will be traveling to select events around the globe. They'll be sitting in the Mentor seat. The seat next to them will be open. \n\nThis is your chance to be in that seat, to meet face-to-face with some of the world's most interesting people in a truly unique one-on-one. \n\nSee upcoming Innovation Class Flights at http://www.DeltaInnovationClass.com",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/3_-1LPRMD_4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/3_-1LPRMD_4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/3_-1LPRMD_4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/3_-1LPRMD_4/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/3_-1LPRMD_4/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT1M20S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "47510",
+      "likeCount": "316",
+      "dislikeCount": "11",
+      "favoriteCount": "0",
+      "commentCount": "86"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/MyC-ptWAzwZJtHnb5vhXL2re2W8\"",
+    "id": "Zji6vwrULdc",
+    "snippet": {
+      "publishedAt": "2014-04-09T14:27:19.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Delta \"UP\" TV Ad",
+      "description": "",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/Zji6vwrULdc/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/Zji6vwrULdc/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/Zji6vwrULdc/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/Zji6vwrULdc/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/Zji6vwrULdc/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT1M1S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "8270",
+      "likeCount": "152",
+      "dislikeCount": "1",
+      "favoriteCount": "0",
+      "commentCount": "18"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/F9Ip29a1Vc4a727LjbCy-uDEtkE\"",
+    "id": "C86MAR4rGY0",
+    "snippet": {
+      "publishedAt": "2014-02-12T19:40:58.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Destination Wine: Champagne Jacquart",
+      "description": "",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/C86MAR4rGY0/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/C86MAR4rGY0/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/C86MAR4rGY0/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/C86MAR4rGY0/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT2M33S",
+      "dimension": "2d",
+      "definition": "sd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "1760",
+      "likeCount": "5",
+      "dislikeCount": "5",
+      "favoriteCount": "0",
+      "commentCount": "3"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/KV0zqsBtybrO4TmYA2IpnFJdYgA\"",
+    "id": "kNxi5ICR4ws",
+    "snippet": {
+      "publishedAt": "2014-02-06T14:13:38.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Behind the Scenes: Delta Sky Magazine - Alfre Woodard",
+      "description": "",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/kNxi5ICR4ws/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/kNxi5ICR4ws/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/kNxi5ICR4ws/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/kNxi5ICR4ws/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT1M31S",
+      "dimension": "2d",
+      "definition": "sd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "1987",
+      "likeCount": "13",
+      "dislikeCount": "2",
+      "favoriteCount": "0",
+      "commentCount": "2"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/-6ngYKxNflviEFTQEg3nojQz7SU\"",
+    "id": "eduNjwNvcH4",
+    "snippet": {
+      "publishedAt": "2014-01-28T16:06:44.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Delta's 80's In-Flight Safety Video",
+      "description": "As a tribute to Delta's first safety video premiering in the 80's, our latest version is 80's themed to continue our emphasis on safety in an engaging way.\nThe safety video was filmed over 20 hours on a Delta 777 in Detroit. More than 100 people including 20 actors, 80 extras, six flight attendants and a pilot are featured in the video dressed in 80's fashions including authentic Delta flight attendant uniforms, leg warmers, hair scrunchies and neon colors. There are also cameos from some of our favorite 80's stars including basketball player Kareem Abdul Jabbar, who had a cameo in the movie \"Airplane\", as a Delta first officer. We also have our favorite '80s alien, Alf, and even an original member of Devo, Gerald Casale, safely storing the popular energy dome. \n\nWe introduced safety videos designed to be constantly updated with fresh scenes to reward even the most frequent of frequent flyers for paying attention. Watch the full video here and be sure to let us know what you think!",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/eduNjwNvcH4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/eduNjwNvcH4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/eduNjwNvcH4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/eduNjwNvcH4/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT5M22S",
+      "dimension": "2d",
+      "definition": "sd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "1701081",
+      "likeCount": "8962",
+      "dislikeCount": "590",
+      "favoriteCount": "0",
+      "commentCount": "1319"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/hknUlWRL56FObYUuLUHtQ67KyTI\"",
+    "id": "dALXCy77dr4",
+    "snippet": {
+      "publishedAt": "2013-12-23T19:29:35.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Delta #CheerCart Goes On Tour",
+      "description": "#CheerCart set off on a journey to thank Delta flyers across 5 cities. Watch the best moments from our 2013 Holiday Tour.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/dALXCy77dr4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/dALXCy77dr4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/dALXCy77dr4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/dALXCy77dr4/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i1.ytimg.com/vi/dALXCy77dr4/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT48S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "4153",
+      "likeCount": "21",
+      "dislikeCount": "2",
+      "favoriteCount": "0",
+      "commentCount": "13"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/FDPVrg2PcfM0xULVe7P0vj8IOOo\"",
+    "id": "gqXnrVhpKQA",
+    "snippet": {
+      "publishedAt": "2013-12-20T20:40:58.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Delta #CheerCart visits Children's Hospital",
+      "description": "The holidays got sweeter for us when #CheerCart spent some time with the wonderful kids at Children's Healthcare of Atlanta at Scottish Rite.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/gqXnrVhpKQA/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/gqXnrVhpKQA/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/gqXnrVhpKQA/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/gqXnrVhpKQA/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT20S",
+      "dimension": "2d",
+      "definition": "sd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "3807",
+      "likeCount": "31",
+      "dislikeCount": "2",
+      "favoriteCount": "0",
+      "commentCount": "4"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "\"FOuwADrXJjsTKgUIQJoQC6nKNFY/jiM2mngLAUi0krmJjgvAl4V_xXc\"",
+    "id": "zvi6XF4eEUc",
+    "snippet": {
+      "publishedAt": "2013-12-20T20:41:37.000Z",
+      "channelId": "UCjSrVD08nsyPDCNRjqSV7yA",
+      "title": "Delta #CheerCart in Hong Kong",
+      "description": "#CheerCart got a stamp in its passport heading to Hong Kong to spread holiday cheer.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i1.ytimg.com/vi/zvi6XF4eEUc/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i1.ytimg.com/vi/zvi6XF4eEUc/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i1.ytimg.com/vi/zvi6XF4eEUc/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i1.ytimg.com/vi/zvi6XF4eEUc/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        }
+      },
+      "channelTitle": "Delta",
+      "categoryId": "19",
+      "liveBroadcastContent": "none"
+    },
+    "contentDetails": {
+      "duration": "PT12S",
+      "dimension": "2d",
+      "definition": "sd",
+      "caption": "false",
+      "licensedContent": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true
+    },
+    "statistics": {
+      "viewCount": "3671",
+      "likeCount": "15",
+      "dislikeCount": "2",
+      "favoriteCount": "0",
+      "commentCount": "2"
+    }
+  }
+]

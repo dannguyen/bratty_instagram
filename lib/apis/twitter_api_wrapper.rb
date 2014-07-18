@@ -82,10 +82,10 @@ class TwitterAPIWrapper < APIWrapper
         opts = HashWithIndifferentAccess.new(options)
         opts['contributor_details'] ||= true
         opts['include_entities'] ||= true
-        opts['count'] ||= 200
         opts['trim_user'] = (opts['trim_user'] == false) ? false : true
-        item_limit  = (opts.delete(:item_limit) || MAX_NUMBER_OF_TWEETS_RETRIEVABLE).to_i
-        batch_sleep = opts.delete(:batch_sleep).to_f
+        opts['count'] = (opts.delete('batch_size') || 200).to_i
+        batch_limit  = (opts.delete('batch_limit') || (MAX_NUMBER_OF_TWEETS_RETRIEVABLE / opts['count'].to_f).ceil).to_i
+        batch_sleep = opts.delete('batch_sleep').to_f
         ## setting before and after
         # :max_id/:before sets the upper_bounds of what tweets to include
         #  if it is not set, then we assume the user wants to fetch from the latest tweet
@@ -100,7 +100,9 @@ class TwitterAPIWrapper < APIWrapper
           collected_tweets = []
           nxt_step = HashWithIndifferentAccess.new
 
-          while collected_tweets.length <= item_limit
+          b_count = 0
+          while b_count <= batch_limit
+            b_count += 1
 #           begin
 
             resp = client.user_timeline(user_id, opts.merge(nxt_step))

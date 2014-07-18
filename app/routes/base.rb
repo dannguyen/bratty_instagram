@@ -84,15 +84,15 @@ module BrattyPack
               csv << headers
               @results.each do |result|
                 if result.success?
-                  p_obj = @presenter.create_presentable_objects(result.body)
-
-                  csv << headers.map{ |col_name| p_obj[col_name][:value] }
+                  p_objs = @presenter.create_presentable_objects(result.body)
+                  p_objs.each do |p|
+                    csv << headers.map{ |col_name| p.read_attribute(col_name)[:value] }
+                  end
                 else
                   csv << [result.params.to_s, result.message ]
                 end
               end
             end
-
           end
 
 

@@ -23,6 +23,10 @@ module BrattyPack
       @config[:fields].map{ |f| f[:name].gsub('_', ' ') }
     end
 
+    def column_names
+      columns # alias for now
+    end
+
     def columns
       @config[:fields].map{|f| f[:name] }
     end

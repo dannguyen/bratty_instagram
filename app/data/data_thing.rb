@@ -28,13 +28,22 @@ module BrattyPack
         hsh
       end
 
+      # return a flattened hash
+      super(flattened_data)
+
     end
 
     def attributes
       @_columns
     end
 
-    def [](att_name)
+    # this returns a whole attribute and its meta hsh
+    # e.g.
+    # x['id']
+    #   => "1574083"
+    # x.read_attribute('id')
+    #   => {"value"=>"1574083", "name"=>"id", "type"=>:string, "formatted_value"=>"1574083"}
+    def read_attribute(att_name)
       if( a = attributes[att_name] )
         return a
       end
@@ -43,6 +52,15 @@ module BrattyPack
 
 
     private
+
+      def flattened_data
+        @_columns.inject({}) do |h, (att_name, att_hsh)|
+          h[att_name] = att_hsh['value']
+
+          h
+        end
+      end
+
       def make_attribute(hsh, val)
         opts = HashWithIndifferentAccess.new(hsh)
         att = HashWithIndifferentAccess.new

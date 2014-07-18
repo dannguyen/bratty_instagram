@@ -33,8 +33,8 @@ describe 'DataPresenter' do
   context 'parsing' do
     let(:data){ presenter.create_presentable_object(data_obj) }
     describe '#data' do
-      it 'is a hash' do
-        expect(data).to be_a Hash
+      it 'is a delegate to Hash' do
+        expect(data.to_h).to be_a Hash
       end
 
       # not very stubby

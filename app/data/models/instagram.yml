@@ -19,8 +19,8 @@ user:
 
     - name: media_count
       type: numeric
-      nested:
-        counts: media
+      nested: [counts, media]
+
 
     - name: followed_by_count
       type: numeric

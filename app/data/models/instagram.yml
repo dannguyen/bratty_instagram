@@ -4,6 +4,7 @@ content_item:
   fields:
     - name: id
       uuid: true
+
 user:
   fields:
     - name: id
@@ -23,13 +24,11 @@ user:
 
     - name: followed_by_count
       type: numeric
-      nested:
-        counts: followed_by
+      nested: [counts, followed_by]
 
     - name: follows_count
       type: numeric
-      nested:
-        counts: follows
+      nested: [counts, follows]
 
     - name: bio
       type: text

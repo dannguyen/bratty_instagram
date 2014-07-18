@@ -53,20 +53,20 @@ class YoutubeAPIWrapper < APIWrapper
       end
 
 
-      # uid could be username or channel ID...ideally
+      # user_id could be username or channel ID...ideally
       # it should be channel ID
-      def content_items_for_user(uid, options = {})
+      def content_items_for_user(user_id, options = {})
         opts = HashWithIndifferentAccess.new(options)
-        item_limit  = opts.delete(:item_limit) || 10000
+        item_limit  = (opts.delete(:item_limit) || 10000).to_i
         batch_sleep = opts.delete(:batch_sleep).to_f
         foop = Proc.new do |clients|
           client = clients.pop
-          if !is_youtube_id?(uid)
+          if !is_youtube_id?(user_id)
             # do an extra get for the channel and its canonical id
-            channel = get_channel_from_username(client, uid)
-            uid = channel['id']
+            channel = get_channel_from_username(client, user_id)
+            user_id = channel['id']
           end
-          list_id = derive_playlist_id_from_channel_id(uid)
+          list_id = derive_playlist_id_from_channel_id(user_id)
 
           # now we make multiple iterations to get the entire list
           collected_videos = []
@@ -88,7 +88,7 @@ class YoutubeAPIWrapper < APIWrapper
           collected_videos
         end
 
-        yield :single, foop, uid
+        yield :single, foop, user_id
       end
 
       private

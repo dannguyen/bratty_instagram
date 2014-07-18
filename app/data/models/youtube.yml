@@ -13,53 +13,42 @@ user:
     - name: kind
 
     - name: title
-      nested:
-        snippet: title
+      nested: [snippet, title]
 
     - name: description
       type: text
-      nested:
-        snippet: description
+      nested: [snippet, description]
+
 
     - name: published_at
       type: datetime
-      nested:
-        snippet: publishedAt
+      nested: [snippet, publishedAt]
 
     - name: default_thumbnail
       type: image_url
-      nested:
-        snippet:
-          thumbnails:
-            default: url
+      nested: [snippet, thumbnails, default, url]
 
     - name: uploads_playlist_url
       unique: true
-      nested:
-        contentDetails:
-          relatedPlaylists: uploads
+      nested: [contentDetails, relatedPlaylists, uploads]
 
     - name: google_plus_user_id
       unique: true
-      nested:
-        contentDetails: googlePlusUserId
+      nested: [contentDetails, googlePlusUserId]
 
     - name: view_count
       type: numeric
-      nested:
-        statistics: viewCount
+      nested: [statistics, viewCount]
 
     - name: comment_count
       type: numeric
-      nested:
-        statistics: commentCount
+      nested: [statistics, commentCount]
 
     - name: subscriber_count
       type: numeric
-      nested:
-        statistics: subscriberCount
+      nested: [statistics, subscriberCount]
+
 
     - name: video_count
       type: numeric
-      nested:
-        statistics: videoCount
+      nested: [statistics, videoCount]

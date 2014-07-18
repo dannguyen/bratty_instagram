@@ -106,8 +106,7 @@ module BrattyPack
             if block_given?
               @results = yield params
             else
-              input_vals = process_text_input_array(params[param_name.to_sym])
-              @results = init_api_wrapper.fetch(endpoint_name, input_vals)
+              @results = init_api_wrapper.fetch(endpoint_name, params)
             end
 
             json(@results)

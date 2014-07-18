@@ -52,3 +52,8 @@ Once in `pry`, you can use this shortcut to quickly instantiate one of the onlin
 
 ```
 
+
+
+TODO:
+- HTTP interface via simple_api_endpoint does not pass in options
+- Write Ruby methods to transform JSON to flattened values

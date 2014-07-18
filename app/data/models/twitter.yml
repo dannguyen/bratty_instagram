@@ -47,18 +47,12 @@ user:
       type: numeric
 
     - name: latest_status_text
-      nested:
-        status: text
+      nested: [status, text]
 
     - name: latest_status_id
       unique: true
-      nested:
-        status: id
+      nested: [status, id]
 
     - name: latest_status_created_at
       type: datetime
-      nested:
-        status: created_at
-
-    # - name: profile_url
-    #   interploate: https://twitter.com/&:screen_name
+      nested: [status, created_at]

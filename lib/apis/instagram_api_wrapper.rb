@@ -36,8 +36,9 @@ class InstagramAPIWrapper < APIWrapper
       # Instagram's API does allow for min_id/max_id to be used, but we will ignore
       # that for the time being
       def content_items_for_user(user_id, options = {})
+        user_id = Array(user_id)[0] # silly hack for web interface for now
         opts = HashWithIndifferentAccess.new(options)
-        item_limit = opts.delete(:item_limit) || 10000
+        item_limit = (opts.delete(:item_limit) || 10000).to_i
         batch_sleep = opts.delete(:batch_sleep).to_f
 
         ## setting before and after

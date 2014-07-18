@@ -27,7 +27,6 @@ class TwitterAPIWrapper < APIWrapper
 
 
 
-
   module Fetchers
     class << self
       def users(all_uids, options={})
@@ -77,13 +76,15 @@ class TwitterAPIWrapper < APIWrapper
       #     #<Twitter::Tweet id=484440173195706368>,
       #     ...
       #  ]
-      def content_items_for_user(uid, options = {})
+      def content_items_for_user(user_id, options = {})
+
+        user_id = Array(user_id)[0] # silly hack for web interface for now
         opts = HashWithIndifferentAccess.new(options)
         opts['contributor_details'] ||= true
         opts['include_entities'] ||= true
         opts['count'] ||= 200
         opts['trim_user'] = (opts['trim_user'] == false) ? false : true
-        item_limit  = opts.delete(:item_limit) || MAX_NUMBER_OF_TWEETS_RETRIEVABLE
+        item_limit  = (opts.delete(:item_limit) || MAX_NUMBER_OF_TWEETS_RETRIEVABLE).to_i
         batch_sleep = opts.delete(:batch_sleep).to_f
         ## setting before and after
         # :max_id/:before sets the upper_bounds of what tweets to include
@@ -102,7 +103,7 @@ class TwitterAPIWrapper < APIWrapper
           while collected_tweets.length <= item_limit
 #           begin
 
-            resp = client.user_timeline(uid, opts.merge(nxt_step))
+            resp = client.user_timeline(user_id, opts.merge(nxt_step))
             tweets = resp.map{ |t| HashWithIndifferentAccess.new(t.to_h) }
               collected_tweets.concat tweets
 #           rescue => err
@@ -116,7 +117,7 @@ class TwitterAPIWrapper < APIWrapper
 #           end
             # assuming that we're going back in time, we want to set
             # max_id to be the oldest of this current batch, i.e. the last tweet
-            nxt_step['max_id'] = tweets.last['id']
+            nxt_step['max_id'] = tweets.last.nil? ? nil : tweets.last['id']
             puts "Next step: #{nxt_step['max_id']}"
             break if ( resp.nil? || resp.empty? ) ||
                       ## max_id is nil, or less than since_id
@@ -130,11 +131,10 @@ class TwitterAPIWrapper < APIWrapper
           collected_tweets
         end
 
-        yield :single, foop, uid
+        yield :single, foop, user_id
       end
 
       private
-
         # basically removes twitter.com/thing
         def clean_screen_name(val)
           if val.is_a?(Fixnum)
@@ -167,5 +167,4 @@ class TwitterAPIWrapper < APIWrapper
 
     end
   end
-
 end

@@ -152,4 +152,4 @@ DEPENDENCIES
   sinatra-contrib
   slim
   thin
-  twitter (>= 5.11)
+  twitter (= 5.11)

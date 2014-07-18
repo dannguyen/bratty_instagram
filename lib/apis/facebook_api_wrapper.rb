@@ -19,7 +19,8 @@ class FacebookAPIWrapper < APIWrapper
 
     class << self
       # uids is an array of user_ids or names
-      def users(user_ids, &blk)
+      def users(user_ids, options = {}, &blk)
+        opts = HashWithIndifferentAccess.new(options)  # nothing needed here, but accept it anyway
         Array(user_ids).each do |uid|
         foop = Proc.new do |clients|
           client = clients.pop

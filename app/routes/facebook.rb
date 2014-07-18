@@ -8,15 +8,22 @@ module BrattyPack
         slim :'facebook/index'
       end
 
+      # /api/youtube/users
+      simple_api_endpoint 'users', service: 'facebook' do |options|
+        opts = options.dup
+        user_ids = process_text_input_array( opts.delete('ids') )
 
-      simple_api_endpoint 'users',
-          service: 'facebook',
-          param_name: :ids,
-          presenter_model: 'user'
+        init_api_wrapper.fetch('users', user_ids, opts  )
+      end
 
-      simple_api_endpoint 'content_items_for_user',
-        service: 'facebook',
-        :param_name => :id
+      simple_api_endpoint 'content_items_for_user', service: 'facebook' do |options|
+        opts = options.dup
+        user_id = opts.delete('id')
+
+        init_api_wrapper.fetch('content_items_for_user', user_id, opts  )
+      end
+
+
 
 
     end

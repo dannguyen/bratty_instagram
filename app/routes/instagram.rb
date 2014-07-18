@@ -4,15 +4,29 @@ module BrattyPack
   module Routes
     class Instagram < Base
 
+      # get "/instagram" do
+      #   slim :'instagram/index'
+      # end
 
-      get "/instagram" do
-        slim :'instagram/index'
+      # /api/youtube/users
+      simple_api_endpoint 'users', service: 'instagram' do |options|
+        opts = options.dup
+        user_ids = process_text_input_array( opts.delete('ids') )
+
+        init_api_wrapper.fetch('users', user_ids, opts  )
       end
 
-      simple_api_endpoint 'users',
-          service: 'instagram',
-          param_name: :ids,
-          presenter_model: 'user'
+      simple_api_endpoint 'content_items_for_user', service: 'instagram' do |options|
+        opts = options.dup
+        user_id = opts.delete('id')
+
+        init_api_wrapper.fetch('content_items_for_user', user_id, opts  )
+      end
+
+      # simple_api_endpoint 'users',
+      #     service: 'instagram',
+      #     param_name: :ids,
+      #     presenter_model: 'user'
 
 
     end

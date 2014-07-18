@@ -23,7 +23,8 @@ class YoutubeAPIWrapper < APIWrapper
  module Fetchers
     class << self
 
-      def users(ux)
+      def users(ux, options = {})
+        opts = HashWithIndifferentAccess.new(options)  # nothing needed here, but accept it anyway
         uids = Array(ux)
         # first, collect info for entries that are channel IDs
         all_cids = uids.select{|u| is_youtube_id?(u) }

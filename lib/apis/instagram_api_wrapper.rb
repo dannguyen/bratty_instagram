@@ -19,7 +19,9 @@ class InstagramAPIWrapper < APIWrapper
   module Fetchers
     class << self
       # uids is an array of user_ids or names
-      def users(uids, &blk)
+      def users(uids, options = {})
+        opts = HashWithIndifferentAccess.new(options)  # nothing needed here, but accept it anyway
+
         Array(uids).each do |user_id|
           foop = Proc.new do |clients|
             client = clients.pop

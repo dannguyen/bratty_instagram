@@ -35,7 +35,6 @@ module BrattyPack
     # one
     def create_presentable_objects(data_obj)
       data_arr = data_obj.is_a?(Hash) ? [data_obj] : Array(data_obj)
-
       data_arr.map! do |obj|
         p = @config['fields'].map do |field|
           [field, parse_value(field, obj)]
@@ -58,7 +57,7 @@ module BrattyPack
           # nested: [counts, followed_by]
           obj = data_obj
           kvals = f_nested.dup  # [:counts, :followed_by]
-          until kvals.empty?
+          until kvals.empty? || obj.nil?
             kval = kvals.shift # [:counts]
             obj = obj[kval]    # data_obj[:counts]
           end

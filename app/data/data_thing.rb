@@ -75,7 +75,15 @@ module BrattyPack
             txt = val.to_s
             txt.length > 255 ? txt[0..255] + '...' : txt
           when :datetime
-            Chronic.parse(val).strftime("%Y-%m-%d %H:%M:%S")
+            # TK todo: handle funky timezoning of twitter and facebook
+            v = val.to_s
+            if v =~ /^\d{6,}$/
+              Time.at val.to_i
+            elsif v.empty?
+              nil
+            else
+              Chronic.parse(v).strftime("%Y-%m-%d %H:%M:%S")
+            end
           when :uuid_url, :url
             val.to_s.gsub(/\/(?!=\/)/, "/\n")
           else

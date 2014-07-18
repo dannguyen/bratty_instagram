@@ -50,6 +50,9 @@ class TwitterAPIWrapper < APIWrapper
       # get individual tweets
       def content_items(tweets_ids, options={})
         opts = HashWithIndifferentAccess.new(options)
+        # by default, we assume that we need user information with standalone tweets
+        opts['trim_user']         =  opts['trim_user'].to_s == 'true' ? true : false
+
         Array(tweets_ids).each_slice(TWITTER_MAX_BATCH_TWEET_SIZE) do |batch_ids|
           foop = Proc.new do |clients|
             client = clients.pop
@@ -80,9 +83,9 @@ class TwitterAPIWrapper < APIWrapper
 
         user_id = Array(user_id)[0] # silly hack for web interface for now
         opts = HashWithIndifferentAccess.new(options)
-        opts['contributor_details'] ||= true
-        opts['include_entities'] ||= true
-        opts['trim_user'] = (opts['trim_user'] == false) ? false : true
+        opts['include_entities']  =  opts['include_entities'].to_s == 'false' ? false : true
+        opts['trim_user']         =  opts['trim_user'].to_s == 'false' ? false : true
+        opts['include_rts']       =  opts['include_rts'].to_s == 'false' ? false : true
         opts['count'] = (opts.delete('batch_size') || 200).to_i
         batch_limit  = (opts.delete('batch_limit') || (MAX_NUMBER_OF_TWEETS_RETRIEVABLE / opts['count'].to_f).ceil).to_i
         batch_sleep = opts.delete('batch_sleep').to_f

@@ -16,7 +16,7 @@ module BrattyPack
         init_api_wrapper.fetch('users', user_ids, opts  )
       end
 
-      simple_api_endpoint 'content_items_for_user', service: 'facebook' do |options|
+      simple_api_endpoint 'content_items_for_user', service: 'facebook', :presenter_model => :post do |options|
         opts = options.dup
         user_id = opts.delete('id')
 

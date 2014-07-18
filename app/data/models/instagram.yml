@@ -1,9 +1,36 @@
-content_item:
-  description: A photo or a video
-  service_specific_name: media
+media:
   fields:
     - name: id
-      uuid: true
+    - name: type
+    - name: comments_count
+      type: numeric
+      nested: [comments, count]
+    - name: filter
+    - name: created_time
+      type: datetime
+    - name: link
+      type: url
+    - name: likes
+      type: numeric
+      nested: [likes, count]
+    - name: standard_image_url
+      type: image_url
+      nested: [images, standard_resolution,url]
+    - name: caption_text
+      type: text
+      nested: [caption, text]
+    - name: latitude
+      type: numeric
+      nested: [location, latitude]
+    - name: latitude
+      type: numeric
+      nested: [location, longitude]
+    - name: location_id
+      nested: [location, id]
+    - name: username
+      nested: [user, username]
+    - name: user_id
+      nested: [user, id]
 
 user:
   fields:

@@ -31,7 +31,8 @@ div.container-fluid
                     - if col[:type].to_s.index('url')
                       - case col[:type]
                       - when :image_url
-                        img src="#{{col[:value]}}" alt="image url"
+                        - unless col[:value].to_s.empty?
+                            img src="#{{col[:value]}}" alt="#{{col[:value]}}"
                       - else
                         a href="#{{col[:value]}}" => col[:formatted_value]
 

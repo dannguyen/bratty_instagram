@@ -1,3 +1,43 @@
+post:
+  fields:
+    - name: id
+    - name: from_id
+      nested: [from, id]
+    - name: from_name
+      nested: [from, name]
+    - name: to_id
+      nested: [to, id]
+    - name: to_name
+      nested: [to, name]
+    - name: object_id
+    - name: type
+    - name: status_type
+    - name: story
+      type: text
+    - name: created_time
+      type: datetime
+    - name: updated_time
+      type: datetime
+    - name: shares_count
+      type: numeric
+      nested: [shares, count]
+    - name: first_like_id
+      nested: [likes, data, 0, id]
+    - name: first_comment_id
+      nested: [comments, data, 0, id]
+    - name: application_name
+      nested: [application, name]
+    - name: application_id
+      nested: [application, id]
+    - name: message
+      type: text
+    - name: picture
+      type: image_url
+    - name: link
+      type: url
+
+
+
 user:
   fields:
     - name: id

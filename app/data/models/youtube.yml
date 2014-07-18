@@ -1,9 +1,40 @@
-content_item:
-  description: A video
-  service_specific_name: video
+video:
   fields:
     - name: id
-      uuid: true
+    - name: channel_id
+      nested: [snippet, channelId]
+    - name: channel_title
+      nested: [snippet, channelTitle]
+    - name: title
+      nested: [snippet, title]
+    - name: description
+      type: text
+      nested: [snippet, description]
+    - name: published_at
+      type: datetime
+      nested: [snippet, publishedAt]
+    - name: default_thumbnail_url
+      type: image_url
+      nested: [snippet, thumbnails, default, url]
+    - name: duration
+      nested: [contentDetails, duration]
+    - name: view_count
+      type: numeric
+      nested: [statistics, viewCount]
+    - name: like_count
+      type: numeric
+      nested: [statistics, likeCount]
+    - name: dislike_count
+      type: numeric
+      nested: [statistics, dislikeCount]
+    - name: favorite_count
+      type: numeric
+      nested: [statistics, favoriteCount]
+    - name: comment_count
+      type: numeric
+      nested: [statistics, commentCount]
+
+
 
 user:
   fields:

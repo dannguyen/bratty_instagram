@@ -18,6 +18,6 @@ gem 'koala'
 ## dev stuff
 gem 'thin'
 gem 'rake'
-gem 'rspec'
+gem 'rspec', '~> 2.14'
 gem 'pry'
 

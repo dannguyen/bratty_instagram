@@ -46,19 +46,15 @@ module BrattyPack
         if f_nested.nil?
           val = data_obj[field_name]
         else
+          # nested: [counts, followed_by]
           obj = data_obj
-          kval = f_nested.keys[0]    # :counts
-          fn = f_nested[kval]     # { :counts => :media }[:counts]
-
-          while obj.is_a?(Hash)
-            obj = obj[kval]
-            break unless fn.is_a?(Hash)
-
-            kval = fn.keys[0]
-            fn = fn[kval]
+          kvals = f_nested.dup  # [:counts, :followed_by]
+          until kvals.empty?
+            kval = kvals.shift # [:counts]
+            obj = obj[kval]    # data_obj[:counts]
           end
 
-          val = obj.nil? ? nil : obj[fn]
+          val = obj.nil? ? nil : obj
         end
 
         return val

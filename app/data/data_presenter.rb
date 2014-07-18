@@ -31,14 +31,19 @@ module BrattyPack
       @config[:fields].map{|f| f[:name] }
     end
 
-    # returns PresentableDataThing
-    def create_presentable_object(data_obj)
+    # returns an Array of PresentableDataThings, even if there's only
+    # one
+    def create_presentable_objects(data_obj)
+      data_arr = data_obj.is_a?(Hash) ? [data_obj] : Array(data_obj)
 
-      arr = @config['fields'].inject([]) do |a, field|
-        a << [field, parse_value(field, data_obj)]
+      data_arr.map! do |obj|
+        p = @config['fields'].map do |field|
+          [field, parse_value(field, obj)]
+        end
+        PresentableDataThing.new(p)
       end
 
-      return PresentableDataThing.new(arr)
+      return data_arr
     end
 
 

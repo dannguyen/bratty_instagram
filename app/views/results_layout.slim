@@ -20,25 +20,27 @@ div.container-fluid
 
       tbody
         - @results.each do |result|
-          tr
-            td = result.params
-            - if result.success?
-              - obj = @presenter.create_presentable_object( result.response )
-              - @presenter.columns.each do |col_name|
-                - col = obj[col_name]
-                td class="#{{col[:type]}}"
-                  - if col[:type].to_s.index('url')
-                    - case col[:type]
-                    - when :image_url
-                      img src="#{{col[:value]}}" alt="image url"
+          - if result.success?
+            - presentable_objects = @presenter.create_presentable_objects( result.response )
+            - presentable_objects.each do |obj|
+              tr
+                td = result.params
+                - @presenter.columns.each do |col_name|
+                  - col = obj.read_attribute(col_name)
+                  td class="#{{col[:type]}}"
+                    - if col[:type].to_s.index('url')
+                      - case col[:type]
+                      - when :image_url
+                        img src="#{{col[:value]}}" alt="image url"
+                      - else
+                        a href="#{{col[:value]}}" => col[:formatted_value]
+
                     - else
-                      a href="#{{col[:value]}}" => col[:formatted_value]
+                      => col[:formatted_value]
 
-                  - else
-                    => col[:formatted_value]
-
-            - else
-              td.error = result.message
+          - else
+              tr
+                td.error = result.message
 
 
   / == yield

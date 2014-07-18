@@ -1,8 +1,17 @@
 tweet:
   fields:
+    - name: id
     - name: text
       type: text
     - name: lang
+    - name: created_at
+      type: datetime
+    - name: source
+    - name: retweet_count
+      type: numeric
+    - name: favorite_count
+      type: numeric
+
 
 user:
   fields:

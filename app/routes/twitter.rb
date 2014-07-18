@@ -4,14 +4,10 @@ module BrattyPack
   module Routes
     class Twitter < Base
 
-      simple_api_endpoint 'users',
-                    service: 'twitter',
-                    param_name: [:ids, :screen_names],
-                    presenter_model: 'user' do |options|
-
+      simple_api_endpoint 'users', service: 'twitter', :presenter_model => :user do |options|
         opts = options.dup
-        user_ids = process_text_input_array(opts['ids'].delete.to_s).map{|u| u.to_i}
-        screen_names = process_text_input_array(opts['screen_names'].delete.to_s)
+        user_ids = process_text_input_array(opts.delete('ids').to_s).map{|u| u.to_i}
+        screen_names = process_text_input_array(opts.delete('screen_names').to_s)
 
         results = []
         wrapper = init_api_wrapper
@@ -21,7 +17,7 @@ module BrattyPack
         results
       end
 
-      simple_api_endpoint 'content_items_for_user', service: 'twitter' do |options|
+      simple_api_endpoint 'content_items_for_user', service: 'twitter', :presenter_model => :tweet do |options|
         opts = options.dup
         user_id = opts.delete('id')
 

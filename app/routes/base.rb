@@ -54,14 +54,10 @@ module BrattyPack
           param_name = opts[:param_name]
           presenter_model_name = opts[:presenter_model]
 
+          ## Set up the Web GET view
           self.send(http_method, "/api/#{service_name}/#{endpoint_name}") do
-            if block_given?
-              @results = yield params
-            else
-              input_vals = process_text_input_array(params[param_name.to_sym])
-              @results = init_api_wrapper.fetch(endpoint_name, input_vals)
-            end
 
+            @results = yield params
             @presenter = DataPresenter.new(service_name, presenter_model_name)
             slim :results_layout, :layout => :layout
           end
@@ -88,7 +84,7 @@ module BrattyPack
               csv << headers
               @results.each do |result|
                 if result.success?
-                  p_obj = @presenter.create_presentable_object(result.body)
+                  p_obj = @presenter.create_presentable_objects(result.body)
 
                   csv << headers.map{ |col_name| p_obj[col_name][:value] }
                 else

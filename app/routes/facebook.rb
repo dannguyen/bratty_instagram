@@ -9,7 +9,7 @@ module BrattyPack
       end
 
       # /api/youtube/users
-      simple_api_endpoint 'users', service: 'facebook' do |options|
+      simple_api_endpoint 'users', service: 'facebook', :presenter_model => :user do |options|
         opts = options.dup
         user_ids = process_text_input_array( opts.delete('ids') )
 

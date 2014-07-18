@@ -9,7 +9,7 @@ module BrattyPack
       # end
 
       # /api/youtube/users
-      simple_api_endpoint 'users', service: 'instagram' do |options|
+      simple_api_endpoint 'users', service: 'instagram', :presenter_model => :user do |options|
         opts = options.dup
         user_ids = process_text_input_array( opts.delete('ids') )
 

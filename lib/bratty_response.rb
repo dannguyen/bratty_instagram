@@ -40,7 +40,8 @@ class BrattyResponse
   end
 
   def self.error(params, err, msg=nil)
-    message = msg || "#{err.inspect} #{err.backtrace[0..2].join("\n")}"
+    message = msg || "#{err.inspect} #{err}"
+
     new(:error, params, {message: message, error: err})
   end
 

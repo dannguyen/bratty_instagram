@@ -126,6 +126,10 @@ class YoutubeAPIWrapper < APIWrapper
           end
         end
 
+        def get_channels_from_channel_ids(client, uids)
+          get_channel(client, { id: Array(uids).join(',') })
+        end
+
         # returns a Youtube standard response, in which all
         # the items simply have:
         # "contentDetails" => { "videoId" => "ZZsTQwPW6x4" }
